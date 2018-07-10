@@ -1,0 +1,44 @@
+.app {
+  background-image: url('contact.png');
+  position: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.intro {
+  margin-left: 5%;
+  margin-right: 60%;
+  margin-top: 15%;
+  padding: 30px;
+  text-align: center;
+}
+
+.intro img {
+  width: 25%;
+  height: 25%;
+  margin-bottom: -40px;
+}
+
+.intro h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: -25px;
+}
+
+.intro h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+}
+
+.scrollable {
+
+}
