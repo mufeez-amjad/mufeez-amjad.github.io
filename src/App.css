@@ -1,26 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600|Raleway:300,400,500');
+
 .app {
-  background-image: url('contact.png');
+  background-image: linear-gradient(to right,
+    rgba(255, 255, 255, 0.75) ,
+    rgba(255, 255, 255, 0.4)),
+  url('contact.png');
   position: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-clip: cover;
   background-attachment: fixed;
-  overflow: hidden;
+  overflow-x: hidden; 
   width: 100%;
   height: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
 }
 
 .intro {
-  margin-left: 5%;
-  margin-right: 60%;
+  margin-left:7%;
+  margin-right:auto;
   margin-top: 15%;
   padding: 30px;
   text-align: center;
+  position: fixed;
+  flex-wrap: wrap;
 }
 
 .intro img {
-  width: 25%;
-  height: 25%;
+  width: 110px;
+  height: 100px;
   margin-bottom: -40px;
 }
 
@@ -28,7 +39,7 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 4rem;
   font-weight: 600;
-  color: white;
+  color: #23A8EA;
   margin-bottom: -25px;
 }
 
@@ -36,9 +47,105 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
   font-weight: 600;
-  color: white;
+  color: #333333;
+  margin-bottom: 25px;
+}
+
+.social-media {
+  display: inline-flex;
+}
+
+.social-media a {
+  padding: 10px;
+  color: #333333;
+}
+
+.social-media a:hover {
+  color: #23A8EA;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
 }
 
 .scrollable {
+  background: #ffffff;
+  height: fit-content;
+  width: 650px;
+  margin-left: 750px;
+  margin-right: 50px;
+  margin-top: 61%;
+  text-align: center;
+  flex-wrap: wrap;
+}
 
+.scrollable h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #23A8EA;
+}
+
+.scrollable p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333333;
+  text-align: left;
+  display: inline;
+  margin-right: 25px;
+}
+
+.scrollable em {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #23A8EA;
+  text-align: left;
+  font-style: normal;
+}
+
+.scrollable .profile {
+  display: flex;
+}
+
+.scrollable .profile img {
+  width: 110px;
+  height: 100px;
+  padding-right: 25px;
+  margin-left: 25px;
+}
+
+@media screen and (max-width: 600px) {
+
+  .app {
+    justify-content: center;
+    background-image: linear-gradient(to right,
+    rgba(255, 255, 255, 0.75) ,
+    rgba(255, 255, 255, 0.75)),
+    url('contact.png');
+
+    display: flex;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .intro {
+    margin-top: 5px;
+    margin-left:0;
+    margin-right:0;
+  }
+  .intro h1 {
+    font-size: 2.5rem;
+    margin-top: 40px;
+  }
+  .intro h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  .scrollable {
+    width: 100%;
+    height: fit-content;
+    margin-top: 0;
+  }
 }
