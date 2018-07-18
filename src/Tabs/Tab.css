@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600|Raleway:500,600,700');
+
+.Tabs {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 3px;
+  }
+  
+  .Tabs__Tab {
+    display: inline-block;
+    width: 100px;
+    /* top right bottom left  */
+    padding: 1em;
+    padding-top: 0;
+    color: #23A8EA;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+  }
+  
+  .Tabs__Tab:hover, .Tabs__Tab--active {
+    color: #23A8EA;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+  }
+  
+  .Tabs__Underline {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border-bottom: 2px solid #333333;
+  }
