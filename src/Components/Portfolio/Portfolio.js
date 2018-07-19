@@ -30,7 +30,6 @@ class Portfolio extends Component {
                     <div key="aTab">Development</div>
                     <div key="bTab">Design</div>
                 </Tabs>
-                <p>{content[this.state.active]}</p>
                 <div> {content[this.state.active]} </div>
             </div>
         );
