@@ -20,59 +20,6 @@
   flex-direction: row;
 }
 
-.intro {
-  margin-left:7%;
-  margin-right:auto;
-  padding: 30px;
-  text-align: center;
-  position: fixed;
-  flex-wrap: wrap;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.intro img {
-  width: 110px;
-  height: 100px;
-  margin-bottom: -40px;
-}
-
-.intro h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 4rem;
-  font-weight: 600;
-  color: #23A8EA;
-  margin-bottom: -25px;
-}
-
-.intro h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2rem;
-  font-weight: 600;
-  color: #333333;
-  margin-bottom: 25px;
-}
-
-.social-media {
-  display: inline-flex;
-}
-
-.social-media a {
-  padding: 10px;
-  color: #333333;
-}
-
-.social-media a:hover {
-  color: #23A8EA;
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition:.5s;
-}
-
 .scrollable {
   background: #ffffff;
   height: fit-content;
@@ -105,79 +52,6 @@ p {
 
 .scrollable .skills {
   display: inline;
-}
-
-.scrollable .experience {
-  border-top: 1px solid rgba(128, 128, 128, 0.3);
-  margin-left: 25px;
-  margin-right: 25px;
-  margin-top: 30px;
-}
-
-.scrollable .experience h2 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #23A8EA;
-  text-align: left;
-  margin-left: 15px;
-  margin-top: 20px;
-}
-
-.scrollable .experience .job h3 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-  color: #333333;
-  text-align: left;
-  float: left;
-  margin-left: 35px; 
-  margin-top: -1px;
-  padding-right: 20px;
-}
-
-.scrollable .experience .job h5 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: #333333;
-  text-align: left;
-  float: left;
-  margin: 18px 0 0 -194px;
-}
-
-.scrollable .experience .job .details {
-  white-space: nowrap;
-}
-
-.scrollable .experience .job .details ul {
-  list-style: none;
-  margin-top: 25px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 0.95rem;
-  font-weight: 400;
-  color: #333333;
-  text-align: left;
-  margin-left: 20px;
-}
-
-.scrollable .experience .job .details li::before {
-  content: "• ";
-  color: #23A8EA;
-}
-
-.scrollable .experience .job .details h4 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #333333;
-  text-align: left;
-  color: #23A8EA;
-}
-
-.scrollable .experience .job .details h4::before {
-  content: "• ";
-  color: #23A8EA;
 }
 
 .scrollable .profile .summary {
@@ -233,23 +107,6 @@ p {
   float:left;
 }
 
-.scrollable .portfolio {
-  border-top: 1px solid rgba(128, 128, 128, 0.3);
-  margin-left: 25px;
-  margin-right: 25px;
-  margin-top: 30px;
-}
-
-.scrollable .portfolio h2 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #23A8EA;
-  text-align: left;
-  margin-left: 15px;
-  margin-top: 20px;
-}
-
 @media screen and (max-width: 600px) {
 
   .app {
@@ -263,22 +120,7 @@ p {
     overflow-y: scroll;
     overflow-x: hidden;
   }
-  .intro {
-    top: auto;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-    margin-left:0;
-    margin-right:0;
-  }
-  .intro h1 {
-    font-size: 2.5rem;
-    margin-top: 40px;
-  }
-  .intro h2 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-  }
+  
   .scrollable {
     width: 100%;
     height: fit-content;

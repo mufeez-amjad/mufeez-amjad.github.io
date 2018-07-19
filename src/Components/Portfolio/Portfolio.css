@@ -1,0 +1,15 @@
+.portfolio {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 20px;
+}
+  
+.portfolio h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #23A8EA;
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 20px;
+}
