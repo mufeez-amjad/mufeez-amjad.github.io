@@ -4,6 +4,7 @@ import profile from './profile.jpg';
 import Intro from './Components/Intro/Intro';
 import Experience from './Components/Experience/Experience';
 import Portfolio from './Components/Portfolio/Portfolio';
+import Awards from './Components/Awards/Awards'
 
 class App extends Component {
   constructor() {
@@ -47,7 +48,10 @@ class App extends Component {
             </p>
           </div>
 
+
           <Experience />
+
+          <Awards />
 
           <Portfolio />
 

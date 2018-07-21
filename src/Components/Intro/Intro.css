@@ -40,15 +40,21 @@
 .social-media a {
     padding: 10px;
     color: #333333;
+
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    transition: all .5s ease-out;
 }
 
 .social-media a:hover {
     color: #23A8EA;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition:.5s;
+    -webkit-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -ms-transition: all .5s ease-in;
+    transition: all .5s ease-in;
 }
 
 @media screen and (max-width: 600px) {
@@ -60,6 +66,7 @@
       transform: translateY(0);
       margin-left:0;
       margin-right:0;
+      position: fixed;
     }
     .intro h1 {
       font-size: 2.5rem;

@@ -1,0 +1,54 @@
+.awards {
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 25px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+}
+.awards .award {
+  display: block;
+}
+
+.awards h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #23A8EA;
+  text-align: left;
+}
+  
+.awards .award h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #333333;
+  text-align: left;
+  margin-left: 35px;
+}
+
+.awards .award h3 a {
+  text-decoration: none;
+  color: #333333;
+}
+
+
+  
+.awards .award h5 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #333333;
+    text-align: left;
+    margin-left: 35px;
+    margin-top: -17px;
+}
+
+.awards .award p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #333333;
+  margin-left: 35px;
+  margin-right: 37px;
+  margin-top: -15px;
+}
