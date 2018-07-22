@@ -50,10 +50,6 @@ p {
   display: inline;
 }
 
-.scrollable .skills {
-  display: inline;
-}
-
 .scrollable .profile .summary {
   font-family: 'Raleway', sans-serif;
   font-size: 1rem;
@@ -90,6 +86,11 @@ p {
   font-style: normal;
 }
 
+.scrollable .skills {
+  display: block;
+  margin-top: 35px;
+}
+
 .scrollable .skills em::before {
   content: "• ";
 }
@@ -97,6 +98,10 @@ p {
 .scrollable .skills p {
   margin-left: 40px;
   margin-right: 30px;
+}
+
+.scrollable .skills .list {
+  padding-top: 15px;
 }
 
 .scrollable .profile img {

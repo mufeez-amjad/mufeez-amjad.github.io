@@ -6,32 +6,57 @@
     padding-bottom: 25px;
 }
 
+.portfolio-items a {
+    text-decoration: none;
+    color: #333333;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.portfolio-items a:visited {
+    color: #333333;
+}
+
 .portfolio-items .item {
-    background-color: #23A8EA;
+    background-color: #333333;
     color: #FAFAFA;
+    cursor: pointer;
 
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
     border-radius: 2px;
-    -webkit-transition: -webkit-box-shadow .25s;
-    transition: -webkit-box-shadow .25s;
-    -o-transition: box-shadow .25s;
-    transition: box-shadow .25s;
-    transition: box-shadow .25s,-webkit-box-shadow .25s;
     -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12),0 2px 1px -2px rgba(0,0,0,.2);
     box-shadow: 0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12),0 2px 1px -2px rgba(0,0,0,.2);
     width: 13rem;
     height: 13rem;
     margin: 1rem;
+
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    transition: all .5s ease-out;
 }
 
 .portfolio-items .item:hover {
+    cursor: pointer;
+    background-color: #23A8EA;
     box-shadow: 0 1px 1px 0 rgba(0,0,0,.5),0 1px 3px 0 rgba(0,0,0,.5),0 2px 1px -2px rgba(0,0,0,.5);
+
+    -webkit-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -ms-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.portfolio-items .item a:hover {
+    cursor: pointer;
 }
 
 .portfolio-items .item h1 {
+    cursor: pointer;
     -ms-flex: 1 1;
     flex: 1 1;
     padding: 0.7rem;
@@ -42,6 +67,7 @@
 }
 
 .portfolio-items .item p {
+    cursor: pointer;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -52,28 +78,13 @@
     text-align: center;
     line-height: 1.25rem;
     color: #ffffff;
-    margin-top: 0px;
+    margin: 0px 5px 0 5px;
+    padding-top: 5px;
 }
 
 .portfolio-items .item .icons {
-    padding: 1rem 0;
+    cursor: pointer;
+    margin-top: 2rem;
     text-align: center;
     display: inline-block;
-}
-
-.portfolio-items .item .links {
-    padding: 0 0 .85rem;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    font-size: .875rem;
-    font-weight: 400;
-}
-
-.portfolio-items .item .links a {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    color: #ffffff;
-    text-decoration: none;
 }

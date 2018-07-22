@@ -35,19 +35,15 @@ class App extends Component {
             <p className="summary">I’m an incoming <em>Software Engineering</em> student at the University of Waterloo
                 with experience in both <em>software development</em> and <em>graphic design</em>.
             </p>
-
-            <br />
-            <p>With my skillset, I love contributing to a project's design, in addition to its development.</p>
           </div>
 
           <div className="skills">
             <p style={{ float: 'left' }}>I have worked with:</p>
-            <p style={{ marginTop: '30px' }}>
+            <p className='list'>
               <span className="develop">  <em>Java</em> <em>Swift</em> <em>Python</em> <em>Node.js</em> <em>React.js</em> </span>
               <span className="design"><em>Adobe Creative Suite</em> <em>Sketch</em></span>
             </p>
           </div>
-
 
           <Experience />
 
