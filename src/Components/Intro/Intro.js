@@ -6,6 +6,8 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { faDribbble } from '@fortawesome/free-brands-svg-icons'
 import { faFileAlt } from '@fortawesome/free-solid-svg-icons'
+import { faAt } from '@fortawesome/free-solid-svg-icons'
+import resume from './MufeezAmjadResume.pdf'
 
 import './Intro.css'
 class Intro extends Component {
@@ -19,12 +21,12 @@ class Intro extends Component {
             <a href='https://github.com/mufeez-amjad' target='blank'><FontAwesomeIcon icon={faGithub} size="2x"/></a>
             <a href='https://dribbble.com/mufeez-amjad' target='blank'><FontAwesomeIcon icon={faDribbble} size="2x"/></a>
             <a href='https://linkedin.com/in/mufeezamjad' target='blank'><FontAwesomeIcon icon={faLinkedinIn} size="2x"/></a>
-            <a href='' target='blank'><FontAwesomeIcon icon={faFileAlt} size="2x"/></a>
+            <a href='mailto:mufeez.amjad@uwaterloo.ca'><FontAwesomeIcon icon={faAt} size="2x"/></a>
+            <a href={resume} target='blank'><FontAwesomeIcon icon={faFileAlt} size="2x"/></a>
             </div>
         </div>
     );
   }
 }
-
 
 export default Intro;

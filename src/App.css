@@ -115,10 +115,7 @@ p {
 
   .app {
     justify-content: center;
-    background-image: linear-gradient(to right,
-    rgba(255, 255, 255, 0.75) ,
-    rgba(255, 255, 255, 0.75)),
-    url('contact.png');
+    background-image: url('contact2.png');
 
     display: flex;
     flex-direction: column;
@@ -127,6 +124,11 @@ p {
     overflow-x: hidden;
     text-align: center;
     align-content: center;
+
+    background-position-y: 0;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size: auto 350px;
   }
   
   .scrollable {
@@ -136,6 +138,19 @@ p {
     margin-left: 0;
     margin-right: 0;
     opacity: 1;
+  }
+
+  .scrollable .profile .summary {
+    font-size: 0.95rem;
+    margin-top: 40px;
+  }
+
+  .scrollable .skills p {
+    margin-right: 30px;
+  }
+
+  .scrollable .skills p {
+    padding-bottom: 3px;
   }
 }
 
