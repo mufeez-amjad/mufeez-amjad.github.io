@@ -17,7 +17,7 @@
   background-color: #ffffff;
   display: flex;
   justify-content: flex-start;
-  flex-direction: row;
+  /* flex-direction: row; */
 }
 
 .scrollable {
@@ -28,7 +28,6 @@
   margin-right: 50px;
   margin-top: 61%;
   text-align: center;
-  flex-wrap: wrap;
 }
 
 .scrollable h1 {
@@ -123,20 +122,20 @@ p {
 
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     overflow-y: scroll;
     overflow-x: hidden;
     text-align: center;
-  }
-
-  .intro {
-    position: fixed;
+    align-content: center;
   }
   
   .scrollable {
     width: 100%;
+    margin-top: 0;
     height: fit-content;
-    margin-top: 100px;
-    flex: 0;
+    margin-left: 0;
+    margin-right: 0;
+    opacity: 1;
   }
 }
 

@@ -17,7 +17,7 @@ class Experience extends Component {
             <div className="award">
                 <h3><a target='blank' href="http://ecoocs.org/">2nd Place - ECOO Programming Competition</a></h3>
                 <h5>Mar 2018</h5>
-                <p>Placed second in Round 1 and top 25 at the Central Ontario Finals.</p>
+                <p>Placed second in Round 1 and top 25 at the Central Ontario Finals (April 2018).</p>
             </div>
             
             <div className="award">

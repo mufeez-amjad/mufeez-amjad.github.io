@@ -88,3 +88,11 @@
     text-align: center;
     display: inline-block;
 }
+
+@media screen and (max-width: 600px) {
+
+    .portfolio-items .item {    
+        margin: 0.35rem;
+    }
+    
+  }

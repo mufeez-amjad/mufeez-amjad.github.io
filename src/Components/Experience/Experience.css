@@ -72,3 +72,15 @@
     content: "• ";
     color: #23A8EA;
   }
+
+  @media screen and (max-width: 600px) {
+
+    .scrollable .experience .job {
+      margin-left: -10px;
+    }
+    .scrollable .experience .job .details ul {
+      margin-left: -5px;
+      font-size: 0.85rem;
+    }
+    
+  }
