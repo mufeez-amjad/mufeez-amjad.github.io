@@ -30,8 +30,6 @@
   text-decoration: none;
   color: #333333;
 }
-
-
   
 .awards .award h5 {
     font-family: 'Raleway', sans-serif;
@@ -51,4 +49,19 @@
   margin-left: 35px;
   margin-right: 37px;
   margin-top: -15px;
+}
+
+@media screen and (max-width: 480px){
+
+  .awards .award h3 {
+    font-size: 0.95rem;
+  }
+
+  .awards .award p {
+    font-size: 0.8rem;
+  }
+
+  .scrollable .skills .list em {
+    font-size: 0.90rem;
+  }
 }

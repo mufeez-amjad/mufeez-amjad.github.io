@@ -84,3 +84,28 @@
     }
     
   }
+
+  @media screen and (max-width: 485px){
+
+    .scrollable .experience .job {
+      margin-left: -15px;
+    }
+
+    .scrollable .experience .job h3 {
+      font-size: 0.9rem;
+    }
+
+    .scrollable .experience .job h5 {
+      margin: 18px 0 0 -176px;
+    }
+
+    .scrollable .experience .job .details h4 {
+      font-size: 0.9rem;
+    }
+
+    .scrollable .experience .job .details ul {
+      font-size: 0.8rem;
+    }
+
+  }
+  

@@ -10,7 +10,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      opacity: 0,
+      opacity: 1,
     };
     this.scrollEvent = this.scrollEvent.bind(this);
   }
