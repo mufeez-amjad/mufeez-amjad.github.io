@@ -51,7 +51,7 @@
     font-weight: 400;
     color: #333333;
     text-align: left;
-    margin-left: 20px;
+    margin-left: 5px;
   }
   
   .scrollable .experience .job .details li::before {
@@ -107,5 +107,26 @@
       font-size: 0.8rem;
     }
 
+  }
+
+  @media screen and (max-width: 430px){
+
+    .scrollable .experience {
+      margin-left: 10px;
+      margin-top: -10px;
+    }
+
+    .scrollable .experience .job h3 {
+      padding-right: 5px;
+    }
+
+    .scrollable .experience .job h5 {
+      margin: 18px 0 0 -162px;
+    }
+
+    .scrollable .experience .job .details ul {
+      font-size: 0.75rem;
+    }
+      
   }
   

@@ -21,14 +21,34 @@
   font-family: 'Raleway', sans-serif;
   font-size: 1rem;
   font-weight: 700;
-  color: #333333;
   text-align: left;
   margin-left: 35px;
+
+  -webkit-transition: all .5s ease-in;
+  -moz-transition: all .5s ease-in;
+  -o-transition: all .5s ease-in;
+  -ms-transition: all .5s ease-in;
+  transition: all .5s ease-in;
 }
 
 .awards .award h3 a {
   text-decoration: none;
   color: #333333;
+
+  -webkit-transition: all .5s ease-in;
+  -moz-transition: all .5s ease-in;
+  -o-transition: all .5s ease-in;
+  -ms-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.awards .award h3 a:hover {
+  color: #23A8EA;
+  -webkit-transition: all .5s ease-in;
+  -moz-transition: all .5s ease-in;
+  -o-transition: all .5s ease-in;
+  -ms-transition: all .5s ease-in;
+  transition: all .5s ease-in;
 }
   
 .awards .award h5 {
@@ -64,4 +84,20 @@
   .scrollable .skills .list em {
     font-size: 0.90rem;
   }
+}
+
+@media screen and (max-width: 430px){
+
+  .awards {
+    margin-left: 10px;
+  }
+
+  .awards .award {
+    margin-left: -10px;
+  }
+
+  .awards .award p {
+    margin-right: 15px;
+  }
+    
 }

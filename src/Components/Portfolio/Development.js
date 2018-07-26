@@ -61,8 +61,18 @@ class Development extends Component {
                         <h1>Bubble Burst</h1>
                         <p>An iOS arcade game for iPhone and iPods testing reflexes.</p>
                         <div className="icons">
-                            <img style={{width: "30px", height: "30px", padding: "0 5px 0 5px"}} src={images['ios.png']} alt="android" />
+                            <img style={{width: "30px", height: "30px", padding: "0 5px 0 5px"}} src={images['ios.png']} alt="iOS" />
                             <img style={{width: "25px", height: "30px", padding: "0 5px 0 5px"}} src={images['firebase.png']} alt="firebase" />
+                        </div>
+                    </a>
+                </div>
+
+                <div className="item">
+                    <a target='blank' href="https://github.com/mufeez-amjad/GoogleDoodle-Canada150">
+                        <h1>Google Doodle</h1>
+                        <p>My submission to the Doodle 4 Google Canada contest.</p>
+                        <div className="icons">
+                            <img style={{width: "30px", height: "30px", padding: "0 5px 0 5px"}} src={images['java.png']} alt="java" />
                         </div>
                     </a>
                 </div>

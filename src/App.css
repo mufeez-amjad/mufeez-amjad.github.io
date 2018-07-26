@@ -21,13 +21,36 @@
 }
 
 .scrollable {
-  background: #ffffff;
+  background: #ffffffd3;
+  height: -moz-fit-content;
+  height: -webkit-fit-content;
   height: fit-content;
+  position: absolute;
+  top: 91vh;
   width: 650px;
   margin-left: 50%;
   margin-right: 50px;
-  margin-top: 61%;
   text-align: center;
+
+  -webkit-transition: all .5s ease-in;
+  -moz-transition: all .5s ease-in;
+  -o-transition: all .5s ease-in;
+  -ms-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.scrollable:hover {
+  background: #ffffff;
+
+  -webkit-transition: all .5s ease-in;
+  -moz-transition: all .5s ease-in;
+  -o-transition: all .5s ease-in;
+  -ms-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.scrollable .chevron {
+  margin-top: 20px;
 }
 
 .scrollable h1 {
@@ -138,6 +161,12 @@ p {
     margin-left: 0;
     margin-right: 0;
     opacity: 1;
+    position: static;
+    top: 0;
+  }
+
+  .scrollable .chevron {
+    display: none;
   }
 
   .scrollable .profile .summary {
@@ -177,6 +206,18 @@ p {
 
   .scrollable .profile .summary {
     margin-top: 30px;
+  }
+  
+}
+
+@media screen and (max-width: 430px){
+
+  .scrollable .profile .summary {
+    margin-top: 20px;
+  }
+
+  .scrollable .skills p {
+    padding-bottom: 30px;
   }
   
 }

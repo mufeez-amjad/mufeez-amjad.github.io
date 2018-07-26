@@ -6,6 +6,9 @@ import Experience from './Components/Experience/Experience';
 import Portfolio from './Components/Portfolio/Portfolio';
 import Awards from './Components/Awards/Awards'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+
 class App extends Component {
   constructor() {
     super();
@@ -28,6 +31,11 @@ class App extends Component {
         <Intro />
 
         <div className="scrollable" style={{ opacity: this.state.opacity }}>
+        
+          <div className="chevron">
+            <FontAwesomeIcon color="#23A8EA" icon={faChevronDown} size="2x"/>
+          </div>
+
           <h1>Hello world!</h1>
 
           <div className="profile">
