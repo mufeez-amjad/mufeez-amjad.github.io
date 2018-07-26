@@ -31,6 +31,7 @@ class Portfolio extends Component {
                     <div key="bTab">Design</div>
                 </Tabs>
                 <div> {content[this.state.active]} </div>
+                <div style={{display:"none"}}> {content['bTab']} </div>
             </div>
         );
     }

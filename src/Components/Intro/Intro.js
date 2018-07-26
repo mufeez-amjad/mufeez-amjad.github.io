@@ -18,11 +18,11 @@ class Intro extends Component {
             <h1>Mufeez Amjad</h1>
             <h2>Developer and Designer</h2>
             <div className="social-media">
-            <a href='https://github.com/mufeez-amjad' target='blank'><FontAwesomeIcon icon={faGithub} size="2x"/></a>
-            <a href='https://dribbble.com/mufeez-amjad' target='blank'><FontAwesomeIcon icon={faDribbble} size="2x"/></a>
-            <a href='https://linkedin.com/in/mufeezamjad' target='blank'><FontAwesomeIcon icon={faLinkedinIn} size="2x"/></a>
-            <a href='mailto:mufeez.amjad@uwaterloo.ca'><FontAwesomeIcon icon={faAt} size="2x"/></a>
-            <a href={resume} target='blank'><FontAwesomeIcon icon={faFileAlt} size="2x"/></a>
+                <a href='https://github.com/mufeez-amjad' target='blank'><FontAwesomeIcon icon={faGithub} size="2x"/></a>
+                <a href='https://dribbble.com/mufeez-amjad' target='blank'><FontAwesomeIcon icon={faDribbble} size="2x"/></a>
+                <a href='https://linkedin.com/in/mufeezamjad' target='blank'><FontAwesomeIcon icon={faLinkedinIn} size="2x"/></a>
+                <a href='mailto:mufeez.amjad@uwaterloo.ca'><FontAwesomeIcon icon={faAt} size="2x"/></a>
+                <a href={resume} target='blank'><FontAwesomeIcon icon={faFileAlt} size="2x"/></a>
             </div>
         </div>
     );

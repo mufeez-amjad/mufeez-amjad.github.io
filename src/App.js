@@ -40,7 +40,7 @@ class App extends Component {
 
           <div className="profile">
             <img src={profile} alt="Profile" />
-            <p className="summary">I’m an incoming <em>Software Engineering</em> student at the University of Waterloo
+            <p className="summary">I’m a 1A <em>Software Engineering</em> student at the University of Waterloo
                 with experience in both <em>software development</em> and <em>graphic design</em>.
             </p>
           </div>

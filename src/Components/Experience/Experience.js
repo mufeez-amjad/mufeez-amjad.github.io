@@ -15,7 +15,7 @@ class Experience extends Component {
                 <h4>Freelance Graphic Designer</h4>
                 <ul>
                     <li>Started during my grade 9 year whilst taking a graphics course</li>
-                    <li>Over 200 clients for multiple design projects</li>
+                    <li>Over <b>200 clients</b> for multiple design projects</li>
                     <li>Worked on UI/UX design, web design, identity, and marketing</li>
                 </ul>
                 </div>

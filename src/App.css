@@ -118,7 +118,7 @@ p {
 }
 
 .scrollable .skills p {
-  margin-left: 40px;
+  margin-left: 30px;
   margin-right: 30px;
 }
 
@@ -163,6 +163,7 @@ p {
     opacity: 1;
     position: static;
     top: 0;
+    background-color: #ffffff;
   }
 
   .scrollable .chevron {
@@ -218,6 +219,38 @@ p {
 
   .scrollable .skills p {
     padding-bottom: 30px;
+  }
+  
+}
+
+@media screen and (max-width: 375px){
+
+  .scrollable .profile .summary {
+    margin-top: 20px;
+  }
+
+  .scrollable .skills p {
+    padding-bottom: 50px;
+  }
+
+  .scrollable h1 {
+    font-size: 1.5rem;
+  }
+  
+}
+
+@media screen and (max-height: 800px){
+
+  .scrollable {
+    top: 80vh;
+  }
+  
+}
+
+@media screen and (max-height: 1100px){
+
+  .scrollable {
+    top: 94vh;
   }
   
 }
