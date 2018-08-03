@@ -13,3 +13,10 @@
     margin-left: 15px;
     margin-top: 20px;
 }
+
+@media screen and (max-width: 375px){
+    .portfolio {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
