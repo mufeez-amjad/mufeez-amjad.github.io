@@ -89,6 +89,37 @@
     display: inline-block;
 }
 
+.portfolio-items .item .inProgress {
+    background: #333333;
+    height: 13rem;
+    width: 13rem;
+    position: relative;
+    margin-top: -11.25rem;
+    opacity: 0.9;
+    padding: 0;
+    transition: opacity .5s;
+}
+.portfolio-items .item .inProgress p {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 12rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.portfolio-items .item .inProgress:hover {
+    opacity: 0;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+}
+
+.portfolio-items .item .inProgress p {
+    align-content: center;
+}
+
 @media screen and (max-width: 600px) {
 
     .portfolio-items .item {    
@@ -111,6 +142,16 @@
         width: 12rem;
         height: 12rem;
     }
+
+    .portfolio-items .item .inProgress {
+        height: 12rem;
+        width: 12rem;
+        margin-top: -11rem;
+    }
+    .portfolio-items .item .inProgress p {
+        line-height: 11.1rem;
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 470px){
@@ -127,6 +168,15 @@
         width: 11.5rem;
         height: 11.5rem;
         margin: 0.1rem;
+    }
+    .portfolio-items .item .inProgress {
+        height: 11.5rem;
+        width: 11.5rem;
+        margin-top: -10.9rem;
+    }
+    .portfolio-items .item .inProgress p {
+        line-height: 10.6rem;
+        font-size: 1rem;
     }
 }
 
@@ -152,5 +202,15 @@
 
     .portfolio-items .item {
         margin: 0.5rem;
+    }
+
+    .portfolio-items .item .inProgress {
+        height: 11rem;
+        width: 11rem;
+        margin-top: -9.8rem;
+    }
+    .portfolio-items .item .inProgress p {
+        line-height: 9.8rem;
+        font-size: 1rem;
     }
 }

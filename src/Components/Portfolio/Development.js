@@ -18,18 +18,7 @@ class Development extends Component {
             <div className="portfolio-items">
 
                 <div className="item">
-                    <a target='blank' href="https://devpost.com/software/fightvr">
-                        <h1>FightVR</h1>
-                        <p>A VR game that uses a Myo and a phone as controllers.</p>
-                        <div className="icons" style={{alignContent: "center"}}>
-                            <img style={{width: "30px", height: "30px", padding: "0 5px 0 5px"}} src={images['unity.png']} alt="unity" />
-                            <img style={{width: "30px", height: "30px", padding: "0 5px 0 5px"}} src={images['csharp.png']} alt="c#" />
-                            <img style={{width: "30px", height: "30px", padding: "0 5px 0 5px"}} src={images['android.png']} alt="android" />
-                        </div>
-                    </a>
-                </div>
-
-                <div className="item">
+                    
                     <a>
                         <h1>GreenBox</h1>
                         <p>A social media app to make linking up with friends easy.</p>
@@ -40,8 +29,22 @@ class Development extends Component {
                             <img style={{width: "25px", height: "30px", padding: "0 5px 0 5px"}} src={images['firebase.png']} alt="firebase" />
                         </div>
                     </a>
+                    <div className="inProgress">
+                        <p>In progress!</p>
+                    </div>
                 </div>
-                
+
+                <div className="item">
+                    <a target='blank' href="https://devpost.com/software/fightvr">
+                        <h1>FightVR</h1>
+                        <p>A VR game that uses a Myo and a phone as controllers.</p>
+                        <div className="icons" style={{alignContent: "center"}}>
+                            <img style={{width: "30px", height: "30px", padding: "0 5px 0 5px"}} src={images['unity.png']} alt="unity" />
+                            <img style={{width: "30px", height: "30px", padding: "0 5px 0 5px"}} src={images['csharp.png']} alt="c#" />
+                            <img style={{width: "30px", height: "30px", padding: "0 5px 0 5px"}} src={images['android.png']} alt="android" />
+                        </div>
+                    </a>
+                </div>
 
                 <div className="item">
                     <a target='blank' href="https://github.com/mufeez-amjad/DriveBack">

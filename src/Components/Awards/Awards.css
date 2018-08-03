@@ -42,14 +42,14 @@
   transition: all .5s ease-in;
 }
 
-.awards .award h3 a:hover {
+/* .awards .award h3 a:hover {
   color: #23A8EA;
   -webkit-transition: all .5s ease-in;
   -moz-transition: all .5s ease-in;
   -o-transition: all .5s ease-in;
   -ms-transition: all .5s ease-in;
   transition: all .5s ease-in;
-}
+} */
   
 .awards .award h5 {
     font-family: 'Raleway', sans-serif;
