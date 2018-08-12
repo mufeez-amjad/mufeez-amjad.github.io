@@ -51,13 +51,25 @@
 
 .scrollable .chevron {
   margin-top: 20px;
+  position: relative;
+  animation: MoveUpDown 1.5s linear infinite;
+}
+
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    top: 5px;
+  }
+  50% {
+    top: 15px;
+  }
 }
 
 .scrollable h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
   font-weight: 600;
-  color: #23A8EA;
+  color: #35a6de;
 }
 
 p {
@@ -103,7 +115,7 @@ p {
   font-family: 'Raleway', sans-serif;
   font-size: 1rem;
   font-weight: 600;
-  color: #23A8EA;
+  color: #35a6de;
   text-align: left;
   font-style: normal;
 }
@@ -154,7 +166,7 @@ p {
   left: 0;
   width: 100%;
   height: 3px;
-  background: #23A8EA;
+  background: #35a6de;
   animation: strikein .75s ease-in-out forwards;
 }
 

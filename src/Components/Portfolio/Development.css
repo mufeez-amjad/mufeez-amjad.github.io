@@ -41,7 +41,7 @@
 
 .portfolio-items .item:hover {
     cursor: pointer;
-    background-color: #23A8EA;
+    background-color: #35a6de;
     box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2);
     
     -webkit-transition: all .5s ease-in;
