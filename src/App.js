@@ -9,30 +9,75 @@ import Awards from './Components/Awards/Awards'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
-import Scrollchor from 'react-scrollchor';
-
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      opacity: 1,
+      term: "an incoming"
     };
-    this.scrollEvent = this.scrollEvent.bind(this);
   }
 
-  scrollEvent() {
+  componentWillMount() {
+    this.calculateTerm();
+  }
+
+  calculateTerm() {
+    const today = new Date('September 30, 2019');
+    var currentTerm = "an incoming";
+    //Fall: Sept 6
+    //Winter: Jan 7
+    //Spring: May 6
+    var oneA = new Date('September 2, 2018');
+    var oneB = new Date('January 7, 2019');      
+    var twoA = new Date('September 5, 2019'); //Fall -> Spring
+    var twoB = new Date('May 4, 2020'); //Spring -> Winter
+    var threeA = new Date('January 4, 2021'); //Winter -> Fall
+    var threeB = new Date('September 9, 2021'); //Fall -> Spring    
+    var fourA = new Date('May 9, 2022'); //Spring -> Winter
+    var fourB = new Date('January 9, 2023');
+    var graduation = new Date('June 1, 2018')
+
+    if (today < oneA){
+      currentTerm = 'an incoming';
+    }
+    else if (today < oneB) {
+      currentTerm = "a 1A"
+    }
+    else if (today < twoA) {
+      currentTerm = "a 1B"
+    }
+    else if (today < twoB) {
+      currentTerm = "a 2A"
+    }
+    else if (today < threeA) {
+      currentTerm = "a 2B"
+    }
+    else if (today < threeB) {
+      currentTerm = "a 3A"
+    }
+    else if (today < fourA) {
+      currentTerm = "a 3B"
+    }
+    else if (today < fourB) {
+      currentTerm = "a 4A"
+    }
+    else if (today < graduation) {
+      currentTerm = "a 4B"
+    }
+
     this.setState({
-      opacity: this.state.opacity + 1,
+      term: currentTerm
     });
   }
 
   render() {
+
     return (
-      <div className="app" onScroll={this.scrollEvent}>
+      <div className="app">
         
         <Intro />
 
-        <div className="scrollable" style={{ opacity: this.state.opacity }}>
+        <div className="scrollable">
         
           {/* TODO: add scroll animation to greeting */}
           <a className="chevron"> 
@@ -43,7 +88,7 @@ class App extends Component {
 
           <div className="profile">
             <img src={profile} alt="Profile" />
-            <p className="summary">I’m a 1A <em>Software Engineering</em> student at the University of Waterloo
+            <p className="summary">I’m {this.state.term} <em>Software Engineering</em> student at the University of Waterloo
                 with experience in both <em>software development</em> and <em>graphic design</em>.
             </p>
           </div>
