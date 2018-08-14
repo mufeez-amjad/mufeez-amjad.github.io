@@ -22,7 +22,7 @@ class App extends Component {
   }
 
   calculateTerm() {
-    const today = new Date('September 30, 2019');
+    const today = new Date();
     var currentTerm = "an incoming";
     //Fall: Sept 6
     //Winter: Jan 7
