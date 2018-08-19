@@ -16,8 +16,18 @@
     margin-left: 15px;
     margin-top: 20px;
   }
+
+  .experience .job {
+    
+  }
+
+  .experience .job .heading {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
   
-  .scrollable .experience .job h3 {
+  .experience .job .heading h3 {
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
     font-weight: 700;
@@ -28,22 +38,39 @@
     margin-top: -1px;
     padding-right: 20px;
   }
+
+  .experience .job .heading h3 a {
+    text-decoration: none;
+    color: #333333;
+  }
+
+ .experience .job .heading h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333333;
+    text-align: left;
+    color: #35a6de;
+    margin-top: 0;
+  }
+
+  .experience .job .heading h4::before {
+    content: "• ";
+    color: #35a6de;
+  }
   
-  .scrollable .experience .job h5 {
+  .experience .job h5 {
+    float: left;
+    margin-left: 35px;
+    margin-top: -25px;
+    margin-bottom: 0px;
     font-family: 'Raleway', sans-serif;
     font-size: 0.85rem;
     font-weight: 500;
     color: #333333;
-    text-align: left;
-    float: left;
-    margin: 18px 0 0 -194px;
   }
   
-  .scrollable .experience .job .details {
-    white-space: nowrap;
-  }
-  
-  .scrollable .experience .job .details ul {
+ .experience .job ul {
     list-style: none;
     margin-top: 25px;
     font-family: 'Raleway', sans-serif;
@@ -51,28 +78,14 @@
     font-weight: 400;
     color: #333333;
     text-align: left;
-    margin-left: 5px;
+    margin-top: -2px;
   }
   
-  .scrollable .experience .job .details li::before {
+  .scrollable .experience .job li::before {
     content: "• ";
     color: #35a6de;
   }
   
-  .scrollable .experience .job .details h4 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
-    color: #333333;
-    text-align: left;
-    color: #35a6de;
-  }
-  
-  .scrollable .experience .job .details h4::before {
-    content: "• ";
-    color: #35a6de;
-  }
-
   @media screen and (max-width: 600px) {
 
     .scrollable .experience .job {
