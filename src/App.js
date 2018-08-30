@@ -97,10 +97,8 @@ class App extends Component {
             <p className="left">I have worked with:</p>
             <p className='list'>
               <span className="languages"><em>Java</em> <em>Python</em> <em>JavaScript</em> <em>Swift</em> <em>C#</em> </span>
-              <span className="frameworks"><em>React</em> <em>Node</em> <em>Socket.IO</em> <em>React Native</em> </span> 
+              <span className="frameworks"><em>React.js</em> <em>Node.js</em> <em>Socket.IO</em> <em>React Native</em> </span> 
               <span className="software"><em>Adobe Creative Suite</em> <em>Sketch</em></span> 
-               
-              
             </p>
           </div>
 

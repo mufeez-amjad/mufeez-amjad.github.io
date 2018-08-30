@@ -219,27 +219,29 @@ p {
 
   .scrollable .profile .summary {
     font-size: 0.95rem;
-    margin-top: 40px;
   }
 
   .scrollable .skills p {
   }
 }
-
-@media screen and (max-width: 1250px) { 
-    
-}
-
-@media screen and (max-width: 560px) { 
-  .scrollable .skills p {
-  }
-}
-
 
 @media screen and (max-width: 485px){
 
+  .scrollable .profile {
+    margin-left: 0px;
+    margin-right: 15px;
+  }
+
   .scrollable .profile img {
-    margin-left: 15;
+    margin-left: 15px;
+  }
+
+  .scrollable .skills {
+    margin-left: 0px;
+  }
+  
+  .scrollable .skills .left {
+    margin-right: 15px;
   }
   .scrollable .skills p {
     font-size: 0.95rem;
@@ -250,36 +252,33 @@ p {
   }
 }
 
-@media screen and (max-width: 460px){
-
-  .scrollable .profile .summary {
-    margin-top: 30px;
-  }
-  
-}
-
 @media screen and (max-width: 430px){
 
   .scrollable .profile .summary {
-    margin-top: 20px;
+    font-size: 0.95rem;
   }
 
-  .scrollable .skills p {
+  .scrollable .skills .left {
+    font-size: 0.9rem;
+    flex: 1.5;
+    margin-right: 5px;
+  }
+
+  .scrollable .skills .list span em {
+    font-size: 0.9rem;
+    flex: 1;
   }
   
 }
 
 @media screen and (max-width: 375px){
 
-  .scrollable .profile .summary {
-    margin-top: 20px;
-  }
-
-  .scrollable .skills p {
-  }
-
   .scrollable h1 {
     font-size: 1.5rem;
+  }
+
+  .scrollable .skills {
+    margin-right: 10px;
   }
   
 }

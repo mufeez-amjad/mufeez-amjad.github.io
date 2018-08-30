@@ -12,12 +12,12 @@ class Experience extends Component {
 
                 <div className="heading">
                     <h3><a href="https://www.liberal.ca/" target="blank" className="strike">Liberal Party of Canada</a></h3>
-                    <h4>External Communications Liaison</h4>
+                    <h4>Web Developer & Designer</h4>
                 </div>
                 <h5>Oct 2017 - June 2018</h5>
                 <ul>
                     <li>Developed a website showcasing events and initiatives.</li>
-                    <li>Ran marketing campaigns with a <b>~120% increase</b> in engagement.</li>
+                    <li>Ran marketing campaigns with a <b>~110% increase</b> in engagement.</li>
                     <li>Coordinated with the MP office to organize and plan events.</li>
                 </ul>
 
