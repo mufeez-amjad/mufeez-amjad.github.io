@@ -14,6 +14,16 @@
     margin-top: 20px;
 }
 
+@media screen and (max-width: 485){
+    .portfolio {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .portfolio h2 {
+        margin-left: 15px;
+    }
+}
+
 @media screen and (max-width: 375px){
     .portfolio {
         margin-left: 0px;

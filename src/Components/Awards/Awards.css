@@ -15,6 +15,7 @@
   font-weight: 700;
   color: #35a6de;
   text-align: left;
+  margin-left: 15px;
 }
   
 .awards .award h3 {
@@ -71,8 +72,19 @@
   margin-top: -15px;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 485px){
 
+  .awards {
+    margin-left: 0;
+  }
+
+  .awards h2 {
+    margin-left: 15px;
+  }
+
+  .awards .award {
+    margin-left: -15px;
+  }
   .awards .award h3 {
     font-size: 0.95rem;
   }

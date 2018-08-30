@@ -11,7 +11,7 @@ class Experience extends Component {
             <div className="job">
 
                 <div className="heading">
-                    <h3><a href="liberal.ca" className="strike">Liberal Party of Canada</a></h3>
+                    <h3><a href="https://www.liberal.ca/" target="blank" className="strike">Liberal Party of Canada</a></h3>
                     <h4>External Communications Liaison</h4>
                 </div>
                 <h5>Oct 2017 - June 2018</h5>

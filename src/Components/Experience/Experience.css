@@ -1,13 +1,13 @@
-.scrollable .experience {
+.experience {
     border-top: 1px solid rgba(128, 128, 128, 0.3);
     margin-left: 25px;
     margin-right: 25px;
-    margin-top: 30px;
+    margin-top: 15px;
     border-bottom: 1px solid rgba(128, 128, 128, 0.3);
     padding-bottom: 15px;
   }
   
-  .scrollable .experience h2 {
+  .experience h2 {
     font-family: 'Raleway', sans-serif;
     font-size: 1.2rem;
     font-weight: 700;
@@ -80,92 +80,127 @@
     text-align: left;
     margin-top: -2px;
   }
+
+  .experience .job ul li {
+    list-style-position: outside;
+    margin-left: 1em;
+  }
   
-  .scrollable .experience .job li::before {
+  .experience .job li::before {
     content: "• ";
     color: #35a6de;
   }
   
   @media screen and (max-width: 600px) {
 
-    .scrollable .experience .job {
+    .experience .job {
       margin-left: -10px;
     }
-    .scrollable .experience .job .details ul {
-      margin-left: -5px;
-      font-size: 0.85rem;
+    .experience .job ul {
+      font-size: 0.95rem;
     }
     
   }
 
+  @media screen and (max-width: 555px) {
+
+    .experience .job .heading h3 {
+      font-size: 0.95rem;
+    }
+
+    .experience .job .heading h4 {
+      font-size: 0.95rem;
+    }
+    
+    .experience .job h5 {
+      font-size: 0.82rem;
+    }
+    
+    .experience .job ul {
+      font-size: 0.85rem;
+    }
+  }
+
   @media screen and (max-width: 485px){
 
-    .scrollable .experience .job {
+    .experience {
+      margin-left: 0;
+    }
+
+    .experience .job {
       margin-left: -15px;
     }
 
-    .scrollable .experience .job h3 {
-      font-size: 0.9rem;
+    .experience .job .heading h3 {
+      font-size: 0.85rem;
     }
 
-    .scrollable .experience .job h5 {
-      margin: 18px 0 0 -176px;
+    .experience .job .heading h4 {
+      font-size: 0.85rem;
+      margin-left: -8px;
     }
 
-    .scrollable .experience .job .details h4 {
-      font-size: 0.9rem;
+    .experience .job h5 {
+      margin-top: -23px;
     }
 
-    .scrollable .experience .job .details ul {
-      font-size: 0.9rem;
+    .experience .job ul {
+      font-size: 0.8rem;
+      margin-top: 0px;
+      margin-left: -5px;
+      margin-right: -15px;
     }
 
   }
 
   @media screen and (max-width: 430px){
 
-    .scrollable .experience {
-      margin-left: 10px;
-      margin-top: -10px;
+    .experience {
+      margin-left: 0;
+      margin-right: 0;      
     }
-
-    .scrollable .experience .job h3 {
-      padding-right: 5px;
+    
+    .experience .job {
+      margin-left: -15px;
+      margin-right: 0px;
     }
-
-    .scrollable .experience .job h5 {
-      margin: 18px 0 0 -162px;
-    }
-
-    .scrollable .experience .job .details ul {
-      font-size: 0.75rem;
+    
+    .experience .job ul {
+      font-size: 0.83rem;
+      margin-left: -15px;
+      margin-right: 5px;
     }
       
   }
 
   @media screen and (max-width: 375px){
 
-    .scrollable .experience {
+    .experience {
       margin-left: 0px;
       margin-right: 0px;
-      margin-top: -30px;
-    }
-
-    .scrollable .experience .job h3 {
-      font-size: 0.85rem;
       margin-top: 0px;
     }
 
-    .scrollable .experience .job h5 {
-      margin: 15px 0 0 -153px;
+    .experience .job .heading h3 {
+      font-size: 0.8rem;
+      margin-top: 0px;
+    }
+
+    .experience .job .heading h4 {
+      font-size: 0.85rem;
+      margin-left: -40px;
+    }
+
+    .experience .job h5 {
+      margin: 0;
       font-size: 0.75rem;
     }
 
-    .scrollable .experience .job .details h4 {
+    .experience .job h4 {
       font-size: 0.8rem;
     }
 
-    .scrollable .experience .job .details li {
+    .experience .job .details li {
       display: block;
       white-space: normal;
     }

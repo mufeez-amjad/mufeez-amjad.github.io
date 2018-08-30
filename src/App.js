@@ -94,10 +94,13 @@ class App extends Component {
           </div>
 
           <div className="skills">
-            <p style={{ float: 'left' }}>I have worked with:</p>
+            <p className="left">I have worked with:</p>
             <p className='list'>
-              <span className="develop">  <em>Java</em> <em>Swift</em> <em>Python</em> <em>Node.js</em> <em>React.js</em> </span>
-              <span className="design"><em>Adobe Creative Suite</em> <em>Sketch</em></span>
+              <span className="languages"><em>Java</em> <em>Python</em> <em>JavaScript</em> <em>Swift</em> <em>C#</em> </span>
+              <span className="frameworks"><em>React</em> <em>Node</em> <em>Socket.IO</em> <em>React Native</em> </span> 
+              <span className="software"><em>Adobe Creative Suite</em> <em>Sketch</em></span> 
+               
+              
             </p>
           </div>
 

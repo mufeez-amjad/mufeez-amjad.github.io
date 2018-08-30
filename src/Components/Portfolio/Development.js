@@ -17,7 +17,7 @@ class Development extends Component {
         return (
             <div className="portfolio-items">
 
-                <div className="item">
+                {/* <div className="item">
                     
                     <a>
                         <h1>GreenBox</h1>
@@ -32,7 +32,7 @@ class Development extends Component {
                     <div className="inProgress">
                         <p>In progress!</p>
                     </div>
-                </div>
+                </div> */}
 
                 <div className="item">
                     <a target='blank' href="https://devpost.com/software/fightvr">
