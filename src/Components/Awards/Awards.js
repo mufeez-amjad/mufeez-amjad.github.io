@@ -6,7 +6,7 @@ class Experience extends Component {
  render() {
     return (
         <div className="awards">
-            <h2>Award & Achievements</h2>         
+            <h2>Awards & Achievements</h2>         
     
             <div className="award">
                 <h3><a target='blank' href="https://www.pickering.ca/en/city-hall/civicawards.aspx" className="strike">City of Pickering Civic Award</a></h3>

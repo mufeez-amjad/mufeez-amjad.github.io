@@ -18,7 +18,8 @@
   }
 
   .experience .job {
-    
+    margin-left: 35px;
+    margin-right: 10px;
   }
 
   .experience .job .heading {
@@ -34,7 +35,6 @@
     color: #333333;
     text-align: left;
     float: left;
-    margin-left: 35px; 
     margin-top: -1px;
     padding-right: 20px;
   }
@@ -61,7 +61,6 @@
   
   .experience .job h5 {
     float: left;
-    margin-left: 35px;
     margin-top: -25px;
     margin-bottom: 0px;
     font-family: 'Raleway', sans-serif;
@@ -83,7 +82,7 @@
 
   .experience .job ul li {
     list-style-position: outside;
-    margin-left: 1em;
+    margin-left: -1.5em;
   }
   
   .experience .job li::before {
@@ -94,7 +93,7 @@
   @media screen and (max-width: 600px) {
 
     .experience .job {
-      margin-left: -10px;
+      margin-left: 30px;
     }
     .experience .job ul {
       font-size: 0.95rem;
@@ -125,10 +124,11 @@
 
     .experience {
       margin-left: 0;
+      margin-right: 0;
     }
 
     .experience .job {
-      margin-left: -15px;
+      margin-left: 15px;
     }
 
     .experience .job .heading h3 {
@@ -137,7 +137,7 @@
 
     .experience .job .heading h4 {
       font-size: 0.85rem;
-      margin-left: -8px;
+      margin-left: 10px;
     }
 
     .experience .job h5 {
@@ -155,16 +155,10 @@
 
   @media screen and (max-width: 430px){
 
-    .experience {
-      margin-left: 0;
-      margin-right: 0;      
+    .experience .job .heading h4 {
+      margin-left: -10px;
     }
-    
-    .experience .job {
-      margin-left: -15px;
-      margin-right: 0px;
-    }
-    
+
     .experience .job ul {
       font-size: 0.83rem;
       margin-left: -15px;
@@ -178,29 +172,29 @@
     .experience {
       margin-left: 0px;
       margin-right: 0px;
-      margin-top: 0px;
     }
 
     .experience .job .heading h3 {
       font-size: 0.8rem;
-      margin-top: 0px;
+      flex: 2;
     }
 
     .experience .job .heading h4 {
-      font-size: 0.85rem;
-      margin-left: -40px;
+      font-size: 0.8rem;
+      margin-left: -25px;
+      flex: 2;
     }
 
     .experience .job h5 {
-      margin: 0;
       font-size: 0.75rem;
+      margin-top: -35px;
     }
 
-    .experience .job h4 {
-      font-size: 0.8rem;
+    .experience .job ul {
+      margin-top: -10px;
     }
 
-    .experience .job .details li {
+    .experience .job li {
       display: block;
       white-space: normal;
     }
