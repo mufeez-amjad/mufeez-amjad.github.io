@@ -50,10 +50,10 @@
     -ms-transition: all .5s ease-in;
     transition: all .5s ease-in;
 }
-
+/* 
 .portfolio-items .item a:hover {
     cursor: pointer;
-}
+} */
 
 .portfolio-items .item h1 {
     cursor: pointer;
@@ -121,11 +121,9 @@
 }
 
 @media screen and (max-width: 600px) {
-
     .portfolio-items .item {    
         margin: 0.35rem;
     }
-    
 }
 
 @media screen and (max-width: 505px){
@@ -151,6 +149,14 @@
     .portfolio-items .item .inProgress p {
         line-height: 11.1rem;
         font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 485px){
+    
+    /* TODO: fix left and right margin - justify content */
+    .portfolio-items {
+        /* justify-content:  */
     }
 }
 

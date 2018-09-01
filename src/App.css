@@ -142,7 +142,7 @@ p {
 }
 
 .scrollable .skills .list {
-  flex: 2;
+  flex: 2.5;
 }
 
 .scrollable .skills .list .languages em {
@@ -221,7 +221,8 @@ p {
     font-size: 0.95rem;
   }
 
-  .scrollable .skills p {
+  .scrollable .skills .list {
+    flex: 2;
   }
 }
 
