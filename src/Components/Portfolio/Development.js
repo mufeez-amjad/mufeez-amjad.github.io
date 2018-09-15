@@ -35,6 +35,17 @@ class Development extends Component {
                 </div> */}
 
                 <div className="item">
+                    <a target='blank' href="https://devpost.com/software/pyro">
+                        <h1>Pyro</h1>
+                        <p>A playlist collaboration app to liven social occasions.</p>
+                        <div className="icons" style={{alignContent: "center"}}>
+                            <img style={{width: "30px", height: "30px", padding: "0 5px 0 5px"}} src={images['reactnative.png']} alt="react" />
+                            <img style={{width: "30px", height: "30px", padding: "0 5px 0 5px"}} src={images['node.png']} alt="node" />
+                        </div>
+                    </a>
+                </div>
+
+                <div className="item">
                     <a target='blank' href="https://devpost.com/software/fightvr">
                         <h1>FightVR</h1>
                         <p>A VR game that uses a Myo and a phone as controllers.</p>
@@ -73,6 +84,7 @@ class Development extends Component {
 
                 <div className="item">
                     <a target='blank' href="https://github.com/mufeez-amjad/BubbleBurst-iOS">
+                        {/* TODO: make a modal with youtube link + github link  */}
                         <h1>Bubble Burst</h1>
                         <p>An iOS arcade game for iPhone and iPods testing reflexes.</p>
                         <div className="icons">
