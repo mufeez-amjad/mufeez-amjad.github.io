@@ -8,7 +8,7 @@
   }
   
   .experience h2 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;;
     font-size: 1.2rem;
     font-weight: 700;
     color: #35a6de;
@@ -29,7 +29,7 @@
   }
   
   .experience .job .heading h3 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;;
     font-size: 1rem;
     font-weight: 700;
     color: #333333;
@@ -45,7 +45,7 @@
   }
 
  .experience .job .heading h4 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;;
     font-size: 1rem;
     font-weight: 600;
     color: #333333;
@@ -63,7 +63,7 @@
     float: left;
     margin-top: -25px;
     margin-bottom: 0px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;;
     font-size: 0.85rem;
     font-weight: 500;
     color: #333333;
@@ -72,7 +72,7 @@
  .experience .job ul {
     list-style: none;
     margin-top: 25px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;;
     font-size: 0.95rem;
     font-weight: 400;
     color: #333333;

@@ -9,16 +9,23 @@ import Awards from './Components/Awards/Awards'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
+import ReactDOM from 'react';
+
 class App extends Component {
   constructor() {
     super();
     this.state = {
       term: "an incoming"
     };
+    this.scrollTo = React.createRef();
   }
 
   componentWillMount() {
     this.calculateTerm();
+  }
+
+  componentDidMount() {
+    this.scrollTo.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }
 
   calculateTerm() {
@@ -80,11 +87,13 @@ class App extends Component {
         <div className="scrollable">
         
           {/* TODO: add scroll animation to greeting */}
-          <a className="chevron"> 
+          <a className="chevron" href="#greeting"> 
             <FontAwesomeIcon color="#35a6de" icon={faChevronDown} size="2x"/>
           </a>
          
-          <h1>Hey there!</h1>
+          <h1 id="greeting" ref={this.scrollTo}>
+            Hey there!
+          </h1>
 
           <div className="profile">
             <img src={profile} alt="Profile" />

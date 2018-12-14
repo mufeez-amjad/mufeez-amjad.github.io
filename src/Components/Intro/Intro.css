@@ -41,20 +41,20 @@
     padding: 10px;
     color: #333333;
 
-    -webkit-transition: all .5s ease-out;
-    -moz-transition: all .5s ease-out;
-    -o-transition: all .5s ease-out;
-    -ms-transition: all .5s ease-out;
-    transition: all .5s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    transition: all .3s ease-out;
 }
 
 .social-media a:hover {
     color: #35a6de;
-    -webkit-transition: all .5s ease-in;
-    -moz-transition: all .5s ease-in;
-    -o-transition: all .5s ease-in;
-    -ms-transition: all .5s ease-in;
-    transition: all .5s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    transition: all .3s ease-in;
 }
 
 @media screen and (max-width: 600px) {

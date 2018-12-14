@@ -32,11 +32,11 @@
     height: 13rem;
     margin: 0.8rem;
 
-    -webkit-transition: all .5s ease-out;
-    -moz-transition: all .5s ease-out;
-    -o-transition: all .5s ease-out;
-    -ms-transition: all .5s ease-out;
-    transition: all .5s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    transition: all .3s ease-out;
 }
 
 .portfolio-items .item:hover {
@@ -44,11 +44,11 @@
     background-color: #35a6de;
     box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2);
     
-    -webkit-transition: all .5s ease-in;
-    -moz-transition: all .5s ease-in;
-    -o-transition: all .5s ease-in;
-    -ms-transition: all .5s ease-in;
-    transition: all .5s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    transition: all .3s ease-in;
 }
 /* 
 .portfolio-items .item a:hover {
@@ -97,7 +97,7 @@
     margin-top: -11.25rem;
     opacity: 0.9;
     padding: 0;
-    transition: opacity .5s;
+    transition: opacity .3s;
 }
 .portfolio-items .item .inProgress p {
     text-align: center;
@@ -109,11 +109,11 @@
 
 .portfolio-items .item .inProgress:hover {
     opacity: 0;
-    -webkit-transition: all .5s ease-out;
-    -moz-transition: all .5s ease-out;
-    -o-transition: all .5s ease-out;
-    -ms-transition: all .5s ease-out;
-    transition: all .5s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    transition: all .3s ease-out;
 }
 
 .portfolio-items .item .inProgress p {

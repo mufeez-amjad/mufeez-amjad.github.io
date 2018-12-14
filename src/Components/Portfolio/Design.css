@@ -21,20 +21,20 @@
     border-color: rgba(128, 128, 128, 0.3);
     margin-top: 8px;
 
-    -webkit-transition: all .5s ease-out;
-    -moz-transition: all .5s ease-out;
-    -o-transition: all .5s ease-out;
-    -ms-transition: all .5s ease-out;
-    transition: all .5s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    transition: all .3s ease-out;
 }
 
 .column img:hover {
     border-color: #35a6de;
-    -webkit-transition: all .5s ease-in;
-    -moz-transition: all .5s ease-in;
-    -o-transition: all .5s ease-in;
-    -ms-transition: all .5s ease-in;
-    transition: all .5s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    transition: all .3s ease-in;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns

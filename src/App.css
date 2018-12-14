@@ -32,27 +32,27 @@
   margin-right: 50px;
   text-align: center;
 
-  -webkit-transition: all .5s ease-in;
-  -moz-transition: all .5s ease-in;
-  -o-transition: all .5s ease-in;
-  -ms-transition: all .5s ease-in;
-  transition: all .5s ease-in;
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  transition: all .3s ease-in;
 }
 
 .scrollable:hover {
   background: #ffffff;
 
-  -webkit-transition: all .5s ease-in;
-  -moz-transition: all .5s ease-in;
-  -o-transition: all .5s ease-in;
-  -ms-transition: all .5s ease-in;
-  transition: all .5s ease-in;
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  transition: all .3s ease-in;
 }
 
 .scrollable .chevron {
   margin-top: 20px;
   position: relative;
-  animation: MoveUpDown 1.5s linear infinite;
+  animation: MoveUpDown 1.3s linear infinite;
 }
 
 
@@ -73,7 +73,7 @@
 }
 
 p {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;;
   font-size: 1rem;
   font-weight: 500;
   color: #333333;
@@ -95,7 +95,7 @@ p {
 }
 
 .scrollable .profile .summary {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;;
   font-size: 1rem;
   font-weight: 500;
   color: #333333;
@@ -105,7 +105,7 @@ p {
 
 
 .scrollable h2 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;;
   font-size: 1rem;
   font-weight: 500;
   color: #333333;
@@ -116,7 +116,7 @@ p {
 }
 
 .scrollable em {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;;
   font-size: 1rem;
   font-weight: 600;
   color: #35a6de;
