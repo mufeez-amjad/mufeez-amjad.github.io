@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactGA from 'react-ga';
 
 import Tabs from '../Tabs/Tabs';
 import Development from './Development'
@@ -15,6 +16,13 @@ class Portfolio extends Component {
         };
     }
 
+    handleClick(target) {
+        ReactGA.event({
+            category: 'Navigation',
+            action: 'Changed to ' + target,
+        });
+    }
+
     render() {
         const content = {
             aTab: <Development />,
@@ -27,8 +35,8 @@ class Portfolio extends Component {
                     active={this.state.active}
                     onChange={active => this.setState({active})}
                 >
-                    <div key="aTab">Development</div>
-                    <div key="bTab">Design</div>
+                    <div onClick={()=>{this.handleClick('Development')}} key="aTab">Development</div>
+                    <div onClick={()=>{this.handleClick('Design')}} key="bTab">Design</div>
                 </Tabs>
                 <div> {content[this.state.active]} </div>
                 <div style={{display:"none"}}> {content['bTab']} </div>

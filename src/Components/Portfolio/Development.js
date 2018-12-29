@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import ReactGA from 'react-ga';
 
-import Modal from './Modal/Modal';
+// import Modal from './Modal/Modal';
 
 import './Development.css'
 
@@ -12,7 +13,14 @@ class Development extends Component {
 		this.state = {
 			isShowing: false
 		}
-	}
+    }
+    
+    handleClick(target) {
+        ReactGA.event({
+            category: 'Projects',
+            action: 'Clicked ' + target,
+        });
+    }
 
 	openModalHandler = () => {
 		this.setState({
@@ -74,7 +82,7 @@ class Development extends Component {
                     {/* <button type="button" onClick={this.openModalHandler}>
                         OPEN
                     </button> */}
-                    <a target='blank' href="https://github.com/mufeez-amjad/Nocturnal">
+                    <a onClick={()=>{this.handleClick('Nocturnal')}} target='blank' href="https://github.com/mufeez-amjad/Nocturnal">
                         <h1>Nocturnal</h1>
                         <p>An Arduino-based sleep tracker with an analytics dashboard.</p>
                         <div className="icons" style={{alignContent: "center"}}>
@@ -86,7 +94,7 @@ class Development extends Component {
                 </div>
 
                 <div className="item">
-                    <a target='blank' href="https://devpost.com/software/pyro">
+                    <a onClick={()=>{this.handleClick('Pyro')}} target='blank' href="https://devpost.com/software/pyro">
                         <h1>Pyro</h1>
                         <p>A playlist collaboration app to liven social occasions.</p>
                         <div className="icons" style={{alignContent: "center"}}>
@@ -96,9 +104,9 @@ class Development extends Component {
                     </a>
                 </div>
 
-                <div className="item">
-                    <a target='blank' href="https://devpost.com/software/fightvr">
-                        <h1>FightVR</h1>
+                <div className="item trophy">
+                    <a onClick={()=>{this.handleClick('FightVR')}} target='blank' href="https://devpost.com/software/fightvr">
+                        <h1>🏆 FightVR</h1>
                         <p>A VR game that uses a Myo and a phone as controllers.</p>
                         <div className="icons" style={{alignContent: "center"}}>
                             <img style={{width: "30px", height: "30px", padding: "0 5px 0 5px"}} src={images['unity.png']} alt="unity" />
@@ -109,7 +117,7 @@ class Development extends Component {
                 </div>
 
                 <div className="item">
-                    <a target='blank' href="https://github.com/mufeez-amjad/DriveBack">
+                    <a onClick={()=>{this.handleClick('DriveBack')}} target='blank' href="https://github.com/mufeez-amjad/DriveBack">
                         <h1>DriveBack</h1>
                         <p>An iOS app for communicating through license plates.</p>
                         <div className="icons" style={{alignContent: "center"}}>
@@ -122,7 +130,7 @@ class Development extends Component {
                 </div>
 
 
-                <div className="item">
+                {/* <div className="item">
                     <a target='blank' href="https://devpost.com/software/connect-spxadl">
                         <h1>Connect</h1>
                         <p>NFC-enabled Android app to expedite networking.</p>
@@ -131,10 +139,10 @@ class Development extends Component {
                             <img style={{width: "25px", height: "30px", padding: "0 5px 0 5px"}} src={images['firebase.png']} alt="firebase" />
                         </div>
                     </a>
-                </div>
+                </div> */}
 
                 <div className="item">
-                    <a target='blank' href="https://github.com/mufeez-amjad/BubbleBurst-iOS">
+                    <a onClick={()=>{this.handleClick('Bubble Burst')}} target='blank' href="https://github.com/mufeez-amjad/BubbleBurst-iOS">
                         {/* TODO: make a modal with youtube link + github link  */}
                         <h1>Bubble Burst</h1>
                         <p>An iOS arcade game for iPhone and iPods testing reflexes.</p>
@@ -145,7 +153,7 @@ class Development extends Component {
                     </a>
                 </div>
 
-                <div className="item">
+                {/* <div className="item">
                     <a target='blank' href="https://github.com/mufeez-amjad/GoogleDoodle-Canada150">
                         <h1>Google Doodle</h1>
                         <p>My submission to the Doodle 4 Google Canada contest.</p>
@@ -153,7 +161,7 @@ class Development extends Component {
                             <img style={{width: "30px", height: "30px", padding: "0 5px 0 5px"}} src={images['java.png']} alt="java" />
                         </div>
                     </a>
-                </div>
+                </div> */}
             </div> 
         );
     }

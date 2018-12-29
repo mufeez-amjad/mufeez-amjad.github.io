@@ -17,7 +17,7 @@
 }
 
 .portfolio-items .item {
-    background-color: #333333;
+    background-color: #333333; 
     color: #FAFAFA;
     cursor: pointer;
 
@@ -49,6 +49,11 @@
     -o-transition: all .3s ease-in;
     -ms-transition: all .3s ease-in;
     transition: all .3s ease-in;
+}
+
+
+.portfolio-items .trophy {
+    background: rgb(236, 203, 12);
 }
 /* 
 .portfolio-items .item a:hover {
@@ -105,6 +110,7 @@
     line-height: 12rem;
     font-size: 1rem;
     font-weight: 600;
+    align-content: center;
 }
 
 .portfolio-items .item .inProgress:hover {
@@ -114,10 +120,6 @@
     -o-transition: all .3s ease-out;
     -ms-transition: all .3s ease-out;
     transition: all .3s ease-out;
-}
-
-.portfolio-items .item .inProgress p {
-    align-content: center;
 }
 
 @media screen and (max-width: 600px) {

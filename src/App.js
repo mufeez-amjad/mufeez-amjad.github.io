@@ -10,13 +10,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import ReactGA from 'react-ga';
 
-//TODO: add conditional for scrollIntoView
-//TODO: add Google Analytics
-
-//TODO: update awards
 //TODO: add project modals
 //TODO: indicate winner hackathon projects
-
 
 class App extends Component {
   constructor() {
@@ -29,7 +24,7 @@ class App extends Component {
 
   initializeReactGA() {
     ReactGA.initialize('UA-131240409-1');
-    ReactGA.pageview('/homepage');
+    ReactGA.pageview('/home');
   }
 
   componentWillMount() {
