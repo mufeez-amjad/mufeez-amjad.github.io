@@ -7,7 +7,13 @@ class Experience extends Component {
     return (
         <div className="awards">
             <h2>Awards & Achievements</h2>         
-    
+
+            <div className="award">
+                <h3><a target='blank' href="https://docs.microsoft.com/en-us/azure/" className="strike">Microsoft Top Contributor for Azure Docs</a></h3>
+                <h5>Nov 2018</h5>
+                <p>Awarded for my contributions to the Microsoft Documentation for Azure during the Canadian Open Source Doc-a-thon.</p>
+            </div>
+
             <div className="award">
                 <h3><a target='blank' href="https://www.pickering.ca/en/city-hall/civicawards.aspx" className="strike">City of Pickering Civic Award</a></h3>
                 <h5>June 2018</h5>

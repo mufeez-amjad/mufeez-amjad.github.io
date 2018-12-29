@@ -24,7 +24,7 @@
 
   .experience .job .heading {
     display: flex;
-    justify-content: flex-start;
+    justify-content: start;
     align-items: flex-start;
   }
   

@@ -6,7 +6,23 @@ class Experience extends Component {
  render() {
     return (
         <div className="experience">
-            <h2>Work Experience</h2>         
+            <h2>Work Experience</h2>   
+
+            <div className="job">
+
+                <div className="heading">
+                    <h3><a href="https://watonomous.ca/#/" target="blank" className="strike">WATOnomous</a></h3>
+                    <h4 style={{'margin-left': "60px"}}>Web Infrastructure Developer</h4>
+                </div>
+                <h5>Sept 2018 - Dec 2018</h5>
+                <ul>
+
+                
+                    <li>Developed a <b>Django</b>-based applicant administration interface</li>
+                    <li>Built a <b>RESTful API</b> to screen, schedule interviews, and accept applicants</li>
+                </ul>
+
+            </div>      
             
             <div className="job">
 
@@ -16,9 +32,9 @@ class Experience extends Component {
                 </div>
                 <h5>Oct 2017 - June 2018</h5>
                 <ul>
-                    <li>Developed a website showcasing events and initiatives.</li>
-                    <li>Ran marketing campaigns with a <b>~110% increase</b> in engagement.</li>
-                    <li>Coordinated with the MP office to organize and plan events.</li>
+                    <li>Developed a website using <b>HTML, CSS, and JS</b> for events and initiative</li>
+                    <li>Achieved <b>1.5x visitor conversion rate</b></li>
+                    <li>Ran marketing campaigns with a <b>110% increase in engagement</b></li>
                 </ul>
 
             </div>
@@ -30,9 +46,9 @@ class Experience extends Component {
                 </div>
                 <h5>Apr 2015 - June 2018</h5>
                 <ul>
-                    <li>Started during my grade 9 year whilst taking a graphics course.</li>
-                    <li>Over <b>200 clients</b> for multiple design projects.</li>
-                    <li>Worked on UI/UX design, web design, identity, and marketing.</li>
+                    <li>Over <b>200 clients</b> for websites, UI/UX, branding, products, etc</li>
+                    <li>Generated $18k in revenue, experiencing <b>65% year on year growth</b></li>
+                    <li>Published 4 approved Snapchat geofilters with over <b>1.6 million views</b></li>
                 </ul>
             </div>
 

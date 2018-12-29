@@ -8,6 +8,15 @@ import Awards from './Components/Awards/Awards'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import ReactGA from 'react-ga';
+
+//TODO: add conditional for scrollIntoView
+//TODO: add Google Analytics
+
+//TODO: update awards
+//TODO: add project modals
+//TODO: indicate winner hackathon projects
+
 
 class App extends Component {
   constructor() {
@@ -18,12 +27,20 @@ class App extends Component {
     this.scrollTo = React.createRef();
   }
 
+  initializeReactGA() {
+    ReactGA.initialize('UA-131240409-1');
+    ReactGA.pageview('/homepage');
+  }
+
   componentWillMount() {
     this.calculateTerm();
+    this.initializeReactGA();
   }
 
   componentDidMount() {
-    this.scrollTo.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    if (window.screen.width >= 600) {
+      this.scrollTo.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    }
   }
 
   calculateTerm() {
@@ -102,8 +119,8 @@ class App extends Component {
           <div className="skills">
             <p className="left">I have worked with:</p>
             <p className='list'>
-              <span className="languages"><em>Java</em> <em>Python</em> <em>JavaScript</em> <em>Swift</em> <em>C#</em> </span>
-              <span className="frameworks"><em>React.js</em> <em>Node.js</em> <em>Socket.IO</em> <em>React Native</em> </span> 
+              <span className="languages"><em>Python</em> <em>Java</em> <em>C/C++</em> <em>Swift</em> <em>JavaScript</em> <em>C#</em> </span>
+              <span className="frameworks"><em>React.js</em> <em>Node.js</em> <em>Socket.IO</em> <em>Flask</em> <em>React Native</em> <em>MongoDB</em> <em>Firebase</em> <em>Git</em></span> 
               <span className="software"><em>Adobe Creative Suite</em> <em>Sketch</em></span> 
             </p>
           </div>

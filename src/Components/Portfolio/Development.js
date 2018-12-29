@@ -1,8 +1,30 @@
 import React, { Component } from 'react';
 
+import Modal from './Modal/Modal';
+
 import './Development.css'
 
 class Development extends Component {
+
+    constructor() {
+		super();
+
+		this.state = {
+			isShowing: false
+		}
+	}
+
+	openModalHandler = () => {
+		this.setState({
+			isShowing: true
+		});
+	}
+
+	closeModalHandler = () => {
+		this.setState({
+			isShowing: false
+		});
+}
 
     render() {
 
@@ -17,8 +39,22 @@ class Development extends Component {
         return (
             <div className="portfolio-items">
 
-                {/* <div className="item">
-                    
+            {/* { this.state.isShowing ? <div onClick={this.closeModalHandler} className="back-drop"></div> : null } */}
+
+            {/* <button className="open-modal-btn" onClick={this.openModalHandler}>Open Modal</button> */}
+{/* TODO:Add modal */}
+                {/* <Modal
+                    style={{'z-index': 100}}
+                    className="modal"
+                    header="Nocturnal"
+                    imageSrc="arduino.jpeg"
+                    show={this.state.isShowing}
+                    close={this.closeModalHandler}>
+                        Maybe aircrafts fly very high because they don't want to be seen in plane sight?
+                </Modal> */}
+
+
+                <div className="item">
                     <a>
                         <h1>GreenBox</h1>
                         <p>A social media app to make linking up with friends easy.</p>
@@ -32,7 +68,22 @@ class Development extends Component {
                     <div className="inProgress">
                         <p>In progress!</p>
                     </div>
-                </div> */}
+                </div>
+
+                <div className="item">
+                    {/* <button type="button" onClick={this.openModalHandler}>
+                        OPEN
+                    </button> */}
+                    <a target='blank' href="https://github.com/mufeez-amjad/Nocturnal">
+                        <h1>Nocturnal</h1>
+                        <p>An Arduino-based sleep tracker with an analytics dashboard.</p>
+                        <div className="icons" style={{alignContent: "center"}}>
+                            <img style={{width: "25px", height: "30px", padding: "0 5px 0 5px"}} src={images['flask.png']} alt="flask" />
+                            <img style={{width: "30px", height: "30px", padding: "0 5px 0 5px"}} src={images['python.png']} alt="python" />
+                            <img style={{width: "30px", height: "30px", padding: "0 5px 0 5px"}} src={images['cplusplus.png']} alt="c++" />
+                        </div>
+                    </a>
+                </div>
 
                 <div className="item">
                     <a target='blank' href="https://devpost.com/software/pyro">
