@@ -11,7 +11,9 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import ReactGA from 'react-ga';
 
 //TODO: add project modals
-//TODO: indicate winner hackathon projects
+//TODO: reduce file size for images
+//TODO: fix image size
+//TODO: Description meta tag, update title
 
 class App extends Component {
   constructor() {
