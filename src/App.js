@@ -111,6 +111,11 @@ class App extends Component {
             <p className="summary">I’m {this.state.term} <em>Software Engineering</em> student at the University of Waterloo
                 with experience in both <em>software development</em> and <em>graphic design</em>.
             </p>
+
+          </div>
+          
+          <div className="blog">
+            <p>To read about my experiences and projects, head over to my <a href="http://mufeez.me/blog">blog</a>!</p>
           </div>
 
           <div className="skills">
