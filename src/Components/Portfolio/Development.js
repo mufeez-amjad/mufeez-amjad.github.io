@@ -84,7 +84,7 @@ class Development extends Component {
                     </button> */}
                     <a onClick={()=>{this.handleClick('Nocturnal')}} target='blank' href="https://github.com/mufeez-amjad/Nocturnal">
                         <h1>Nocturnal</h1>
-                        <p>An Arduino-based sleep tracker with an analytics dashboard.</p>
+                        <p>A hardware sleep tracker with an analytics dashboard.</p>
                         <div className="icons" style={{alignContent: "center"}}>
                             <img style={{width: "25px", height: "30px", padding: "0 5px 0 5px"}} src={images['flask.png']} alt="flask" />
                             <img style={{width: "30px", height: "30px", padding: "0 5px 0 5px"}} src={images['python.png']} alt="python" />

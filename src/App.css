@@ -112,7 +112,6 @@ p {
   color: #35a6de;
 }
 
-
 .scrollable h2 {
   font-family: 'Raleway', sans-serif;;
   font-size: 1rem;
@@ -246,6 +245,12 @@ p {
     margin-left: 15px;
   }
 
+  .scrollable .blog p {
+    font-size: 0.95rem;
+    margin: 0 10px;
+    padding: 20px 0 0 0;
+  }
+
   .scrollable .skills {
     margin-left: 0px;
   }
@@ -266,6 +271,11 @@ p {
 
   .scrollable .profile .summary {
     font-size: 0.95rem;
+  }
+
+  .scrollable .blog p {
+    font-size: 0.9rem;
+    margin: 0 15px;
   }
 
   .scrollable .skills .left {
