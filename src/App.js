@@ -9,6 +9,7 @@ import Awards from './Components/Awards/Awards'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import ReactGA from 'react-ga';
+import {Helmet} from "react-helmet";
 
 //TODO: add project modals
 //TODO: reduce file size for images
@@ -93,7 +94,14 @@ class App extends Component {
 
     return (
       <div className="app">
-        
+
+            <Helmet>
+                <meta charSet="utf-8" />
+                <meta name="author" content="Mufeez Amjad"/>
+                <meta name="description" content="Mufeez Amjad — Software Engineer — Toronto, CA"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>     
+                <meta name="keywords" content="Mufeez Amjad, Waterloo, Software Engineer, Designer, Toronto" />
+            </Helmet>
         <Intro />
 
         <div className="scrollable">
