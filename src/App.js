@@ -123,7 +123,7 @@ class App extends Component {
           </div>
           
           <div className="blog">
-            <p>To read about my experiences and projects, head over to my <a href="http://mufeez.me/blog">blog</a>!</p>
+            <p>To read about my experiences and projects, head over to my <a href="http://mufeez.me/blog/">blog</a>!</p>
           </div>
 
           <div className="skills">
