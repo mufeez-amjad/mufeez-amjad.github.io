@@ -4,20 +4,20 @@ self.__precacheManifest = [
     "url": "/static/media/crywolf.958dcde7.png"
   },
   {
-    "revision": "a509c3ac80074fc32955",
-    "url": "/static/css/main.ab44cdbe.chunk.css"
+    "revision": "9632296ca7c28ecb49b0",
+    "url": "/static/css/main.2e606cb6.chunk.css"
   },
   {
-    "revision": "48cc7ed34e091a074a4b",
-    "url": "/static/js/1.48cc7ed3.chunk.js"
+    "revision": "ef9fda8f3585ae415873",
+    "url": "/static/js/1.ef9fda8f.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
     "url": "/static/js/runtime~main.229c360f.js"
   },
   {
-    "revision": "03e521af66178bcc3f42116a7ca20df8",
-    "url": "/static/media/MufeezAmjadResume.03e521af.pdf"
+    "revision": "c4729a0f183b01e454e56cf88cd769ce",
+    "url": "/static/media/MufeezAmjadResume.c4729a0f.pdf"
   },
   {
     "revision": "359df4ce6f0698da3052306159ed4286",
@@ -84,8 +84,8 @@ self.__precacheManifest = [
     "url": "/static/media/budgeting.a0444581.png"
   },
   {
-    "revision": "a509c3ac80074fc32955",
-    "url": "/static/js/main.a509c3ac.chunk.js"
+    "revision": "9632296ca7c28ecb49b0",
+    "url": "/static/js/main.9632296c.chunk.js"
   },
   {
     "revision": "8937149a1f7af42dca1c600be31df2fd",
@@ -168,7 +168,7 @@ self.__precacheManifest = [
     "url": "/static/media/wisseo.8bffc635.png"
   },
   {
-    "revision": "bedab38f35518ee6126f86c0f7554876",
+    "revision": "012e4d53be6e18df4e3f2b4c9e58499a",
     "url": "/index.html"
   }
 ];
