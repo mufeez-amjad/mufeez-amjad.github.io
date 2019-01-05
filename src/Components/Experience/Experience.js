@@ -11,7 +11,7 @@ class Experience extends Component {
             <div className="job">
 
                 <div className="heading">
-                    <h3><a href="https://watonomous.ca/#/" target="blank" className="strike">WATOnomous</a></h3>
+                    <h3><a href="https://watonomous.ca/#/" target="blank" className="strike">WATonomous</a></h3>
                     <h4>Web Infrastructure Developer</h4>
                 </div>
                 <h5>Sept 2018 - Dec 2018</h5>

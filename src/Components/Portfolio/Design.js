@@ -19,13 +19,14 @@ class Design extends Component {
                 <div className="row">
                     <div className="column">
                         <img src={images['crywolf.png']} alt="logo" />
-                        <img src={images['feed.png']} alt="ui"/>
+                        <img src={images['intro.png']} alt="ui"/>
                         <img src={images['pickering2.png']} alt="illustration"/>
                         <img src={images['fractal.png']} alt="logo"/>
-                        <img src={images['budgeting.png']} alt="print"/>
+                        <img src={images['park.png']} alt="print"/>
                         <img src={images['wisseo.png']} alt="logo"/>
                     </div>
                     <div className="column" style={{ flex: 1 }}>
+                        <img src={images['hoc.png']} alt="illustration"/>
                         <img src={images['waterloo2.png']} alt="illustration"/>
                         <img src={images['nike.png']} alt="illustration"/>
                         <img src={images['app-actuator.png']} alt="logo"/>
