@@ -14,7 +14,8 @@ import {Helmet} from "react-helmet";
 //TODO: add project modals
 //TODO: reduce file size for images
 //TODO: fix image size
-//TODO: Description meta tag, update title
+
+//TODO: https://css-tricks.com/animate-a-container-on-mouse-over-using-perspective-and-transform/
 
 class App extends Component {
   constructor() {

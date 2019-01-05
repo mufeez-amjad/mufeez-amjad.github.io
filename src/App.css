@@ -4,7 +4,7 @@
   background-image: linear-gradient(to right,
     rgba(255, 255, 255, 0.75) ,
     rgba(255, 255, 255, 0.4)),
-  url('contact.png');
+  url('bg.png');
   position: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -195,7 +195,10 @@ p {
 
   .app {
     justify-content: center;
-    background-image: url('contact2.png');
+    background-image: linear-gradient(to right,
+    rgba(255, 255, 255, 0.75) ,
+    rgba(255, 255, 255, 0.75)),
+  url('bg.png');
 
     display: flex;
     flex-direction: column;
