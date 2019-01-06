@@ -21,7 +21,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      term: "an incoming"
+      term: "an incoming",
+      coop: ""
     };
     this.scrollTo = React.createRef();
   }
@@ -43,8 +44,9 @@ class App extends Component {
   }
 
   calculateTerm() {
-    const today = new Date();
+    const today = new Date(); //"01/07/2019"
     var currentTerm = "an incoming";
+    var coopTerm = "";
     //Fall: Sept 6
     //Winter: Jan 7
     //Spring: May 6
@@ -56,38 +58,45 @@ class App extends Component {
     var threeB = new Date('September 9, 2021'); //Fall -> Spring    
     var fourA = new Date('May 9, 2022'); //Spring -> Winter
     var fourB = new Date('January 9, 2023');
-    var graduation = new Date('June 1, 2018')
+    var graduation = new Date('June 1, 2018');
 
     if (today < oneA){
       currentTerm = 'an incoming';
     }
     else if (today < oneB) {
-      currentTerm = "a 1A"
+      currentTerm = "a 1A";
     }
     else if (today < twoA) {
-      currentTerm = "a 1B"
+      currentTerm = "a 1B";
+      coopTerm = "Summer 2019";
     }
     else if (today < twoB) {
-      currentTerm = "a 2A"
+      currentTerm = "a 2A";
+      coopTerm = "Winter 2020";
     }
     else if (today < threeA) {
-      currentTerm = "a 2B"
+      currentTerm = "a 2B";
+      coopTerm = "Fall 2020";
     }
     else if (today < threeB) {
-      currentTerm = "a 3A"
+      currentTerm = "a 3A";
+      coopTerm = "Summer 2021";
     }
     else if (today < fourA) {
-      currentTerm = "a 3B"
+      currentTerm = "a 3B";
+      coopTerm = "Winter 2022";
     }
     else if (today < fourB) {
-      currentTerm = "a 4A"
+      currentTerm = "a 4A";
+      coopTerm = "Fall 2022";
     }
     else if (today < graduation) {
-      currentTerm = "a 4B"
+      currentTerm = "a 4B";
     }
 
     this.setState({
-      term: currentTerm
+      term: currentTerm,
+      coop: coopTerm
     });
   }
 
@@ -95,7 +104,6 @@ class App extends Component {
 
     return (
       <div className="app">
-
             <Helmet>
                 <meta charSet="utf-8" />
                 <meta name="author" content="Mufeez Amjad"/>
@@ -120,11 +128,11 @@ class App extends Component {
             <p className="summary">I’m {this.state.term} <em>Software Engineering</em> student at the University of Waterloo
                 with experience in both <em>software development</em> and <em>graphic design</em>.
             </p>
-
           </div>
           
           <div className="blog">
             <p>To read about my experiences and projects, head over to my <a href="http://mufeez.me/blog/">blog</a>!</p>
+            <p style={{marginTop: '-10px', marginBottom: '-5px'}}><b>Currently looking for {this.state.coop} software internships!</b></p>
           </div>
 
           <div className="skills">
