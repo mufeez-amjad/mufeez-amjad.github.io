@@ -31,8 +31,8 @@ class Experience extends Component {
                 <h5>Oct 2017 - June 2018</h5>
                 <ul>
                     <li>Developed a website using <b>HTML, CSS, and JS</b> for events and initiatives</li>
-                    <li>Achieved <b>1.5x visitor conversion rate</b></li>
-                    <li>Ran marketing campaigns with a <b>110% increase in engagement</b></li>
+                    <li>Increased visitor <b>conversion rate by 40%</b></li>
+                    <li>Ran marketing campaigns with a <b>52% increase in engagement</b></li>
                 </ul>
 
             </div>
@@ -46,7 +46,7 @@ class Experience extends Component {
                 <ul>
                     <li>Over <b>200 clients</b> for websites, UI/UX, branding, products, etc</li>
                     <li>Generated $18k in revenue, experiencing <b>65% year on year growth</b></li>
-                    <li>Published 4 approved Snapchat geofilters with over <b>1.6 million views</b></li>
+                    <li>Published 4 approved Snapchat geofilters with over <b>1.8 million views</b></li>
                 </ul>
             </div>
 
