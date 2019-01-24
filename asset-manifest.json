@@ -1,13 +1,13 @@
 {
   "main.css": "/static/css/main.0cd2f942.chunk.css",
-  "main.js": "/static/js/main.688eb5ba.chunk.js",
-  "main.js.map": "/static/js/main.688eb5ba.chunk.js.map",
+  "main.js": "/static/js/main.b8d9ccca.chunk.js",
+  "main.js.map": "/static/js/main.b8d9ccca.chunk.js.map",
   "static/js/1.04985f3d.chunk.js": "/static/js/1.04985f3d.chunk.js",
   "static/js/1.04985f3d.chunk.js.map": "/static/js/1.04985f3d.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
   "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
   "static/media/switch-connect.png": "/static/media/switch-connect.d61a2af1.png",
-  "static/media/MufeezAmjadResume.pdf": "/static/media/MufeezAmjadResume.8e2bf94e.pdf",
+  "static/media/MufeezAmjadResume.pdf": "/static/media/MufeezAmjadResume.299a72b7.pdf",
   "static/media/socket.png": "/static/media/socket.a2cc482b.png",
   "static/media/unity.png": "/static/media/unity.c5fdefd3.png",
   "static/media/app-actuator.png": "/static/media/app-actuator.235c8572.png",
@@ -37,6 +37,6 @@
   "static/media/wisseo.png": "/static/media/wisseo.8bffc635.png",
   "static/css/main.0cd2f942.chunk.css.map": "/static/css/main.0cd2f942.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.6a056b448d34a935cf89ce6875f9c5ba.js": "/precache-manifest.6a056b448d34a935cf89ce6875f9c5ba.js",
+  "precache-manifest.26e0480f983288340b179acfb4453eff.js": "/precache-manifest.26e0480f983288340b179acfb4453eff.js",
   "service-worker.js": "/service-worker.js"
 }
