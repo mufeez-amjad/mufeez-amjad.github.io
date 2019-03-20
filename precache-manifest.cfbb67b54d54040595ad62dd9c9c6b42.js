@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/static/media/nike.89cabeae.png"
   },
   {
-    "revision": "29e5621b271f2a829975",
-    "url": "/static/css/main.0cd2f942.chunk.css"
+    "revision": "09b966212bf299a406fe",
+    "url": "/static/css/main.93a1d544.chunk.css"
   },
   {
-    "revision": "04985f3dd383656328e8",
-    "url": "/static/js/1.04985f3d.chunk.js"
+    "revision": "63527bb43b51fecc0c2d",
+    "url": "/static/js/1.63527bb4.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -68,8 +68,8 @@ self.__precacheManifest = [
     "url": "/static/media/intro.7fdef97e.png"
   },
   {
-    "revision": "29e5621b271f2a829975",
-    "url": "/static/js/main.29e5621b.chunk.js"
+    "revision": "09b966212bf299a406fe",
+    "url": "/static/js/main.09b96621.chunk.js"
   },
   {
     "revision": "86cc71a632fa93a7ccfd59efe470d27e",
@@ -132,7 +132,7 @@ self.__precacheManifest = [
     "url": "/static/media/wisseo.8bffc635.png"
   },
   {
-    "revision": "aee958210252acb587b01d47c855f7d8",
+    "revision": "8ab1588fa3a92b381553d724ddf791b7",
     "url": "/index.html"
   }
 ];
