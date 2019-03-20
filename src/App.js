@@ -130,9 +130,8 @@ class App extends Component {
             </p>
           </div>
           
-          <div className="blog">
-            <p>To read about my experiences and projects, head over to my <a href="http://mufeez.me/blog/">blog</a>!</p>
-            <p style={{marginTop: '-10px', marginBottom: '-5px'}}><b>Currently looking for {this.state.coop} software internships!</b></p>
+          <div style={{padding: '10px 0 0 0'}}>
+            <p style={{textAlign: 'center'}}><b>Currently looking for <span style={{color: '#35a6de'}}>{this.state.coop}</span> software internships!</b></p>
           </div>
 
           <div className="skills">
