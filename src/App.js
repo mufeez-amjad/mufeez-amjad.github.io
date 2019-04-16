@@ -69,6 +69,9 @@ class App extends Component {
     else if (today < twoA) {
       currentTerm = "a 1B";
       coopTerm = "Summer 2019";
+      if (today > new Date('April 22, 2019')) {
+        coopTerm = "Winter 2020";
+      }
     }
     else if (today < twoB) {
       currentTerm = "a 2A";
