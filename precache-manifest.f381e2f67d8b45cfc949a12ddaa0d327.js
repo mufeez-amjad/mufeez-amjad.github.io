@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/nike.89cabeae.png"
   },
   {
-    "revision": "09b966212bf299a406fe",
-    "url": "/static/css/main.93a1d544.chunk.css"
+    "revision": "e55289532760da86ed6f",
+    "url": "/static/css/main.f3d3541b.chunk.css"
   },
   {
     "revision": "63527bb43b51fecc0c2d",
@@ -16,8 +16,8 @@ self.__precacheManifest = [
     "url": "/static/js/runtime~main.229c360f.js"
   },
   {
-    "revision": "a4fbb8161d710a19e5182f410585bcca",
-    "url": "/static/media/MufeezAmjadResume.a4fbb816.pdf"
+    "revision": "cd0ea0aefa15fb2c4010f73fc62dd2ab",
+    "url": "/static/media/MufeezAmjadResume.cd0ea0ae.pdf"
   },
   {
     "revision": "18d3756ea37ad800a5fd3345db7f2a63",
@@ -68,8 +68,8 @@ self.__precacheManifest = [
     "url": "/static/media/intro.7fdef97e.png"
   },
   {
-    "revision": "09b966212bf299a406fe",
-    "url": "/static/js/main.09b96621.chunk.js"
+    "revision": "e55289532760da86ed6f",
+    "url": "/static/js/main.e5528953.chunk.js"
   },
   {
     "revision": "86cc71a632fa93a7ccfd59efe470d27e",
@@ -132,7 +132,7 @@ self.__precacheManifest = [
     "url": "/static/media/wisseo.8bffc635.png"
   },
   {
-    "revision": "8ab1588fa3a92b381553d724ddf791b7",
+    "revision": "7e7354c7e3480d72fe542dfcba36ebdf",
     "url": "/index.html"
   }
 ];
