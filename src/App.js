@@ -43,6 +43,8 @@ class App extends Component {
     }
   }
 
+  addMonths = (oldDate, nMonths) => new Date(oldDate.setMonth(oldDate.getMonth() + nMonths)); 
+
   calculateTerm() {
     const today = new Date(); //"01/07/2019"
     var currentTerm = "an incoming";
@@ -69,25 +71,37 @@ class App extends Component {
     else if (today < twoA) {
       currentTerm = "a 1B";
       coopTerm = "Summer 2019";
-      if (today > new Date('April 22, 2019')) {
+      if (today > this.addMonths(oneB, 4)) {
         coopTerm = "Winter 2020";
       }
     }
     else if (today < twoB) {
       currentTerm = "a 2A";
       coopTerm = "Winter 2020";
+      if (today > this.addMonths(twoA, 4)) {
+        coopTerm = "Fall 2020";
+      }
     }
     else if (today < threeA) {
       currentTerm = "a 2B";
       coopTerm = "Fall 2020";
+      if (today > this.addMonths(twoB, 4)) {
+        coopTerm = "Summer 2021";
+      }
     }
     else if (today < threeB) {
       currentTerm = "a 3A";
       coopTerm = "Summer 2021";
+      if (today > this.addMonths(threeA, 4)) {
+        coopTerm = "Winter 2022";
+      }
     }
     else if (today < fourA) {
       currentTerm = "a 3B";
       coopTerm = "Winter 2022";
+      if (today > this.addMonths(threeB, 4)) {
+        coopTerm = "Fall 2022";
+      }
     }
     else if (today < fourB) {
       currentTerm = "a 4A";

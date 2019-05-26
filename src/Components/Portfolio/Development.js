@@ -106,7 +106,7 @@ class Development extends Component {
 
                 <div className="item trophy">
                     <a onClick={()=>{this.handleClick('FightVR')}} target='blank' href="https://devpost.com/software/fightvr">
-                        <h1>🏆 FightVR</h1>
+                        <h1>FightVR</h1>
                         <p>A VR game that uses a Myo and a phone as controllers.</p>
                         <div className="icons" style={{alignContent: "center"}}>
                             <img style={{width: "30px", height: "30px", padding: "0 5px 0 5px"}} src={images['unity.png']} alt="unity" />
@@ -116,7 +116,7 @@ class Development extends Component {
                     </a>
                 </div>
 
-                <div className="item">
+                {/* <div className="item">
                     <a onClick={()=>{this.handleClick('DriveBack')}} target='blank' href="https://github.com/mufeez-amjad/DriveBack">
                         <h1>DriveBack</h1>
                         <p>An iOS app for communicating through license plates.</p>
@@ -127,7 +127,7 @@ class Development extends Component {
                             <img style={{width: "25px", height: "30px", padding: "0 5px 0 5px"}} src={images['firebase.png']} alt="firebase" />
                         </div>
                     </a>
-                </div>
+                </div> */}
 
 
                 {/* <div className="item">
