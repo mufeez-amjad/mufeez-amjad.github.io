@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "89cabeaea5e86c7c97b433a0a7435048",
-    "url": "/static/media/nike.89cabeae.png"
+    "revision": "7fdef97efbd10162ffab9bd8df5e7c1a",
+    "url": "/static/media/intro.7fdef97e.png"
   },
   {
-    "revision": "e55289532760da86ed6f",
-    "url": "/static/css/main.f3d3541b.chunk.css"
+    "revision": "da00eaa46436f4e56b02",
+    "url": "/static/css/main.93c5f311.chunk.css"
   },
   {
     "revision": "63527bb43b51fecc0c2d",
@@ -18,6 +18,10 @@ self.__precacheManifest = [
   {
     "revision": "cd0ea0aefa15fb2c4010f73fc62dd2ab",
     "url": "/static/media/MufeezAmjadResume.cd0ea0ae.pdf"
+  },
+  {
+    "revision": "7a6840e19bd200b3d64f1a24790cc4c3",
+    "url": "/static/media/bg-mobile.7a6840e1.png"
   },
   {
     "revision": "18d3756ea37ad800a5fd3345db7f2a63",
@@ -64,12 +68,12 @@ self.__precacheManifest = [
     "url": "/static/media/hoc.c9d40ade.png"
   },
   {
-    "revision": "7fdef97efbd10162ffab9bd8df5e7c1a",
-    "url": "/static/media/intro.7fdef97e.png"
+    "revision": "da00eaa46436f4e56b02",
+    "url": "/static/js/main.da00eaa4.chunk.js"
   },
   {
-    "revision": "e55289532760da86ed6f",
-    "url": "/static/js/main.e5528953.chunk.js"
+    "revision": "89cabeaea5e86c7c97b433a0a7435048",
+    "url": "/static/media/nike.89cabeae.png"
   },
   {
     "revision": "86cc71a632fa93a7ccfd59efe470d27e",
@@ -132,7 +136,7 @@ self.__precacheManifest = [
     "url": "/static/media/wisseo.8bffc635.png"
   },
   {
-    "revision": "004d1379903840346bb961e6929c7124",
+    "revision": "a11cda54e10df1458f993caa04682a2c",
     "url": "/index.html"
   }
 ];
