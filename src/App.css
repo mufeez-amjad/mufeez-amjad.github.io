@@ -187,11 +187,7 @@ p {
 
   .app {
     justify-content: center;
-    background-image: linear-gradient(to right,
-    rgba(255, 255, 255, 0.75) ,
-    rgba(255, 255, 255, 0.75)),
-  url('bg.png');
-
+    background-image: url('bg-mobile.png');
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

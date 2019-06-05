@@ -15,7 +15,10 @@ class Experience extends Component {
                     <h4>Software Engineer Intern</h4>
                 </div>
                 <h5>May 2019 - Aug 2019</h5>
-                <p>Coming soon...</p>
+                <ul>
+                    <li>Coming soon...</li>
+                </ul>
+                
 
             </div> 
 

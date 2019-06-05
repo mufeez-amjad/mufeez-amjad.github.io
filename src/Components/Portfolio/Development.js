@@ -107,7 +107,7 @@ class Development extends Component {
                 <div className="item trophy">
                     <a onClick={()=>{this.handleClick('FightVR')}} target='blank' href="https://devpost.com/software/fightvr">
                         <h1>FightVR</h1>
-                        <p>A VR game that uses a Myo and a phone as controllers.</p>
+                        <p>An affordable VR solution using unconventional controllers.</p>
                         <div className="icons" style={{alignContent: "center"}}>
                             <img style={{width: "30px", height: "30px", padding: "0 5px 0 5px"}} src={images['unity.png']} alt="unity" />
                             <img style={{width: "30px", height: "30px", padding: "0 5px 0 5px"}} src={images['csharp.png']} alt="c#" />
@@ -145,7 +145,7 @@ class Development extends Component {
                     <a onClick={()=>{this.handleClick('Bubble Burst')}} target='blank' href="https://github.com/mufeez-amjad/BubbleBurst-iOS">
                         {/* TODO: make a modal with youtube link + github link  */}
                         <h1>Bubble Burst</h1>
-                        <p>An iOS arcade game for iPhone and iPods testing reflexes.</p>
+                        <p>A popular iOS arcade game inspired by Fruit Ninja.</p>
                         <div className="icons">
                             <img style={{width: "30px", height: "30px", padding: "0 5px 0 5px"}} src={images['ios.png']} alt="iOS" />
                             <img style={{width: "25px", height: "30px", padding: "0 5px 0 5px"}} src={images['firebase.png']} alt="firebase" />
