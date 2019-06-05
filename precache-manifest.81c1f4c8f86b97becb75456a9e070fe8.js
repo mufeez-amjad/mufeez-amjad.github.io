@@ -132,7 +132,7 @@ self.__precacheManifest = [
     "url": "/static/media/wisseo.8bffc635.png"
   },
   {
-    "revision": "7e7354c7e3480d72fe542dfcba36ebdf",
+    "revision": "004d1379903840346bb961e6929c7124",
     "url": "/index.html"
   }
 ];
