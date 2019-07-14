@@ -139,50 +139,52 @@ class App extends Component {
           <a className="chevron">
             <FontAwesomeIcon color="#35a6de" icon={faChevronDown} size="2x" />
           </a>
+          <div className="about">
 
-          <h1 ref={this.scrollTo}>Hey there!</h1>
+            <h1 ref={this.scrollTo}>Hey there!</h1>
 
-          <div className="profile">
-            <img src={profile} alt="Profile" />
-            <p className="summary">
-              I’m {this.state.term} <em>Software Engineering</em> student at the
-              University of Waterloo with experience in both{" "}
-              <em>software development</em> and <em>graphic design</em>.
+            <div className="profile">
+              <img src={profile} alt="Profile" />
+              <p className="summary">
+                I’m {this.state.term} <em>Software Engineering</em> student at the
+              University of Waterloo with a strong background in both{" "}
+                <em>software development</em> and <em>graphic design</em>.
             </p>
-          </div>
+            </div>
 
-          <div
-            style={{
-              padding: "10px 0 0 0",
-              marginLeft: "15px",
-              marginRight: "15px"
-            }}>
-            <p style={{ textAlign: "center" }}>
-              <b>
-                Currently looking for{" "}
-                <span style={{ color: "#35a6de" }}>{this.state.coop}</span>{" "}
-                software internships!
+            <div
+              style={{
+                padding: "10px 0 0 0",
+                marginLeft: "15px",
+                marginRight: "15px"
+              }}>
+              <p style={{ textAlign: "center" }}>
+                <b>
+                  Currently looking for{" "}
+                  <span style={{ color: "#35a6de" }}>{this.state.coop}</span>{" "}
+                  software internships!
               </b>
-            </p>
+              </p>
+            </div>
+
+            <div className="skills">
+              <p className="left">I have worked with:</p>
+              <p className="list">
+                <span className="languages">
+                  <em>Python</em> <em>Java</em> <em>C/C++</em> <em>Swift</em>{" "}
+                  <em>JavaScript</em> <em>C#</em>{" "}
+                </span>
+                <span className="frameworks">
+                  <em>React</em> <em>Node.js</em> <em>Socket.IO</em>{" "}
+                  <em>Angular</em> <em>Express</em> <em>Flask</em> <em>Django</em>
+                </span>
+                {/* <span className="software">
+                <em>Adobe Creative Suite</em> <em>Sketch</em>
+              </span> */}
+              </p>
+            </div>
           </div>
 
-          <div className="skills">
-            <p className="left">I have worked with:</p>
-            <p className="list">
-              <span className="languages">
-                <em>Python</em> <em>Java</em> <em>C/C++</em> <em>Swift</em>{" "}
-                <em>JavaScript</em> <em>C#</em>{" "}
-              </span>
-              <span className="frameworks">
-                <em>React.js</em> <em>Node.js</em> <em>Socket.IO</em>{" "}
-                <em>Flask</em> <em>React Native</em> <em>MongoDB</em>{" "}
-                <em>Firebase</em> <em>Git</em>
-              </span>
-              <span className="software">
-                <em>Adobe Creative Suite</em> <em>Sketch</em>
-              </span>
-            </p>
-          </div>
 
           <Experience />
 

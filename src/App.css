@@ -1,17 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:600|Raleway:500,600,700');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:600|Raleway:500,600,700");
 
 .app {
   background-image: linear-gradient(to right,
-    rgba(255, 255, 255, 0.75) ,
-    rgba(255, 255, 255, 0.4)),
-  url('bg.png');
+      rgba(255, 255, 255, 0.9) 2%,
+      rgba(255, 255, 255, 0.7) 50%,
+      rgba(255, 255, 255, 0) 100%),
+    url("bg.png");
+
   position: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-clip: cover;
   background-size: cover;
   background-attachment: fixed;
-  overflow-x: hidden; 
+  overflow-x: hidden;
   width: 100%;
   height: 100%;
   background-color: #ffffff;
@@ -32,21 +34,21 @@
   margin-right: 50px;
   text-align: center;
 
-  -webkit-transition: all .3s ease-in;
-  -moz-transition: all .3s ease-in;
-  -o-transition: all .3s ease-in;
-  -ms-transition: all .3s ease-in;
-  transition: all .3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .scrollable:hover {
   background: #ffffff;
 
-  -webkit-transition: all .3s ease-in;
-  -moz-transition: all .3s ease-in;
-  -o-transition: all .3s ease-in;
-  -ms-transition: all .3s ease-in;
-  transition: all .3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .scrollable .chevron {
@@ -55,25 +57,27 @@
   animation: MoveUpDown 1.3s linear infinite;
 }
 
-
 @keyframes MoveUpDown {
-  0%, 100% {
+
+  0%,
+  100% {
     top: 5px;
   }
+
   50% {
     top: 15px;
   }
 }
 
 .scrollable h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   font-weight: 600;
   color: #35a6de;
 }
 
 p {
-  font-family: 'Raleway', sans-serif;;
+  font-family: "Raleway", sans-serif;
   font-size: 1rem;
   font-weight: 500;
   color: #333333;
@@ -92,12 +96,12 @@ p {
   height: 110px;
   margin-left: 15px;
   border-radius: 55px;
-  -webkit-border-radius: 55px; 
-  -moz-border-radius: 55px;  
+  -webkit-border-radius: 55px;
+  -moz-border-radius: 55px;
 }
 
 .scrollable .profile .summary {
-  font-family: 'Raleway', sans-serif;;
+  font-family: "Raleway", sans-serif;
   font-size: 1rem;
   font-weight: 500;
   color: #333333;
@@ -105,9 +109,8 @@ p {
   margin-left: 30px;
 }
 
-
 .scrollable h2 {
-  font-family: 'Raleway', sans-serif;;
+  font-family: "Raleway", sans-serif;
   font-size: 1rem;
   font-weight: 500;
   color: #333333;
@@ -117,8 +120,8 @@ p {
   margin-bottom: 20px;
 }
 
-.scrollable em {
-  font-family: 'Raleway', sans-serif;;
+.scrollable .about em {
+  font-family: "Raleway", sans-serif;
   font-size: 1rem;
   font-weight: 600;
   color: #35a6de;
@@ -160,34 +163,49 @@ p {
 }
 
 @keyframes strikein {
-  0%     { transform-origin:  0% 50%;transform:scaleX(0); }
-  50%    { transform-origin:  0% 50%;transform:scaleX(1); }
+  0% {
+    transform-origin: 0% 50%;
+    transform: scaleX(0);
+  }
+
+  50% {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+  }
 }
+
 @keyframes strikeout {
-  50%    { transform-origin:  0% 50%;transform:scaleX(1); }
-  0%     { transform-origin:  0% 50%;transform:scaleX(0); }
+  50% {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+  }
+
+  0% {
+    transform-origin: 0% 50%;
+    transform: scaleX(0);
+  }
 }
 
 .strike {
   position: relative;
-  animation: strikein .75s ease-in-out forwards;
+  animation: strikein 0.75s ease-in-out forwards;
 }
+
 .strike:hover:after {
-  content: ' ';
+  content: " ";
   position: absolute;
   top: 50%;
   left: 0;
   width: 100%;
   height: 3px;
   background: #35a6de;
-  animation: strikein .75s ease-in-out forwards;
+  animation: strikein 0.75s ease-in-out forwards;
 }
 
 @media screen and (max-width: 600px) {
-
   .app {
     justify-content: center;
-    background-image: url('bg-mobile.png');
+    background-image: url("bg-mobile.png");
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -201,7 +219,7 @@ p {
     background-clip: border-box;
     background-size: auto 350px;
   }
-  
+
   .scrollable {
     width: 100%;
     margin-top: 0;
@@ -227,8 +245,7 @@ p {
   }
 }
 
-@media screen and (max-width: 485px){
-
+@media screen and (max-width: 485px) {
   .scrollable .profile {
     margin-left: 0px;
     margin-right: 15px;
@@ -247,21 +264,21 @@ p {
   .scrollable .skills {
     margin-left: 0px;
   }
-  
+
   .scrollable .skills .left {
     margin-right: 15px;
   }
+
   .scrollable .skills p {
     font-size: 0.95rem;
   }
 
   .scrollable .skills .list em {
-    font-size: 0.90rem;
+    font-size: 0.9rem;
   }
 }
 
-@media screen and (max-width: 430px){
-
+@media screen and (max-width: 430px) {
   .scrollable .profile .summary {
     font-size: 0.95rem;
   }
@@ -281,11 +298,9 @@ p {
     font-size: 0.9rem;
     flex: 1;
   }
-  
 }
 
-@media screen and (max-width: 375px){
-
+@media screen and (max-width: 375px) {
   .scrollable h1 {
     font-size: 1.5rem;
   }
@@ -293,22 +308,16 @@ p {
   .scrollable .skills {
     margin-right: 10px;
   }
-  
 }
 
-@media screen and (max-height: 800px){
-
+@media screen and (max-height: 800px) {
   .scrollable {
     top: 80vh;
   }
-  
 }
 
-@media screen and (max-height: 1100px){
-
+@media screen and (max-height: 1100px) {
   .scrollable {
     top: 94vh;
   }
-  
 }
-

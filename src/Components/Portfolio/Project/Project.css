@@ -1,0 +1,99 @@
+.project {
+	display: flex;
+	flex-direction: column;
+	width: fit-content;
+	height: fit-content;
+	background: red;
+	/* border-radius: 15px; */
+
+	cursor: pointer;
+
+	background: #333333;
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	-ms-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+
+	margin: 10px 10px 10px 10px;
+}
+
+.project .winner {
+	background: #d8b90b;
+}
+
+.project:hover {
+	background: #35a6de;
+
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	-ms-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+}
+
+.project img {
+	width: 280px;
+	height: auto;
+	/* border-radius: 5px 5px 0 0; */
+}
+
+.content {
+	/* border-radius: 0px 0px 15px 15px; */
+	height: 100px;
+}
+
+.content .heading {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 10px 10px 0 10px;
+	align-items: center;
+	margin: 0;
+	color: white;
+	line-height: 0px;
+}
+
+.content .heading .links {
+	width: 25px;
+	height: auto;
+}
+
+.content h1 {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.25rem;
+	text-align: left;
+}
+
+.content .languages {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+	color: white;
+	text-align: left;
+	margin-left: 10px;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.content .languages em {
+	font-family: "Raleway", sans-serif;
+	font-size: .8rem;
+	font-weight: 600;
+	text-align: left;
+	font-style: normal;
+}
+
+.content .languages em::before {
+	content: "• ";
+}
+
+.content .description {
+	font-family: "Raleway", sans-serif;
+	color: white;
+	font-size: .9rem;
+	font-weight: 600;
+	text-align: left;
+	font-style: normal;
+	padding: 10px 10px 0 10px;
+}
