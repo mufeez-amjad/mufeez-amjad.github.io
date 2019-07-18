@@ -27,13 +27,13 @@ class Experience extends Component {
               target="blank"
               href="https://docs.microsoft.com/en-us/azure/"
               className="strike">
-              Microsoft Top Contributor for Azure Docs
+              Microsoft Insider2Campus 2019 Finalist
             </a>
           </h3>
-          <h5>Nov 2018</h5>
+          <h5>Jun 2019</h5>
           <p>
-            Awarded for my contributions to the Microsoft Documentation for
-            Azure during the Canadian Open Source Doc-a-thon.
+            Placed in the top 15 out of over 500 contestants on the basis of passion for collaborative problem solving,
+            making a difference, and the potential to inspire.
           </p>
         </div>
 

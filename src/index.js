@@ -7,9 +7,9 @@ import registerServiceWorker from './registerServiceWorker';
 
 // WebFont.load({
 //   google: {
-//     families: ['Montserrat: 600', 'Raleway: 500, 500i, 600, 700, 800']
+//     families: ['Montserrat: 600', 'Open Sans: 500, 500i, 600, 700, 800']
 //   }
 // });
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render( < App / > , document.getElementById('root'));
 registerServiceWorker();

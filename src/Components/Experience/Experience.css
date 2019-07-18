@@ -6,9 +6,9 @@
   border-bottom: 1px solid rgba(128, 128, 128, 0.3);
   padding-bottom: 15px;
 }
-  
+
 .experience h2 {
-  font-family: 'Raleway', sans-serif;;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
   color: #35a6de;
@@ -30,7 +30,7 @@
 }
 
 .experience .job .heading h3 {
-  font-family: 'Raleway', sans-serif;;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   font-weight: 700;
   color: #333333;
@@ -45,7 +45,7 @@
 }
 
 .experience .job .heading h4 {
-  font-family: 'Raleway', sans-serif;;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   font-weight: 600;
   color: #333333;
@@ -63,13 +63,14 @@
 .experience .job h5 {
   margin-top: -20px;
   align-self: flex-start;
-  font-family: 'Montserrat', sans-serif;;
+  font-family: 'Open Sans', sans-serif;
   font-size: 0.85rem;
   font-weight: 500;
   color: #333333;
 }
+
 .experience .job p {
-  font-family: 'Raleway', sans-serif;;
+  font-family: 'Open Sans', sans-serif;
   font-size: 0.95rem;
   font-weight: 400;
   color: #333333;
@@ -80,7 +81,7 @@
 .experience .job ul {
   list-style: none;
   margin-top: 25px;
-  font-family: 'Raleway', sans-serif;;
+  font-family: 'Open Sans', sans-serif;
   font-size: 0.95rem;
   font-weight: 400;
   color: #333333;
@@ -103,10 +104,11 @@
   .experience .job {
     margin-left: 30px;
   }
+
   .experience .job ul {
     font-size: 0.95rem;
   }
-  
+
 }
 
 @media screen and (max-width: 555px) {
@@ -119,17 +121,17 @@
     font-size: 0.95rem;
     padding-right: 10px;
   }
-  
+
   .experience .job h5 {
     font-size: 0.82rem;
   }
-  
+
   .experience .job ul {
     font-size: 0.85rem;
   }
 }
 
-@media screen and (max-width: 485px){
+@media screen and (max-width: 485px) {
 
   .experience {
     margin-left: 0;
@@ -163,7 +165,7 @@
 
 }
 
-@media screen and (max-width: 430px){
+@media screen and (max-width: 430px) {
 
   .experience .job .heading h3 {
     font-size: 0.9rem;
@@ -186,10 +188,10 @@
     margin-left: -15px;
     margin-right: 5px;
   }
-    
+
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 375px) {
 
   .experience {
     margin-left: 0px;
@@ -217,5 +219,5 @@
     display: block;
     white-space: normal;
   }
-  
+
 }

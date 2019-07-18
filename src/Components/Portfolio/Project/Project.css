@@ -4,8 +4,6 @@
 	width: 46%;
 	height: fit-content;
 	background: red;
-	/* border-radius: 15px; */
-
 	cursor: pointer;
 
 	background: #333333;
@@ -16,6 +14,7 @@
 	transition: all .3s ease-out;
 
 	margin: 10px 10px 10px 10px;
+	padding: 0px 0px 10px 0px;
 }
 
 .project .winner {
@@ -35,11 +34,6 @@
 .project img {
 	width: 100%;
 	height: auto;
-	/* border-radius: 5px 5px 0 0; */
-}
-
-.content {
-	/* border-radius: 0px 0px 15px 15px; */
 }
 
 .content .heading {
@@ -53,39 +47,50 @@
 	line-height: 0px;
 }
 
-.content .heading .link {
+.content .heading .links>a {
+	color: white;
+	padding: 4px;
+}
+
+.content .heading .links>a * {
 	width: 20px;
 	height: auto;
 }
 
+.content .heading .links>a:hover {
+	color: rgb(168, 168, 168);
+
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	-ms-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+}
+
 .content h1 {
 	color: white;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 1.2rem;
 	text-align: left;
 }
 
 .content .languages {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 1rem;
-	color: white;
-	text-align: left;
 	display: flex;
 	flex-flow: row wrap;
 	word-wrap: break-word;
-	padding: 5px 10px 0 10px;
+	padding: 10px 10px 5px 10px;
 }
 
 .content .languages em {
-	font-family: "Raleway", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-size: .8rem;
 	font-weight: 300;
 	text-align: left;
 	font-style: normal;
 	padding-right: 5px;
 	color: white;
-	padding: 1px 5px 1px 5px;
-	margin: 2px;
+	padding: 1px 1px 1px 1px;
+	margin: 0px 3px 0px 3px;
 	border-radius: 5px;
 	opacity: 0.6;
 }
@@ -93,13 +98,13 @@
 .content .languages em::before {}
 
 .content .description {
-	font-family: "Raleway", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	color: white;
 	font-size: .9rem;
 	font-weight: 400;
 	text-align: left;
 	font-style: normal;
-	padding: 10px 10px 20px 10px;
+	padding: 10px 10px 5px 10px;
 }
 
 @media screen and (max-width: 600px) {

@@ -7,7 +7,7 @@
 }
 
 .awards h2 {
-  font-family: 'Raleway', sans-serif;;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
   color: #35a6de;
@@ -24,7 +24,7 @@
 }
 
 .awards .award h3 {
-  font-family: 'Raleway', sans-serif;;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   font-weight: 700;
   text-align: left;
@@ -55,18 +55,18 @@
   -ms-transition: all .3s ease-in;
   transition: all .3s ease-in;
 } */
-  
+
 .awards .award h5 {
-    font-family: 'Raleway', sans-serif;;
-    font-size: 0.85rem;
-    font-weight: 500;
-    color: #333333;
-    text-align: left;
-    margin-top: -17px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #333333;
+  text-align: left;
+  margin-top: -17px;
 }
 
 .awards .award p {
-  font-family: 'Raleway', sans-serif;;
+  font-family: 'Open Sans', sans-serif;
   font-size: 0.95rem;
   font-weight: 400;
   color: #333333;
@@ -78,10 +78,10 @@
   .awards .award {
     margin-left: 30px;
   }
-  
+
 }
 
-@media screen and (max-width: 485px){
+@media screen and (max-width: 485px) {
 
   .awards {
     margin-left: 0;
@@ -113,15 +113,15 @@
   }
 }
 
-@media screen and (max-width: 430px){
+@media screen and (max-width: 430px) {
 
   .awards .award p {
     margin-right: 15px;
   }
-    
+
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 375px) {
 
   .experience .job h3 {
     font-size: 0.85rem;
@@ -139,5 +139,5 @@
     display: block;
     white-space: normal;
   }
-  
+
 }

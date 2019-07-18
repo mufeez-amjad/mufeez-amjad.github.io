@@ -18,7 +18,9 @@ class Development extends Component {
             "React Native", "Node.js", "Apollo", "GraphQL", "MongoDB"
           ],
           description: "A social media app to make linking up with friends easy.",
-          github: "github"
+          links: {
+            github: ""
+          }
         },
         {
           name: "Nocturnal",
@@ -27,16 +29,21 @@ class Development extends Component {
             "Flask", "C++", "Python"
           ],
           description: "A hardware sleep tracker with an analytics dashboard.",
-          blog: "mufeez.me/blog/posts/se101project/"
+          links: {
+            blog: "mufeez.me/blog/posts/se101project/",
+            github: "https://github.com/mufeez-amjad/Nocturnal"
+          }
         },
         {
           name: "FightVR",
           image: "fightvr.jpg",
           tools: [
-            "C#"
+            "C#", "Unity"
           ],
           description: "An affordable VR solution using unconventional controllers.",
-          github: "github",
+          links: {
+            github: "https://github.com/mufeez-amjad/FightVR"
+          },
           winner: true
         },
         {
@@ -46,7 +53,9 @@ class Development extends Component {
             "Swift", "Firebase"
           ],
           description: "A popular iOS arcade game inspired by Fruit Ninja.",
-          github: "github",
+          links: {
+            github: "https://github.com/mufeez-amjad/BubbleBurst-iOS"
+          }
         },
         {
           name: "Pyro",
@@ -55,8 +64,9 @@ class Development extends Component {
             "React", "Node.js", "Express", "MongoDB"
           ],
           description: "A playlist collaboration app to liven social occasions.",
-          github: "github",
-          winner: true
+          links: {
+            github: "https://github.com/Abs0luteHacks/pyro"
+          }
         }
       ]
     };
@@ -77,6 +87,7 @@ class Development extends Component {
   }
 
   handleClick(target) {
+    console.log(target);
     ReactGA.event({
       category: "Projects",
       action: "Clicked " + target
@@ -98,11 +109,13 @@ class Development extends Component {
           <div className="projects">
             {this.state.projects.map((project, index) => (
               <Project
+                key={index}
                 name={project.name}
                 image={this.state.images[project.image]}
                 tools={project.tools}
                 description={project.description}
-                types={this.state.types}
+                links={project.links}
+                clickHandler={this.handleClick}
               />
             ))
             }

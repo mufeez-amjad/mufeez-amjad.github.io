@@ -3,9 +3,9 @@
     margin-right: 25px;
     margin-top: 20px;
 }
-  
+
 .portfolio h2 {
-    font-family: 'Raleway', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     font-weight: 700;
     color: #35a6de;
@@ -14,17 +14,18 @@
     margin-top: 20px;
 }
 
-@media screen and (max-width: 485px){
+@media screen and (max-width: 485px) {
     .portfolio {
         margin-left: 0px;
         margin-right: 0px;
     }
+
     .portfolio h2 {
         margin-left: 15px;
     }
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 375px) {
     .portfolio {
         margin-left: 0px;
         margin-right: 0px;

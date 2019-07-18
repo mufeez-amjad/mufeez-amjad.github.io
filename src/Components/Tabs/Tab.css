@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:600|Raleway:500,600,700');
-
 .Tabs {
   position: relative;
   display: inline-block;
   margin-bottom: 3px;
 }
-  
+
 .Tabs__Tab {
   display: inline-block;
   width: 100px;
@@ -14,7 +12,7 @@
   padding-top: 0;
   color: #35a6de;
   cursor: pointer;
-  font-family: 'Raleway', sans-serif;;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   -webkit-transition: all .25s ease-out;
   -moz-transition: all .25s ease-out;
@@ -22,9 +20,11 @@
   -ms-transition: all .25s ease-out;
   transition: all .25s ease-out;
 }
+
 .Tabs__Tab--active {
   background-color: transparent;
 }
+
 .Tabs__Tab:hover {
   color: rgb(18, 122, 173);
   -webkit-transition: all .25s ease-out;
@@ -33,7 +33,7 @@
   -ms-transition: all .25s ease-out;
   transition: all .25s ease-out;
 }
-  
+
 .Tabs__Underline {
   position: absolute;
   top: 100%;
@@ -42,6 +42,4 @@
   border-bottom: 2px solid #333333;
 }
 
-@media screen and (max-width: 375px){
-  
-}
+@media screen and (max-width: 375px) {}
