@@ -36,15 +36,14 @@ class Tabs extends React.Component {
       const left = bounds.left - rootBounds.left;
       const right = rootBounds.right - bounds.right;
 
-      sizes[key] = {left, right};
+      sizes[key] = { left, right };
     });
 
-    this.setState({sizes});
+    this.setState({ sizes });
     return sizes;
   }
 
   render() {
-    console.log(JSON.stringify(this.state, null, 2));
     return (
       <div
         className="Tabs"
@@ -77,7 +76,7 @@ class Tabs extends React.Component {
 
   getUnderlineStyle() {
     if (this.props.active == null || Object.keys(this.state.sizes).length === 0) {
-      return {left: '0', right: '100%'};
+      return { left: '0', right: '100%' };
     }
 
     const size = this.state.sizes[this.props.active];
