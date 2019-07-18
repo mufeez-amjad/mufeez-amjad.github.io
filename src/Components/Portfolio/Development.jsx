@@ -30,7 +30,7 @@ class Development extends Component {
           ],
           description: "A hardware sleep tracker with an analytics dashboard.",
           links: {
-            blog: "mufeez.me/blog/posts/se101project/",
+            blog: "blog/posts/se101project/",
             github: "https://github.com/mufeez-amjad/Nocturnal"
           }
         },
