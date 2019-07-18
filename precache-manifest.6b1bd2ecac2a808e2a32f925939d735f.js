@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/hoc.c9d40ade.png"
   },
   {
-    "revision": "2bbe69438a9f3ac791b7",
-    "url": "/static/css/main.4f4d59d2.chunk.css"
+    "revision": "4a9fa1d09531372606e1",
+    "url": "/static/css/main.d5dcc739.chunk.css"
   },
   {
     "revision": "ba05ca62af61fd716a70",
@@ -18,6 +18,10 @@ self.__precacheManifest = [
   {
     "revision": "cd0ea0aefa15fb2c4010f73fc62dd2ab",
     "url": "/static/media/MufeezAmjadResume.cd0ea0ae.pdf"
+  },
+  {
+    "revision": "7201abbf8800811ac45375f473110185",
+    "url": "/static/media/bg-mobile.7201abbf.png"
   },
   {
     "revision": "bcfbdfe0019d7d638c068d819b999036",
@@ -72,8 +76,8 @@ self.__precacheManifest = [
     "url": "/static/media/fractal.d3d3f5ae.png"
   },
   {
-    "revision": "2bbe69438a9f3ac791b7",
-    "url": "/static/js/main.2bbe6943.chunk.js"
+    "revision": "4a9fa1d09531372606e1",
+    "url": "/static/js/main.4a9fa1d0.chunk.js"
   },
   {
     "revision": "7fdef97efbd10162ffab9bd8df5e7c1a",
@@ -144,7 +148,7 @@ self.__precacheManifest = [
     "url": "/static/media/wisseo.8bffc635.png"
   },
   {
-    "revision": "3a3682c73b2fa182535d5a78964d7317",
+    "revision": "de2f940919eba44386b999b79f8dfcba",
     "url": "/index.html"
   }
 ];
