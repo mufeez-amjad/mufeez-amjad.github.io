@@ -10,6 +10,19 @@ class Experience extends Component {
 
         <div className="award">
           <h3>
+            <a>
+              Microsoft Insider2Campus 2019 Finalist
+            </a>
+          </h3>
+          <h5>Jun 2019</h5>
+          <p>
+            Placed in the top 15 out of over 500 contestants on the basis of passion for collaborative problem solving,
+            making a difference, and the potential to inspire.
+          </p>
+        </div>
+
+        <div className="award">
+          <h3>
             <a target="blank" href="" className="strike">
               Waterloo Engineering Competition
             </a>
@@ -18,22 +31,6 @@ class Experience extends Component {
           <p>
             Placed third at the annual competition for building a genetic AI for{" "}
             <i>Tron</i>.
-          </p>
-        </div>
-
-        <div className="award">
-          <h3>
-            <a
-              target="blank"
-              href="https://docs.microsoft.com/en-us/azure/"
-              className="strike">
-              Microsoft Insider2Campus 2019 Finalist
-            </a>
-          </h3>
-          <h5>Jun 2019</h5>
-          <p>
-            Placed in the top 15 out of over 500 contestants on the basis of passion for collaborative problem solving,
-            making a difference, and the potential to inspire.
           </p>
         </div>
 
