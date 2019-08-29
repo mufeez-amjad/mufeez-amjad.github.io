@@ -19,14 +19,26 @@ class Project extends Component {
     )
   }
 
+  winner = () => {
+      return (
+        <div className="winner">
+          {this.props.winner ? <em>{this.props.winner}</em> : null}
+        </div>        
+      )
+    }
+
   render() {
+    console.log(this.props)
     return (
-      <div className="project">
+      <div className="project" style={{color: this.props.winner != undefined ? 'yellow': ''}}>
         <img src={this.props.image} />
         <div className="content">
           <div className="heading">
             <h1>{this.props.name}</h1>
-            {this.links()}
+            <div className="floatRight">
+              {this.winner()}
+              {this.links()}
+            </div>
           </div>
           <div className="description">{this.props.description}</div>
           <div className="languages">

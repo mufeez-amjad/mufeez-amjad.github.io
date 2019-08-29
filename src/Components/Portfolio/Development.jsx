@@ -12,8 +12,20 @@ class Development extends Component {
     this.state = {
       projects: [
         {
-          name: "GreenBox",
-          image: "greenbox.png",
+          name: "Bubbly",
+          image: "bubbly.png",
+          winner: "Top 10 Finalist",
+          tools: [
+            "Arduino", "React", "CAD"
+          ],
+          description: "An interactive and programmable bubble wall.",
+          links: {
+            github: "https://github.com/mufeez-amjad/bubbly"
+          }
+        },
+        {
+          name: "Status",
+          image: "status.png",
           tools: [
             "React Native", "Node.js", "Apollo", "GraphQL", "MongoDB"
           ],
@@ -37,6 +49,7 @@ class Development extends Component {
         {
           name: "FightVR",
           image: "fightvr.jpg",
+          winner: "Best VR Hack",
           tools: [
             "C#", "Unity"
           ],
@@ -44,7 +57,6 @@ class Development extends Component {
           links: {
             github: "https://github.com/mufeez-amjad/FightVR"
           },
-          winner: true
         },
         {
           name: "Bubble Burst",
@@ -115,6 +127,7 @@ class Development extends Component {
                 tools={project.tools}
                 description={project.description}
                 links={project.links}
+                winner={project.winner}
                 clickHandler={this.handleClick}
               />
             ))

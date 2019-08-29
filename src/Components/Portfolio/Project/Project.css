@@ -17,8 +17,23 @@
 	padding: 0px 0px 10px 0px;
 }
 
-.project .winner {
+.project .floatRight {
+	display: flex;
+	align-items: center;
+}
+
+.project .winner em {
+	font-family: "Open Sans", sans-serif;
+	font-size: .8rem;
+	font-weight: 300;
+	text-align: right;
+	font-style: normal;
+	padding-right: 5px;
+	color: white;
 	background: #d8b90b;
+	padding: 2px 10px;
+	margin: 0px 3px 0px 3px;
+	border-radius: 5px;
 }
 
 .project:hover {
