@@ -172,11 +172,11 @@ class App extends Component {
               <p className="list">
                 <span className="languages">
                   <em>Python</em> <em>Java</em> <em>C/C++</em> <em>Swift</em>{" "}
-                  <em>JavaScript</em> <em>C#</em>{" "}
+                  <em>JavaScript</em> <em>SQL</em> <em>C#</em>{" "}
                 </span>
                 <span className="frameworks">
-                  <em>React</em> <em>Node.js</em> <em>Socket.IO</em>{" "}
-                  <em>Angular</em> <em>Express</em> <em>Flask</em> <em>Django</em>
+                  <em>React</em> <em>Node.js</em> <em>Angular</em>{" "}
+                  <em>GraphQL</em> <em>Express</em>
                 </span>
                 {/* <span className="software">
                 <em>Adobe Creative Suite</em> <em>Sketch</em>
