@@ -99,7 +99,6 @@ class Development extends Component {
   }
 
   handleClick(target) {
-    console.log(target);
     ReactGA.event({
       category: "Projects",
       action: "Clicked " + target
