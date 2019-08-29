@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "c9d40ade838eee636008d2d275330393",
-    "url": "/static/media/hoc.c9d40ade.png"
+    "revision": "d3d3f5aeb8b7bb244bf34add84e173dc",
+    "url": "/static/media/fractal.d3d3f5ae.png"
   },
   {
-    "revision": "6359232aa43c64f24047",
-    "url": "/static/css/main.77ec2092.chunk.css"
+    "revision": "5ec4d50c787c41242acd",
+    "url": "/static/css/main.ed164d52.chunk.css"
   },
   {
-    "revision": "ba05ca62af61fd716a70",
-    "url": "/static/js/1.ba05ca62.chunk.js"
+    "revision": "6f915d4f3af76374dd8b",
+    "url": "/static/js/1.6f915d4f.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
     "url": "/static/js/runtime~main.229c360f.js"
   },
   {
-    "revision": "cd0ea0aefa15fb2c4010f73fc62dd2ab",
-    "url": "/static/media/MufeezAmjadResume.cd0ea0ae.pdf"
+    "revision": "c82a86a79d9b53ef235b4cc2cc4cea2e",
+    "url": "/static/media/MufeezAmjadResume.c82a86a7.pdf"
   },
   {
     "revision": "7201abbf8800811ac45375f473110185",
@@ -32,20 +32,28 @@ self.__precacheManifest = [
     "url": "/static/media/arduino.084422e1.jpeg"
   },
   {
+    "revision": "17a157d4d13e4229a5a743acbf25d946",
+    "url": "/static/media/bubble wall.17a157d4.png"
+  },
+  {
     "revision": "d91d0fe8b9b7797d18ad30ede0a0d3b3",
     "url": "/static/media/bubble_burst.d91d0fe8.png"
+  },
+  {
+    "revision": "db2fe797a887b3d440b001e50d3c5df1",
+    "url": "/static/media/bubbly.db2fe797.png"
   },
   {
     "revision": "2500b7f30a4642e4f5d6d6ea512c1289",
     "url": "/static/media/fightvr.2500b7f3.jpg"
   },
   {
-    "revision": "a0a310da029190af78e64437f76a5203",
-    "url": "/static/media/greenbox.a0a310da.png"
-  },
-  {
     "revision": "f03b6cd1f77cd685f4484a8fca2b6528",
     "url": "/static/media/pyro.f03b6cd1.png"
+  },
+  {
+    "revision": "9f99d7766aedf2925407732eedc5deaf",
+    "url": "/static/media/status.9f99d776.png"
   },
   {
     "revision": "235c85720b15325e9cb3c053a1f46fdd",
@@ -72,12 +80,12 @@ self.__precacheManifest = [
     "url": "/static/media/flipd.9a984066.png"
   },
   {
-    "revision": "d3d3f5aeb8b7bb244bf34add84e173dc",
-    "url": "/static/media/fractal.d3d3f5ae.png"
+    "revision": "5ec4d50c787c41242acd",
+    "url": "/static/js/main.5ec4d50c.chunk.js"
   },
   {
-    "revision": "6359232aa43c64f24047",
-    "url": "/static/js/main.6359232a.chunk.js"
+    "revision": "c9d40ade838eee636008d2d275330393",
+    "url": "/static/media/hoc.c9d40ade.png"
   },
   {
     "revision": "7fdef97efbd10162ffab9bd8df5e7c1a",
@@ -148,7 +156,7 @@ self.__precacheManifest = [
     "url": "/static/media/wisseo.8bffc635.png"
   },
   {
-    "revision": "53f7b46fec1dc77ed55906a5f5d96576",
+    "revision": "736f5b04a5083657afad8a088c6c39ef",
     "url": "/index.html"
   }
 ];
