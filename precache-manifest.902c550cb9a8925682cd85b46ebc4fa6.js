@@ -1,19 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "d3d3f5aeb8b7bb244bf34add84e173dc",
-    "url": "/static/media/fractal.d3d3f5ae.png"
+    "revision": "5bd34d3bd2946e4baa95",
+    "url": "/static/css/main.615aff39.chunk.css"
   },
   {
-    "revision": "c0d0a64406088ec41e22",
-    "url": "/static/css/main.ed164d52.chunk.css"
+    "revision": "5bd34d3bd2946e4baa95",
+    "url": "/static/js/main.5bd34d3b.chunk.js"
   },
   {
-    "revision": "6f915d4f3af76374dd8b",
-    "url": "/static/js/1.6f915d4f.chunk.js"
+    "revision": "c8380512b093b7ba95e0",
+    "url": "/static/js/1.c8380512.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
     "url": "/static/js/runtime~main.229c360f.js"
+  },
+  {
+    "revision": "384f6a983d96c924484581b2d4ff7ad0",
+    "url": "/static/media/me.384f6a98.png"
   },
   {
     "revision": "c82a86a79d9b53ef235b4cc2cc4cea2e",
@@ -30,6 +34,10 @@ self.__precacheManifest = [
   {
     "revision": "084422e163c5c13638135e929b9c0cbd",
     "url": "/static/media/arduino.084422e1.jpeg"
+  },
+  {
+    "revision": "86dd70e701888e6cbd8ffeb6ff6e8be3",
+    "url": "/static/media/auxilium.86dd70e7.jpg"
   },
   {
     "revision": "17a157d4d13e4229a5a743acbf25d946",
@@ -80,8 +88,8 @@ self.__precacheManifest = [
     "url": "/static/media/flipd.9a984066.png"
   },
   {
-    "revision": "c0d0a64406088ec41e22",
-    "url": "/static/js/main.c0d0a644.chunk.js"
+    "revision": "d3d3f5aeb8b7bb244bf34add84e173dc",
+    "url": "/static/media/fractal.d3d3f5ae.png"
   },
   {
     "revision": "c9d40ade838eee636008d2d275330393",
@@ -156,7 +164,7 @@ self.__precacheManifest = [
     "url": "/static/media/wisseo.8bffc635.png"
   },
   {
-    "revision": "e3a53a33d2f5ed3ef43d4474f1c1d2be",
+    "revision": "70c296d7592cbc4211d2b81a749b1923",
     "url": "/index.html"
   }
 ];
