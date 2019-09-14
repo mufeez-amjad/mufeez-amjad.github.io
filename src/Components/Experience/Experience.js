@@ -16,7 +16,7 @@ class Experience extends Component {
                     </div>
                     <h5>May 2019 - Aug 2019</h5>
                     <ul>
-                        <li>Coming soon...</li>
+                        <li>Implemented costing algorithms, led several product launches, made performance enhancements, and worked on IoT hardware.</li>
                     </ul>
 
 
@@ -30,8 +30,7 @@ class Experience extends Component {
                     </div>
                     <h5>Sept 2018 - Dec 2018</h5>
                     <ul>
-                        <li>Developed a <b>Django</b>-based applicant administration interface</li>
-                        <li>Built a <b>RESTful API</b> to screen, schedule interviews, and accept applicants</li>
+                        <li>Created an applicant administration interface for screening, scheduling, and accepting applicants.</li>
                     </ul>
 
                 </div>
@@ -44,9 +43,7 @@ class Experience extends Component {
                     </div>
                     <h5>Oct 2017 - June 2018</h5>
                     <ul>
-                        <li>Developed a website using <b>HTML, CSS, and JS</b> for events and initiatives</li>
-                        <li>Increased visitor <b>conversion rate by 40%</b></li>
-                        <li>Ran marketing campaigns with a <b>52% increase in engagement</b></li>
+                        <li>Developed a website and ran marketing campaigns.</li>
                     </ul>
 
                 </div>
@@ -58,9 +55,7 @@ class Experience extends Component {
                     </div>
                     <h5>Apr 2015 - June 2018</h5>
                     <ul>
-                        <li>Over <b>200 clients</b> for websites, UI/UX, branding, products, etc</li>
-                        <li>Generated $18k in revenue, experiencing <b>65% year on year growth</b></li>
-                        <li>Published 4 approved Snapchat geofilters with over <b>1.8 million views</b></li>
+                        <li>Generated over $18000 in revenue through web design, UI/UX, branding, etc projects.</li>
                     </ul>
                 </div>
 
