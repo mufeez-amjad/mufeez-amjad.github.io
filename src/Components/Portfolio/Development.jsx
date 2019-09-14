@@ -118,7 +118,7 @@ class Development extends Component {
   }
 
   render() {
-    var height = this.state.projects.length / 2 * 370
+    var height = this.state.projects.length / 2 * 370;
     if (this.state.images) {
       return (
         <div>
