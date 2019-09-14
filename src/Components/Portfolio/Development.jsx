@@ -12,9 +12,21 @@ class Development extends Component {
     this.state = {
       projects: [
         {
+          name: "Auxilium",
+          image: "auxilium.jpg",
+          winner: "4 Awards",
+          tools: [
+            "Node.js", "Python", "React", "Stellar Blockchain", "AWS", "MongoDB"
+          ],
+          description: "Registered micro-financing for low-income populations",
+          links: {
+            github: "https://github.com/mufeez-amjad/auxilium"
+          }
+        },
+        {
           name: "Bubbly",
           image: "bubbly.png",
-          winner: "Top 10 Finalist",
+          winner: "Top 10",
           tools: [
             "Arduino", "React", "CAD"
           ],
@@ -106,6 +118,7 @@ class Development extends Component {
   }
 
   render() {
+    var height = this.state.projects.length / 2 * 370
     if (this.state.images) {
       return (
         <div>
@@ -117,7 +130,7 @@ class Development extends Component {
               <span style={{ color: this.state.types.language }}>■</span> Frontend
             </div>
           </div> */}
-          <div className="projects">
+          <div className="projects" style={{ height: height }}>
             {this.state.projects.map((project, index) => (
               <Project
                 key={index}

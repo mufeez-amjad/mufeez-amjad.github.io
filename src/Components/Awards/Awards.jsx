@@ -16,8 +16,7 @@ class Experience extends Component {
           </h3>
           <h5>Jun 2019</h5>
           <p>
-            Placed in the top 15 out of over 500 contestants on the basis of passion for collaborative problem solving,
-            making a difference, and the potential to inspire.
+            Placed in the top 12 of over 500 international contestants that will attend the Microsoft Global Hackathon 2019.
           </p>
         </div>
 

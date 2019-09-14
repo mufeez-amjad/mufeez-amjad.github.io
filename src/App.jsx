@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import profile from "./profile.jpg";
+import profile from "./me.png";
 import Intro from "./Components/Intro/Intro";
 import Experience from "./Components/Experience/Experience";
 import Portfolio from "./Components/Portfolio/Portfolio";

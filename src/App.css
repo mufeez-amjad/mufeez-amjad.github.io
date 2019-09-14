@@ -96,9 +96,9 @@ p {
   width: 110px;
   height: 110px;
   margin-left: 15px;
-  border-radius: 55px;
+  /* border-radius: 55px;
   -webkit-border-radius: 55px;
-  -moz-border-radius: 55px;
+  -moz-border-radius: 55px; */
 }
 
 .scrollable .profile .summary {
