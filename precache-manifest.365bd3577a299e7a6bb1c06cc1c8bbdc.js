@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "f46d68790188b2881ed7",
-    "url": "/static/css/main.847e3792.chunk.css"
+    "revision": "320a969e42a180ae8594",
+    "url": "/static/css/main.4b26c9b8.chunk.css"
   },
   {
-    "revision": "f46d68790188b2881ed7",
-    "url": "/static/js/main.f46d6879.chunk.js"
+    "revision": "320a969e42a180ae8594",
+    "url": "/static/js/main.320a969e.chunk.js"
   },
   {
-    "revision": "c8380512b093b7ba95e0",
-    "url": "/static/js/1.c8380512.chunk.js"
+    "revision": "410cc9f58fcee29b8cd7",
+    "url": "/static/js/1.410cc9f5.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -164,7 +164,7 @@ self.__precacheManifest = [
     "url": "/static/media/wisseo.8bffc635.png"
   },
   {
-    "revision": "621de5b674e9ded5a88d541501ccce4c",
+    "revision": "72c31443f2fff9dfceda9fad78abbdc4",
     "url": "/index.html"
   }
 ];
