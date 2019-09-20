@@ -14,11 +14,11 @@ class Development extends Component {
         {
           name: "Auxilium",
           image: "auxilium.jpg",
-          winner: "4 Awards",
+          winner: "3 Awards",
           tools: [
             "Node.js", "Python", "React", "Stellar Blockchain", "AWS", "MongoDB"
           ],
-          description: "Registered micro-financing for low-income populations",
+          description: "Registered micro-financing for low-income populations.",
           links: {
             github: "https://github.com/mufeez-amjad/auxilium"
           }
