@@ -80,25 +80,25 @@ class App extends Component {
     } else if (today < twoB) {
       currentTerm = "a 2A";
       coopTerm = "Winter 2020";
-      if (today > this.addMonths(twoA, 4)) {
+      if (today > this.addMonths(twoA, 2)) {
         coopTerm = "Fall 2020";
       }
     } else if (today < threeA) {
       currentTerm = "a 2B";
       coopTerm = "Fall 2020";
-      if (today > this.addMonths(twoB, 4)) {
+      if (today > this.addMonths(twoB, 2)) {
         coopTerm = "Summer 2021";
       }
     } else if (today < threeB) {
       currentTerm = "a 3A";
       coopTerm = "Summer 2021";
-      if (today > this.addMonths(threeA, 4)) {
+      if (today > this.addMonths(threeA, 2)) {
         coopTerm = "Winter 2022";
       }
     } else if (today < fourA) {
       currentTerm = "a 3B";
       coopTerm = "Winter 2022";
-      if (today > this.addMonths(threeB, 4)) {
+      if (today > this.addMonths(threeB, 2)) {
         coopTerm = "Fall 2022";
       }
     } else if (today < fourB) {
