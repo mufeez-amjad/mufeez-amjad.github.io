@@ -1,7 +1,7 @@
 {
-  "main.css": "/static/css/main.d479f2c6.chunk.css",
-  "main.js": "/static/js/main.89eb6ba5.chunk.js",
-  "main.js.map": "/static/js/main.89eb6ba5.chunk.js.map",
+  "main.css": "/static/css/main.4c427ce1.chunk.css",
+  "main.js": "/static/js/main.7aed0e6e.chunk.js",
+  "main.js.map": "/static/js/main.7aed0e6e.chunk.js.map",
   "static/js/1.410cc9f5.chunk.js": "/static/js/1.410cc9f5.chunk.js",
   "static/js/1.410cc9f5.chunk.js.map": "/static/js/1.410cc9f5.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
@@ -42,8 +42,8 @@
   "static/media/waterloo.png": "/static/media/waterloo.b365d205.png",
   "static/media/waterloo2.png": "/static/media/waterloo2.8481a943.png",
   "static/media/wisseo.png": "/static/media/wisseo.8bffc635.png",
-  "static/css/main.d479f2c6.chunk.css.map": "/static/css/main.d479f2c6.chunk.css.map",
+  "static/css/main.4c427ce1.chunk.css.map": "/static/css/main.4c427ce1.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.d08255e0d9b4a18a1a4a355700d8a463.js": "/precache-manifest.d08255e0d9b4a18a1a4a355700d8a463.js",
+  "precache-manifest.82a52408e1b148f1d4bd236bb340ca85.js": "/precache-manifest.82a52408e1b148f1d4bd236bb340ca85.js",
   "service-worker.js": "/service-worker.js"
 }
