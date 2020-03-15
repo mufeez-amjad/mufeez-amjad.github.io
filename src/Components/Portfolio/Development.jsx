@@ -24,6 +24,18 @@ class Development extends Component {
           }
         },
         {
+          name: "Stellar Tip",
+          image: "stellar-tip.jpg",
+          winner: "2 Awards",
+          tools: [
+            "Node.js", "Express", "jQuery", "Stellar Blockchain", "MongoDB"
+          ],
+          description: "A chrome extension for contributing to content creators.",
+          links: {
+            github: "https://github.com/MichaelxhJiang/stellar-tip"
+          }
+        },
+        {
           name: "Bubbly",
           image: "bubbly.png",
           winner: "Top 10",
