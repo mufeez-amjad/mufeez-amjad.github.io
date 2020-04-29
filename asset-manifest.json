@@ -1,13 +1,13 @@
 {
-  "main.css": "/static/css/main.28d2acf8.chunk.css",
-  "main.js": "/static/js/main.5265da9d.chunk.js",
-  "main.js.map": "/static/js/main.5265da9d.chunk.js.map",
+  "main.css": "/static/css/main.2c0171c1.chunk.css",
+  "main.js": "/static/js/main.75bf86b1.chunk.js",
+  "main.js.map": "/static/js/main.75bf86b1.chunk.js.map",
   "static/js/1.3adf1cb9.chunk.js": "/static/js/1.3adf1cb9.chunk.js",
   "static/js/1.3adf1cb9.chunk.js.map": "/static/js/1.3adf1cb9.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
   "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
   "static/media/me.png": "/static/media/me.384f6a98.png",
-  "static/media/MufeezAmjadResume.pdf": "/static/media/MufeezAmjadResume.f33fd669.pdf",
+  "static/media/MufeezAmjadResume.pdf": "/static/media/MufeezAmjadResume.ae383a78.pdf",
   "static/media/App.css": "/static/media/bg.bcfbdfe0.png",
   "static/media/arduino.jpeg": "/static/media/arduino.084422e1.jpeg",
   "static/media/auxilium.jpg": "/static/media/auxilium.86dd70e7.jpg",
@@ -43,8 +43,8 @@
   "static/media/waterloo.png": "/static/media/waterloo.b365d205.png",
   "static/media/waterloo2.png": "/static/media/waterloo2.8481a943.png",
   "static/media/wisseo.png": "/static/media/wisseo.8bffc635.png",
-  "static/css/main.28d2acf8.chunk.css.map": "/static/css/main.28d2acf8.chunk.css.map",
+  "static/css/main.2c0171c1.chunk.css.map": "/static/css/main.2c0171c1.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.ec2cd4b03b28fc72870b6889d7380a70.js": "/precache-manifest.ec2cd4b03b28fc72870b6889d7380a70.js",
+  "precache-manifest.40efb734310ae876cbf7635d5c619822.js": "/precache-manifest.40efb734310ae876cbf7635d5c619822.js",
   "service-worker.js": "/service-worker.js"
 }

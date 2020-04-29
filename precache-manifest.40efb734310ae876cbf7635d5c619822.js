@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "5265da9d40a337b28fa6",
-    "url": "/static/css/main.28d2acf8.chunk.css"
+    "revision": "75bf86b149858cc582a9",
+    "url": "/static/css/main.2c0171c1.chunk.css"
   },
   {
-    "revision": "5265da9d40a337b28fa6",
-    "url": "/static/js/main.5265da9d.chunk.js"
+    "revision": "75bf86b149858cc582a9",
+    "url": "/static/js/main.75bf86b1.chunk.js"
   },
   {
     "revision": "3adf1cb9febeaf2e38bd",
@@ -20,8 +20,8 @@ self.__precacheManifest = [
     "url": "/static/media/me.384f6a98.png"
   },
   {
-    "revision": "f33fd669b754a1ca2c033f543414bafd",
-    "url": "/static/media/MufeezAmjadResume.f33fd669.pdf"
+    "revision": "ae383a7897a0d2e28e7abe590639cf2b",
+    "url": "/static/media/MufeezAmjadResume.ae383a78.pdf"
   },
   {
     "revision": "7201abbf8800811ac45375f473110185",
@@ -168,7 +168,7 @@ self.__precacheManifest = [
     "url": "/static/media/wisseo.8bffc635.png"
   },
   {
-    "revision": "573f3cb60f45168f101bbf533c62f9ae",
+    "revision": "71f25962490a84b26960012effb68059",
     "url": "/index.html"
   }
 ];
