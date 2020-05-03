@@ -14,97 +14,98 @@ class Development extends Component {
         {
           name: "Auxilium",
           image: "auxilium.jpg",
-          winner: "3 Awards",
+          winner: "4 Awards",
           tools: [
-            "Node.js", "Python", "React", "Stellar Blockchain", "AWS", "MongoDB"
+            "Node.js",
+            "Python",
+            "React",
+            "Stellar Blockchain",
+            "AWS",
+            "MongoDB",
           ],
           description: "Registered micro-financing for low-income populations.",
           links: {
-            github: "https://github.com/mufeez-amjad/auxilium"
-          }
+            github: "https://github.com/mufeez-amjad/auxilium",
+          },
         },
         {
           name: "Stellar Tip",
           image: "stellar-tip.jpg",
           winner: "2 Awards",
           tools: [
-            "Node.js", "Express", "jQuery", "Stellar Blockchain", "MongoDB"
+            "Node.js",
+            "Express",
+            "jQuery",
+            "Stellar Blockchain",
+            "MongoDB",
           ],
-          description: "A chrome extension for contributing to content creators.",
+          description:
+            "A chrome extension for contributing to content creators.",
           links: {
-            github: "https://github.com/MichaelxhJiang/stellar-tip"
-          }
+            github: "https://github.com/MichaelxhJiang/stellar-tip",
+          },
         },
         {
           name: "Bubbly",
           image: "bubbly.png",
           winner: "Top 10",
-          tools: [
-            "Arduino", "React", "CAD"
-          ],
+          tools: ["Arduino", "React", "CAD"],
           description: "An interactive and programmable bubble wall.",
           links: {
-            github: "https://github.com/mufeez-amjad/bubbly"
-          }
+            github: "https://github.com/mufeez-amjad/bubbly",
+          },
         },
         {
           name: "Status",
           image: "status.png",
-          tools: [
-            "React Native", "Node.js", "Apollo", "GraphQL", "MongoDB"
-          ],
-          description: "A social media app to make linking up with friends easy.",
+          tools: ["React Native", "Node.js", "Apollo", "GraphQL", "MongoDB"],
+          description:
+            "A social media app to make linking up with friends easy.",
           links: {
-            github: ""
-          }
+            github: "",
+          },
         },
         {
           name: "Nocturnal",
           image: "arduino.jpeg",
-          tools: [
-            "Flask", "C++", "Python"
-          ],
+          tools: ["Flask", "C++", "Python"],
           description: "A hardware sleep tracker with an analytics dashboard.",
           links: {
             // blog: "blog/posts/se101project/",
-            github: "https://github.com/mufeez-amjad/Nocturnal"
-          }
+            github: "https://github.com/mufeez-amjad/Nocturnal",
+          },
         },
         {
           name: "FightVR",
           image: "fightvr.jpg",
           winner: "Best VR Hack",
-          tools: [
-            "C#", "Unity"
-          ],
-          description: "An affordable VR solution using unconventional controllers.",
+          tools: ["C#", "Unity"],
+          description:
+            "An affordable VR solution using unconventional controllers.",
           links: {
-            github: "https://github.com/mufeez-amjad/FightVR"
+            github: "https://github.com/mufeez-amjad/FightVR",
           },
         },
         {
           name: "Bubble Burst",
           image: "bubble_burst.png",
-          tools: [
-            "Swift", "Firebase"
-          ],
+          tools: ["Swift", "Firebase"],
           description: "A popular iOS arcade game inspired by Fruit Ninja.",
           links: {
-            github: "https://github.com/mufeez-amjad/BubbleBurst-iOS"
-          }
+            github: "https://github.com/mufeez-amjad/BubbleBurst-iOS",
+          },
         },
         {
           name: "Pyro",
           image: "pyro.png",
-          tools: [
-            "React", "Node.js", "Express", "MongoDB"
-          ],
-          description: "A playlist collaboration app to liven social occasions.",
+          tools: ["React", "Node.js", "Express", "MongoDB"],
+          description:
+            "A playlist collaboration app to liven social occasions.",
           links: {
-            github: "https://github.com/Abs0luteHacks/pyro"
-          }
-        }
-      ]
+            github: "https://github.com/Abs0luteHacks/pyro",
+          },
+        },
+      ],
     };
   }
 
@@ -114,23 +115,21 @@ class Development extends Component {
       images[item.replace("./", "")] = r(item);
     });
     this.setState({ images: images });
-  }
+  };
 
   componentWillMount() {
-    this.importAll(
-      require.context("./projects", false, /\.(png|jpe?g|svg)$/)
-    );
+    this.importAll(require.context("./projects", false, /\.(png|jpe?g|svg)$/));
   }
 
   handleClick(target) {
     ReactGA.event({
       category: "Projects",
-      action: "Clicked " + target
+      action: "Clicked " + target,
     });
   }
 
   render() {
-    var height = this.state.projects.length / 2 * 370;
+    var height = (this.state.projects.length / 2) * 370;
     if (this.state.images) {
       return (
         <div>
@@ -154,10 +153,9 @@ class Development extends Component {
                 winner={project.winner}
                 clickHandler={this.handleClick}
               />
-            ))
-            }
+            ))}
           </div>
-        </div >
+        </div>
       );
     }
   }

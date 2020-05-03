@@ -10,13 +10,16 @@ class Experience extends Component {
 
         <div className="award">
           <h3>
-            <a>
-              Microsoft Insider2Campus 2019 Finalist
+            <a
+              target="blank"
+              href="https://devpost.com/mufeez-amjad"
+              className="strike">
+              Hackathon Awards
             </a>
           </h3>
-          <h5>Jun 2019</h5>
+          <h5>2018 - Present</h5>
           <p>
-            Placed in the top 12 of over 500 international contestants that will attend the Microsoft Global Hackathon 2019.
+            PennApps XX (4), HackNYU 2020 (2), Redbull AdrenaLAN, HackThe6ix
           </p>
         </div>
 
@@ -52,12 +55,12 @@ class Experience extends Component {
         <div className="award">
           <h3>
             <a target="blank" href="http://ecoocs.org/" className="strike">
-              2nd Place - ECOO Programming Competition
+              Provincial Semi-Finalist - ECOOCS
             </a>
           </h3>
           <h5>Mar 2018</h5>
           <p>
-            Placed second in Round 1 and top 20 out of 200+ teams at the Central
+            Placed 2nd in Round 1 and top 20 out of 200+ teams at the Central
             Ontario Finals (April 2018).
           </p>
         </div>
