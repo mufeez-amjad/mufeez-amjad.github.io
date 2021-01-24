@@ -1,72 +1,36 @@
 import React, { Component } from "react";
+import Award from "./Award";
 
 import "./Awards.css";
 
-class Experience extends Component {
-  render() {
-    return (
+const awards = [
+  {
+    name: 'Hackathon Awards',
+    link: 'https://devpost.com/mufeez-amjad',
+    date: '2018 - Present',
+    details: 'PennApps XX (4), HackNYU 2020 (2), Redbull AdrenaLAN, HackThe6ix'
+  },
+  {
+    name: 'Waterloo Engineering Competition',
+    date: 'Nov 2018',
+    details: 'Placed third at the annual competition for building a genetic AI for Tron.'
+  },
+  {
+    name: 'City of Pickering Civic Award',
+    link: 'https://www.pickering.ca/en/city-hall/civicawards.asp',
+    date: 'June 2018',
+    details: 'Awarded to a Pickering resident who has exemplified outstanding service and achievements.'
+  }
+]
+
+const Experience = () => {
+    
+  return (
       <div className="awards">
         <h2>Awards & Achievements</h2>
-
-        <div className="award">
-          <h3>
-            <a
-              target="blank"
-              href="https://devpost.com/mufeez-amjad"
-              className="strike">
-              Hackathon Awards
-            </a>
-          </h3>
-          <h5>2018 - Present</h5>
-          <p>
-            PennApps XX (4), HackNYU 2020 (2), Redbull AdrenaLAN, HackThe6ix
-          </p>
-        </div>
-
-        <div className="award">
-          <h3>
-            <a target="blank" href="" className="strike">
-              Waterloo Engineering Competition
-            </a>
-          </h3>
-          <h5>Nov 2018</h5>
-          <p>
-            Placed third at the annual competition for building a genetic AI for{" "}
-            <i>Tron</i>.
-          </p>
-        </div>
-
-        <div className="award">
-          <h3>
-            <a
-              target="blank"
-              href="https://www.pickering.ca/en/city-hall/civicawards.aspx"
-              className="strike">
-              City of Pickering Civic Award
-            </a>
-          </h3>
-          <h5>June 2018</h5>
-          <p>
-            Awarded to a Pickering resident who has exemplified outstanding
-            service and achievements.
-          </p>
-        </div>
-
-        <div className="award">
-          <h3>
-            <a target="blank" href="http://ecoocs.org/" className="strike">
-              Provincial Semi-Finalist - ECOOCS
-            </a>
-          </h3>
-          <h5>Mar 2018</h5>
-          <p>
-            Placed 2nd in Round 1 and top 20 out of 200+ teams at the Central
-            Ontario Finals (April 2018).
-          </p>
-        </div>
+        {awards.map(award => <Award {...award} />)}
       </div>
     );
-  }
 }
 
 export default Experience;

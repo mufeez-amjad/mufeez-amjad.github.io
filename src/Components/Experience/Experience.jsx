@@ -7,7 +7,23 @@ class Experience extends Component {
     return (
       <div className="experience">
         <h2>Work Experience</h2>
-
+        
+        <div className="job">
+          <div className="heading">
+            <h3>
+              <a href="https://tatari.tv" target="blank" className="strike">
+                Tatari
+              </a>
+            </h3>
+            <h4>Infrastructure Engineer Intern</h4>
+          </div>
+          <h5>Sep - Dec 2020 | San Francisco, CA (Remote)</h5>
+          <ul>
+            <li>
+              Worked on building and maintaining ETL pipelines using AWS Redshift, Lambda, Kinesis.
+            </li>
+          </ul>
+        </div>
         <div className="job">
           <div className="heading">
             <h3>
@@ -65,19 +81,6 @@ class Experience extends Component {
               Created an applicant administration interface for screening,
               scheduling, and accepting applicants.
             </li>
-          </ul>
-        </div>
-
-        <div className="job">
-          <div className="heading">
-            <h3>
-              <a className="strike">Major Political Party</a>
-            </h3>
-            <h4>Web Developer & Designer</h4>
-          </div>
-          <h5>Oct 2017 - June 2018 | Ajax, ON</h5>
-          <ul>
-            <li>Developed a website and ran marketing campaigns.</li>
           </ul>
         </div>
 
