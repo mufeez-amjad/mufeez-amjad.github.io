@@ -89,6 +89,7 @@ class Development extends Component {
         {
           name: "Bubble Burst",
           image: "bubble_burst.png",
+          downloads: "1k+ DLs",
           tools: ["Swift", "Firebase"],
           description: "A popular iOS arcade game inspired by Fruit Ninja.",
           links: {
@@ -142,15 +143,11 @@ class Development extends Component {
             </div>
           </div> */}
           <div className="projects" style={{ height: height }}>
-            {this.state.projects.map((project, index) => (
+            {this.state.projects.map(({image, ...project}, index) => (
               <Project
                 key={index}
-                name={project.name}
-                image={this.state.images[project.image]}
-                tools={project.tools}
-                description={project.description}
-                links={project.links}
-                winner={project.winner}
+                image={this.state.images[image]}
+                {...project}
                 clickHandler={this.handleClick}
               />
             ))}

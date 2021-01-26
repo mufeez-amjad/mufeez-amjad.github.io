@@ -21,18 +21,27 @@
   align-items: center;
 }
 
-.project .winner em {
+.project .pill em {
   font-family: "Open Sans", sans-serif;
   font-size: 0.8rem;
   font-weight: 300;
   text-align: right;
   font-style: normal;
   padding-right: 5px;
-  color: white;
-  background: #d8b90b;
   padding: 2px 10px;
   margin: 0px 3px 0px 3px;
   border-radius: 5px;
+  width: fit-content;
+}
+
+.project .winner em {
+  color: white;
+  background: #d8b90b;
+}
+
+.project .downloads em {
+  color: white;
+  background: #1586be;
 }
 
 .project:hover {

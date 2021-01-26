@@ -5,15 +5,16 @@ import "./Awards.css";
 
 const awards = [
   {
+    name: 'Stellar Community Fund',
+    link: 'https://galactictalk.org/d/2327-stellar-tip-tipping-for-content-creators-and-developers',
+    date: 'March 2020',
+    details: 'Received $100k USD for development of open source project.'
+  },
+  {
     name: 'Hackathon Awards',
     link: 'https://devpost.com/mufeez-amjad',
     date: '2018 - Present',
     details: 'PennApps XX (4), HackNYU 2020 (2), Redbull AdrenaLAN, HackThe6ix'
-  },
-  {
-    name: 'Waterloo Engineering Competition',
-    date: 'Nov 2018',
-    details: 'Placed third at the annual competition for building a genetic AI for Tron.'
   },
   {
     name: 'City of Pickering Civic Award',

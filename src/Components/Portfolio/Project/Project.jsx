@@ -20,9 +20,12 @@ class Project extends Component {
   }
 
   winner = () => {
+    const { winner, downloads } = this.props;
+
+    if (winner || downloads)
       return (
-        <div className="winner">
-          {this.props.winner ? <em>{this.props.winner}</em> : null}
+        <div className={`pill ${winner ? "winner" : "downloads"}`}>
+          {winner ? <em>{winner}</em> : <em>{downloads}</em>}
         </div>        
       )
     }
