@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import * as React from "react";
 import Award from "./Award";
 
 import "./Awards.css";
@@ -8,7 +8,7 @@ const awards = [
     name: 'Stellar Community Fund',
     link: 'https://galactictalk.org/d/2327-stellar-tip-tipping-for-content-creators-and-developers',
     date: 'March 2020',
-    details: 'Received $100k USD for development of open source project.'
+    details: 'Received $150k+ USD for development of an open source project.'
   },
   {
     name: 'Hackathon Awards',

@@ -6,15 +6,12 @@ import { faRss } from '@fortawesome/free-solid-svg-icons'
 import "./Project.css";
 
 class Project extends Component {
-  constructor() {
-    super();
-  }
 
   links = () => {
     return (
       <div className="links">
-        {this.props.links.blog ? <a href={this.props.links.blog} target="_blank" onClick={() => this.props.clickHandler("Blog:" + this.props.name)}><FontAwesomeIcon icon={faRss} /></a> : null}
-        {this.props.links.github ? <a href={this.props.links.github} target="_blank" onClick={() => this.props.clickHandler("Github:" + this.props.name)}><FontAwesomeIcon icon={faGithub} /></a> : null}
+        {this.props.links.blog ? <a href={this.props.links.blog} target="blank" onClick={() => this.props.clickHandler("Blog:" + this.props.name)}><FontAwesomeIcon icon={faRss} /></a> : null}
+        {this.props.links.github ? <a href={this.props.links.github} target="blank" onClick={() => this.props.clickHandler("Github:" + this.props.name)}><FontAwesomeIcon icon={faGithub} /></a> : null}
       </div>
     )
   }
@@ -32,8 +29,8 @@ class Project extends Component {
 
   render() {
     return (
-      <div className="project" style={{color: this.props.winner != undefined ? 'yellow': ''}}>
-        <img src={this.props.image} />
+      <div className="project" style={{color: this.props.winner !== undefined ? 'yellow': ''}}>
+        <img src={this.props.image} alt={this.props.name}/>
         <div className="content">
           <div className="heading">
             <h1>{this.props.name}</h1>

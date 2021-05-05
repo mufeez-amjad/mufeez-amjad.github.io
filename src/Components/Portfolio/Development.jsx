@@ -113,7 +113,7 @@ class Development extends Component {
   importAll = (r) => {
     let images = {};
     r.keys().map((item, index) => {
-      images[item.replace("./", "")] = r(item);
+      return images[item.replace("./", "")] = r(item);
     });
     this.setState({ images: images });
   };

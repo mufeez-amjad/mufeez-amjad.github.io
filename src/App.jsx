@@ -19,22 +19,19 @@ export default function App() {
     ReactGA.pageview("/home");
   }, []);
 
-  React.useEffect(
-    () => {
-      if (window.screen.width >= 600) {
-        scrollToContent();
-      }
-    },
-    [scrollTo]
-  );
-
-  const scrollToContent = () => {
+  const scrollToContent = React.useCallback(() => {
     scrollTo.current.scrollIntoView({
       behavior: "smooth",
       block: "start",
       inline: "nearest",
     });
-  };
+  }, [scrollTo]);
+
+  React.useEffect(() => {
+    if (window.screen.width >= 600) {
+      scrollToContent();
+    }
+  }, [scrollTo, scrollToContent])
 
   const { term, coop } = React.useMemo(() => {
     return calculateTerm();
@@ -58,11 +55,11 @@ export default function App() {
       <Intro />
 
       <div className="scrollable">
-        <a className="chevron" onClick={() => scrollToContent()}>
+        <button className="chevron" ref={scrollTo} onClick={() => scrollToContent()}>
           <FontAwesomeIcon color="#35a6de" icon={faChevronDown} size="2x" />
-        </a>
+        </button>
         <div className="about">
-          <h1 ref={scrollTo}>Hey there!</h1>
+          <h1>Hey there!</h1>
 
           <div className="profile">
             <img src={profile} alt="Profile" />

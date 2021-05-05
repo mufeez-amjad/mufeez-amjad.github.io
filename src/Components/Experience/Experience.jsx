@@ -7,7 +7,22 @@ class Experience extends Component {
     return (
       <div className="experience">
         <h2>Work Experience</h2>
-        
+        <div className="job">
+          <div className="heading">
+            <h3>
+              <a href="https://splunk.com" target="blank" className="strike">
+                Splunk 
+              </a>
+            </h3>
+            <h4>Software Engineer Intern</h4>
+          </div>
+          <h5>May 2021 - Present | San Jose, CA (Remote)</h5>
+          <ul>
+            <li>
+              Working on the Cloud Infrastructure Team.
+            </li>
+          </ul>
+        </div>
         <div className="job">
           <div className="heading">
             <h3>
@@ -66,28 +81,8 @@ class Experience extends Component {
         <div className="job">
           <div className="heading">
             <h3>
-              <a
-                href="https://watonomous.ca/#/"
-                target="blank"
-                className="strike">
-                WATonomous
-              </a>
-            </h3>
-            <h4>Web Infrastructure Developer</h4>
-          </div>
-          <h5>Sept - Dec 2018 | Waterloo, ON</h5>
-          <ul>
-            <li>
-              Created an applicant administration interface for screening,
-              scheduling, and accepting applicants.
-            </li>
-          </ul>
-        </div>
-
-        <div className="job">
-          <div className="heading">
-            <h3>
-              <a className="strike">Mufeez Amjad Designs</a>
+              {/* eslint-disable-next-line */}
+              <a href="" className="strike">Mufeez Amjad Designs</a>
             </h3>
             <h4>Freelance Graphic/Web Designer</h4>
           </div>
