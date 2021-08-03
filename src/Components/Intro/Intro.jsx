@@ -27,9 +27,9 @@ class Intro extends Component {
             <div className="intro">
                 <img src={logo} alt="logo" />
                 <h1>Mufeez Amjad</h1>
-                <h2>Developer and Designer</h2>
+                <h2>Software Engineer and Designer</h2>
                 <div className="social-media">
-                    {/* <a onClick={() => { this.handleClick('Blog') }} href="http://mufeez.me/blog/"><FontAwesomeIcon icon={faRss} size="2x" /></a> */}
+                    <a onClick={() => { this.handleClick('Blog') }} href="http://mufeez.me/blog/"><FontAwesomeIcon icon={faRss} size="2x" /></a>
                     <a onClick={() => { this.handleClick('GitHub') }} href='https://github.com/mufeez-amjad' target='blank'><FontAwesomeIcon icon={faGithub} size="2x" /></a>
                     <a onClick={() => { this.handleClick('Dribbble') }} href='https://dribbble.com/mufeez-amjad' target='blank'><FontAwesomeIcon icon={faDribbble} size="2x" /></a>
                     <a onClick={() => { this.handleClick('LinkedIn') }} href='https://linkedin.com/in/mufeez-amjad' target='blank'><FontAwesomeIcon icon={faLinkedinIn} size="2x" /></a>

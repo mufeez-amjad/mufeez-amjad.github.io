@@ -11,15 +11,15 @@ class Experience extends Component {
           <div className="heading">
             <h3>
               <a href="https://splunk.com" target="blank" className="strike">
-                Splunk 
+                Splunk
               </a>
             </h3>
             <h4>Software Engineer Intern</h4>
           </div>
-          <h5>May 2021 - Present | San Jose, CA (Remote)</h5>
+          <h5>May 2021 - Aug 2021 | San Jose, CA (Remote)</h5>
           <ul>
             <li>
-              Working on the Cloud Infrastructure Team.
+              Worked on the Splunk's release train and fleet management.
             </li>
           </ul>
         </div>

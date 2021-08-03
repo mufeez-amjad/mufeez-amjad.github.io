@@ -60,7 +60,7 @@ class Development extends Component {
           image: "status.png",
           tools: ["React Native", "Node.js", "Apollo", "GraphQL", "MongoDB"],
           description:
-            "A social media app to make linking up with friends easy.",
+            "A social media app to improve the experience of making plans with friends.",
           links: {
             github: "",
           },

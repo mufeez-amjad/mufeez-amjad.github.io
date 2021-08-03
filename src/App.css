@@ -90,30 +90,33 @@ p {
   text-align: left;
 }
 
-.scrollable .profile {
+.scrollable .about {
+  margin: 0 20px;
+}
+
+.about .profile {
   display: flex;
-  margin-left: 25px;
-  margin-right: 25px;
+  flex-direction: column;
   align-items: center;
+}
+
+.about .profile .intro {
+  display: flex;
+  align-items: center;
+}
+
+.about .profile p {
+  margin: 20px;
 }
 
 .scrollable .profile img {
   width: 110px;
   height: 110px;
-  margin-left: 15px;
   flex-shrink: 0;
-  /* border-radius: 55px;
-  -webkit-border-radius: 55px;
-  -moz-border-radius: 55px; */
 }
 
 .scrollable .profile .summary {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
-  font-weight: 500;
-  color: #333333;
-  text-align: left;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 .scrollable h2 {
@@ -140,8 +143,6 @@ p {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
-  margin-left: 25px;
-  margin-right: 25px;
 }
 
 .scrollable .skills em::before {
@@ -243,7 +244,7 @@ p {
     display: none;
   }
 
-  .scrollable .profile .summary {
+  .scrollable .profile p {
     font-size: 0.95rem;
   }
 
@@ -286,7 +287,7 @@ p {
 }
 
 @media screen and (max-width: 430px) {
-  .scrollable .profile .summary {
+  .scrollable .profile p {
     font-size: 0.95rem;
   }
 

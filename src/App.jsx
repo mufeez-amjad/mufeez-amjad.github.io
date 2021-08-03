@@ -62,20 +62,20 @@ export default function App() {
           <h1>Hey there!</h1>
 
           <div className="profile">
-            <img src={profile} alt="Profile" />
-            <p className="summary">
-              I’m {term} <em>Software Engineering</em> student at the University
-              of Waterloo with a strong background in both{" "}
-              <em>software development</em> and <em>graphic design</em>.
+            <div className="intro">
+              <img src={profile} alt="Profile" />
+              <p className="summary">
+                I’m {term} <em>Software Engineering</em> student at the University
+                of Waterloo with a passion for building the infrastructure driving great products.
+              </p>
+            </div>
+            
+            <p>
+              You can often find me automating my life, reading TechCrunch, browsing tech and crypto Twitter, or maybe playing Valorant!
             </p>
           </div>
 
-          <div
-            style={{
-              padding: "10px 0 0 0",
-              marginLeft: "15px",
-              marginRight: "15px",
-            }}>
+          <div>
             <p style={{ textAlign: "center" }}>
               <b>
                 Currently looking for{" "}
@@ -89,12 +89,10 @@ export default function App() {
             <p className="left">I have worked with:</p>
             <p className="list">
               <span className="languages">
-                <em>Python</em> <em>C/C++</em> <em>Java</em> <em>JavaScript</em>{" "}
-                <em>SQL</em> <em>Scala</em>{" "}
+                <em>Python</em> <em>Golang</em> <em>C++</em> <em>JavaScript</em> <em>SQL</em>
               </span>
-              <span className="frameworks">
-                <em>React</em> <em>Node.js</em> <em>Flask</em> <em>GraphQL</em>{" "}
-                <em>Express</em>
+              <span className="technologies">
+                <em>Kubernetes</em> <em>AWS</em> <em>React</em> <em>Flask</em> <em>GraphQL</em>{" "}
               </span>
             </p>
           </div>
