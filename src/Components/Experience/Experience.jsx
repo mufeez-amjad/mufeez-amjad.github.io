@@ -19,7 +19,7 @@ class Experience extends Component {
           <h5>May 2021 - Aug 2021 | San Jose, CA (Remote)</h5>
           <ul>
             <li>
-              Worked on the Splunk's release train and fleet management.
+              Worked on Splunk's release train and production fleet management.
             </li>
           </ul>
         </div>
