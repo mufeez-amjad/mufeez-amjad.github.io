@@ -79,8 +79,7 @@ export default function App() {
             <p style={{ textAlign: "center" }}>
               <b>
                 Currently looking for{" "}
-                <span style={{ color: "#35a6de" }}>{coop}</span> software
-                internships!
+                <span style={{ color: "#35a6de" }}>full-time</span> opportunities!
               </b>
             </p>
           </div>
@@ -112,65 +111,16 @@ const addMonths = (oldDate, nMonths) =>
   new Date(oldDate.setMonth(oldDate.getMonth() + nMonths));
 
 const calculateTerm = () => {
-  const today = new Date(); //"01/07/2019"
-  var currentTerm = "an incoming";
-  var coopTerm = "";
-  //Fall: Sept 6
-  //Winter: Jan 7
-  //Spring: May 6
-  var oneA = new Date("September 2, 2018");
-  var oneB = new Date("January 7, 2019");
-  var twoA = new Date("September 5, 2019"); //Fall -> Spring
-  var twoB = new Date("May 4, 2020"); //Spring -> Winter
-  var threeA = new Date("January 4, 2021"); //Winter -> Fall
-  var threeB = new Date("September 9, 2021"); //Fall -> Spring
-  var fourA = new Date("May 9, 2022"); //Spring -> Winter
-  var fourB = new Date("January 9, 2023");
-  var graduation = new Date("June 1, 2018");
+  const today = addMonths(new Date(), 2); // "01/07/2019"
+  var currentTerm = "a 4A";
 
-  if (today < oneA) {
-    currentTerm = "an incoming";
-  } else if (today < oneB) {
-    currentTerm = "a 1A";
-  } else if (today < twoA) {
-    currentTerm = "a 1B";
-    coopTerm = "Summer 2019";
-    if (today > addMonths(oneB, 4)) {
-      coopTerm = "Winter 2020";
-    }
-  } else if (today < twoB) {
-    currentTerm = "a 2A";
-    coopTerm = "Winter 2020";
-    if (today > addMonths(twoA, 2)) {
-      coopTerm = "Fall 2020";
-    }
-  } else if (today < threeA) {
-    currentTerm = "a 2B";
-    coopTerm = "Fall 2020";
-    if (today > addMonths(twoB, 2)) {
-      coopTerm = "Summer 2021";
-    }
-  } else if (today < threeB) {
-    currentTerm = "a 3A";
-    coopTerm = "Summer 2021";
-    if (today > addMonths(threeA, 2)) {
-      coopTerm = "Winter 2022";
-    }
-  } else if (today < fourA) {
-    currentTerm = "a 3B";
-    coopTerm = "Winter 2022";
-    if (today > addMonths(threeB, 2)) {
-      coopTerm = "Fall 2022";
-    }
-  } else if (today < fourB) {
-    currentTerm = "a 4A";
-    coopTerm = "Fall 2022";
-  } else if (today < graduation) {
+  var fourB = new Date("December 23, 2022");
+  
+  if (today > fourB) {
     currentTerm = "a 4B";
   }
 
   return {
     term: currentTerm,
-    coop: coopTerm,
   };
 };

@@ -10,6 +10,36 @@ class Experience extends Component {
         <div className="job">
           <div className="heading">
             <h3>
+              <a href="https://meta.com" target="blank" className="strike">
+                Meta (Facebook)
+              </a>
+            </h3>
+            <h4>Software Engineer Intern</h4>
+          </div>
+          <h5>May - Aug 2022 | New York, NY</h5>
+        </div>
+        <div className="job">
+          <div className="heading">
+            <h3>
+              <a href="https://cockroachlabs.com" target="blank" className="strike">
+                Cockroach Labs
+              </a>
+            </h3>
+            <h4>Software Engineer Intern</h4>
+          </div>
+          <h5>Jan - Apr 2022 | New York, NY (Remote)</h5>
+          <ul>
+            <li>
+              Improved the performance of CockroachDB's storage engine, {" "}
+              <a href="https://github.com/cockroachdb/pebble/pulls?q=author%3Amufeez-amjad" className="strike">
+                Pebble
+              </a>.
+            </li>
+          </ul>
+        </div>
+        <div className="job">
+          <div className="heading">
+            <h3>
               <a href="https://splunk.com" target="blank" className="strike">
                 Splunk
               </a>
@@ -19,7 +49,7 @@ class Experience extends Component {
           <h5>May 2021 - Aug 2021 | San Jose, CA (Remote)</h5>
           <ul>
             <li>
-              Worked on Splunk's release train and production fleet management.
+              Worked on Splunk's automated release train and production fleet management.
             </li>
           </ul>
         </div>
