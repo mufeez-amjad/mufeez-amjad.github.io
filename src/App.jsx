@@ -11,6 +11,8 @@ import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import ReactGA from "react-ga";
 import { Helmet } from "react-helmet";
 
+import webring from './webring.svg'
+
 export default function App() {
   const scrollTo = React.createRef();
 
@@ -53,6 +55,36 @@ export default function App() {
         />
       </Helmet>
       <Intro />
+
+      <div
+        style={{
+            position: 'fixed',
+            bottom: 10,
+            left: 0,
+            backgroundColor: 'white',
+            padding: 5,
+            borderTopRightRadius: 5,
+            borderBottomRightRadius: 5,
+            display: 'flex',
+            justifyContent: 'center',
+            alignContent: 'center'
+        }}
+      >
+        <a
+          target="_blank"
+          href="https://se-webring.xyz/"
+        >
+          <img 
+            src={webring} 
+            style={{
+              width: 20,
+              height: 'auto',
+              display: 'block'
+            }} 
+          />
+        </a>
+        
+      </div>
 
       <div className="scrollable">
         <button className="chevron" ref={scrollTo} onClick={() => scrollToContent()}>
