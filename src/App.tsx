@@ -95,7 +95,7 @@ function App() {
         Get in touch →
       </Contact>
 
-      <div style={{ margin: '100px 0' }}>
+      <IntroContentWrapper>
         <Availability>
           <span>•</span><span>Seeking 2023 new grad opportunities!</span>
         </Availability>
@@ -117,7 +117,7 @@ function App() {
           <p>I've completed <b className='cyan'>6 internships</b> throughout my undergrad degree, ranging from startups to large tech companies. You can read about my work on my <a href="./MufeezAmjadResume.pdf">resume</a>.</p>
           <p>In a past life I worked as a graphic designer, now I use those skills to beautify the UI & UX for my side projects. You can often find me automating my life, reading TechCrunch, browsing tech and crypto Twitter, or maybe playing Valorant!</p>
         </Content>
-      </div>
+      </IntroContentWrapper>
 
       <Projects>
         <h1>Selected Projects</h1>
@@ -169,6 +169,14 @@ function App() {
 }
 
 export default App;
+
+const IntroContentWrapper = styled.div`
+  margin: 100px 0;
+
+  @media only screen and (max-width: 768px) {
+    margin: 20px 0;
+  }
+`;
 
 const Project = styled.div`
   width: 338px;
@@ -244,8 +252,6 @@ const Project = styled.div`
         background: #333333;     
       }
     }
-
-    
   }
 
   &:hover {
@@ -256,6 +262,25 @@ const Project = styled.div`
       background-color: #35a6dee0;
     }
   }  
+
+  @media only screen and (max-width: 768px) {
+    max-width: 250px;
+    video {
+      width: 250px;
+      height: 400px;
+      border-radius: 30px;
+    }
+
+    .overlay {
+      width: 250px;
+      height: 400px;
+      border-radius: 30px;
+    }
+
+    &:not(:first-child) {
+      margin-left: 6px;
+    }
+  }
 `;
 
 const Projects = styled.div`
@@ -269,8 +294,47 @@ const Projects = styled.div`
   
   margin-bottom: 32px;
 
-  div {
+  > div {
     display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media only screen and (max-width: 768px) {
+    h1 {
+      font-size: 20px;
+    }
+    h2 {
+      font-size: 24px;
+    }
+    p {
+      font-size: 18px;
+    }
+    a {
+      font-size: 18px;
+    }
+    
+    margin-bottom: 0px;
+  }
+
+  @media only screen and (max-width: 425px) {
+    max-width: 425px;
+
+    > div {
+      white-space: nowrap;
+      flex-wrap: nowrap;
+      position: relative;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+    max-width: 375px;
+  }
+
+  @media only screen and (max-width: 320px) {
+    max-width: 320px;
   }
 `;
 
@@ -296,6 +360,13 @@ const Content = styled.div`
 
   color: #333333;
   opacity: 0.8;
+
+  p {
+    font-size: 18px;
+  }
+  a {
+    font-size: 18px;
+  }
 `;
 
 const Availability = styled.div`
@@ -378,6 +449,24 @@ const Intro = styled.div`
       }
     }
   }
+
+  @media only screen and (max-width: 768px) {
+    h1 {
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 24px;
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    h1 {
+      font-size: 32px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+  }
 `;
 
 
@@ -399,5 +488,13 @@ const Container = styled.div`
     border-top: 2px solid #333333;
 
     opacity: 0.15;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    padding: 30px 100px;
+  }
+
+  @media only screen and (max-width: 425px) {
+    padding: 30px 30px;
   }
 `;
