@@ -113,7 +113,7 @@ function App() {
         </Intro>
 
         <Content>
-          <p>Hey there! I’m a 4A Software Engineering student at the University of Waterloo with a passion for building the infrastructure driving great products.</p>
+          <p>Hey there! I’m a 4B Software Engineering student at the University of Waterloo with a passion for building the infrastructure driving great products.</p>
           <p>I've completed <b className='cyan'>6 internships</b> throughout my undergrad degree, ranging from startups to large tech companies. You can read about my work on my <a href="./MufeezAmjadResume.pdf">resume</a>.</p>
           <p>In a past life I worked as a graphic designer, now I use those skills to beautify the UI & UX for my side projects. You can often find me automating my life, reading TechCrunch, browsing tech and crypto Twitter, or maybe playing Valorant!</p>
         </Content>
