@@ -2,14 +2,32 @@ import * as React from "react";
 import styled, { keyframes } from "styled-components";
 import { Routes, Route, NavLink, useLocation } from "react-router-dom";
 import Tooltip from "./Tooltip";
+import { Highlights } from "./Highlights";
+import { usePrevious } from "./usePrevious";
+import { PostsRouter } from "./posts/router";
 
 export default function RoutedApp() {
   return (
     <AppContainer>
-      <Container>
-        <Header />
-        <Content />
-      </Container>
+      <Routes>
+        <Route
+          path={'/'}
+          element={
+            <>
+              <Container>
+                <Header />
+                <Content />
+              </Container>
+            </>
+          }
+        />
+        <Route
+          path={'/posts/*'}
+          element={
+            <PostsRouter />
+          }
+        />
+      </Routes>
     </AppContainer>
   )
 }
@@ -20,19 +38,9 @@ const routes = [
   { path: "/photos", displayName: "Photos" },
 ];
 
-function usePrevious<T>(value: T) {
-  const ref = React.useRef<T | undefined>();
-
-  React.useEffect(() => {
-    ref.current = value;
-  });
-
-  return ref.current;
-}
-
 const Header = () => {
-  const [isHovering, setIsHovering] = React.useState(false);
-  const [activeRect, setActiveRect] = React.useState({ top: 0, left: 0, width: 0, height: 0 });
+  const [activeRect, setActiveRect] = React.useState({ left: 0, width: 0 });
+  const [isActive, setIsActive] = React.useState(true);
   const navRef = React.useRef<HTMLDivElement>(null);
   const [key, setKey] = React.useState(0);
 
@@ -41,26 +49,21 @@ const Header = () => {
       return;
     }
 
-    const navRect = navRef.current.getBoundingClientRect(); // Get NavLinkContainer's rect
+    const navRect = navRef.current.getBoundingClientRect();
     let link;
     if (event && event.target && event.target instanceof Element) {
       link = event.target.closest('a');
     }
     link = link || navRef.current.querySelector('.active');
     if (link) {
-      const { top, left, width, height } = link.getBoundingClientRect();
-      // Adjust top and left to be relative to NavLinkContainer
+      const { left, width } = link.getBoundingClientRect();
       setActiveRect({
-        top: top - navRect.top - 6, // Subtract padding to move up
-        left: left - navRect.left - 8, // Subtract padding to move left
-        width: width + 16, // Add double padding to increase width
-        height: height + 12 // Add double padding to increase height
+        left: left - navRect.left,
+        width: width
       });
-      setIsHovering(true);
+      setIsActive(link.classList.contains('active'));
     }
   };
-
-  const hideRectangle = () => setIsHovering(false);
 
   React.useEffect(() => {
     window.addEventListener('resize', updateActiveRect);
@@ -72,14 +75,15 @@ const Header = () => {
 
   React.useEffect(() => {
     if (previousLocation?.pathname !== location.pathname) {
-      setKey(prev => prev + 1); // Increment key on location change
+      setKey(prev => prev + 1);
+      updateActiveRect();
     }
   }, [previousLocation, location]);
 
   return (
     <HeaderContainer>
-      <Image src="photo.jpg" />
-      <HeaderText key={key}> {/* Add key here */}
+      <StyledImage src="photo1.jpeg" />
+      <HeaderText key={key}>
         <Routes>
           {routes.map(route => (
             <Route key={route.path} path={route.path} element={<>{route.displayName}</>} />
@@ -88,14 +92,17 @@ const Header = () => {
       </HeaderText>
       <HeaderRoutes
         ref={navRef}
-        onMouseLeave={hideRectangle}
+        onMouseLeave={() => {
+          updateActiveRect();
+          setIsActive(true);
+        }}
       >
-        <AnimatedRectangle
+        <AnimatedUnderline
           style={{
-            ...activeRect,
-            opacity: isHovering ? 1 : 0,
-            visibility: isHovering ? 'visible' : 'hidden',
+            left: activeRect.left,
+            width: activeRect.width,
           }}
+          $isActive={isActive}
         />
         {routes.map(route => (
           <StyledNavLink
@@ -112,6 +119,7 @@ const Header = () => {
   )
 }
 
+
 const Content = () => {
   return (
     <Routes>
@@ -125,29 +133,42 @@ const Content = () => {
 const AboutContent = () => {
   return (
     <ContentContainer>
-      <Paragraph>
-        I am an engineer based in New York, currently working at <ExternalLink href="https://linear.app/homepage">Linear</ExternalLink>, where I joined as the first junior engineer in 2023.
-      </Paragraph>
-      <Paragraph>
-        Previously, I worked at Cockroach Labs on <Tooltip text="RocksDB inspired KV store written in Go">
-          <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
-            <ExternalLink href="https://github.com/cockroachdb/pebble">Pebble</ExternalLink>
-            <InfoIcon />
-          </span>
-        </Tooltip> and at Meta on <Tooltip text="Meta's incremental build system written in Rust">
-          <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
-            <ExternalLink href="https://github.com/facebook/buck2">Buck2</ExternalLink>
-            <InfoIcon />
-          </span>
-        </Tooltip>.
-      </Paragraph>
-      <Paragraph>
-        My interests include distributed systems, databases, and high-performance computing.
-      </Paragraph>
-    </ContentContainer >
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 16, marginTop: 16 }}>
+        <Paragraph>
+          I'm an engineer based in NYC, currently working at <ExternalLink href="https://linear.app/homepage" target="_blank">Linear</ExternalLink>, where I joined as the first junior engineer in 2023.
+        </Paragraph>
+        <Paragraph>
+          Previously, I worked at Cockroach Labs on <Tooltip text="RocksDB inspired KV store written in Go">
+            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '2px' }}>
+              <ExternalLink href="https://github.com/cockroachdb/pebble" target="_blank">Pebble</ExternalLink>
+              <InfoIcon />
+            </span>
+          </Tooltip> and at Meta on <Tooltip text="Meta's incremental build system written in Rust">
+            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '2px' }}>
+              <ExternalLink href="https://github.com/facebook/buck2" target="_blank">Buck2</ExternalLink>
+              <InfoIcon />
+            </span>
+          </Tooltip>.
+        </Paragraph>
+        <Paragraph>
+          My interests include high-performance computing, distributed systems, and databases.
+        </Paragraph>
+        <div style={{ display: 'flex', gap: 16, fontFamily: 'Red Hat Display', fontSize: 16, marginTop: 16 }}>
+          <ExternalLink href="https://github.com/mufeez-amjad" target="_blank" $hideUnderline>
+            GitHub
+          </ExternalLink>
+          <ExternalLink href="https://twitter.com/moofeez" target="_blank" $hideUnderline>
+            Twitter
+          </ExternalLink>
+          <ExternalLink href="mailto:mufeez.amjad@outlook.com" $hideUnderline>
+            Email
+          </ExternalLink>
+        </div>
+      </div>
+      <Highlights />
+    </ContentContainer>
   );
 }
-
 
 const slideUp = keyframes`
   from {
@@ -172,28 +193,27 @@ const blurIn = keyframes`
 `;
 
 const ContentContainer = styled.div`
-  margin-top: 28px;
+  margin-top: 12px;
   animation: ${slideUp} 0.5s ease-out, ${blurIn} 0.6s ease-out;
 `;
 
 
-const Paragraph = styled.p`
-  font-family: 'Open Sans';
+const Paragraph = styled.div`
+  font-family: 'Red Hat Display';
   font-size: 16px;
   line-height: 1.5;
   color: #333333;
 `;
 
-const Image = styled.img`
-  width: 64px;
-  height: 64px;
-  border-radius: 32px;
+const StyledImage = styled.img`
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
 `;
 
 const AppContainer = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
   height: 100%;
   width: 100%;
 `;
@@ -221,10 +241,10 @@ const blurInAndOut = keyframes`
 
 const HeaderText = styled.h1`
   font-size: 26px;
-  font-family: 'Montserrat';
-  font-weight: 400;
-  opacity: 0;
-  animation: ${blurInAndOut} 0.5s ease-in forwards;
+  font-family: 'Red Hat Display';
+  font-weight: 600;
+  opacity: 1;
+  /* animation: ${blurInAndOut} 0.5s ease-in forwards; */
 `;
 
 const HeaderContainer = styled.div`
@@ -242,14 +262,14 @@ const HeaderRoutes = styled.div`
 const StyledNavLink = styled(NavLink)`
   text-decoration: none;
   color: #bababa;
-  font-family: 'Open Sans';
+  font-family: 'Red Hat Display';
 
   &.active {
     color: black;
   }
 `;
 
-const ExternalLink = styled.a`
+const ExternalLink = styled.a<{ $hideUnderline?: boolean }>`
   color: initial;
   position: relative;
   text-decoration: none;
@@ -263,7 +283,7 @@ const ExternalLink = styled.a`
     bottom: 0;
     left: 0;
     background-color: currentColor;
-    visibility: visible;
+    visibility: ${props => props.$hideUnderline ? 'hidden' : 'visible'};
     opacity: 0.25;
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
   }
@@ -274,24 +294,23 @@ const ExternalLink = styled.a`
   }
 `;
 
-const scaleIn = keyframes`
+const moveUnderline = keyframes`
   from {
-    transform: scale(0);
+    transform: scaleX(0);
   }
   to {
-    transform: scale(1);
+    transform: scaleX(1);
   }
 `;
 
-const AnimatedRectangle = styled.div`
+const AnimatedUnderline = styled.div<{ $isActive: boolean }>`
   position: absolute;
-  height: 100%;
-  border-radius: 8px;
-  background-color: rgba(184, 184, 184, 0.2);
-  transition: all 0.1s ease-in-out;
-  z-index: -1;
-  animation: ${scaleIn} 0.5s ease-in-out forwards;
-  transform-origin: center;
+  bottom: -2px;
+  height: 1px;
+  background-color: ${props => props.$isActive ? '#000' : '#bababa'};
+  transition: all 0.3s ease-in-out;
+  transform-origin: left;
+  animation: ${moveUnderline} 0.3s ease-in-out forwards;
 `;
 
 const InfoIcon = () => (

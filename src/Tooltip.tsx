@@ -7,16 +7,17 @@ interface TooltipProps {
     children: ReactNode;
 }
 
-const TooltipContent = styled.div<{ isVisible: boolean }>`
+const TooltipContent = styled.div<{ $isVisible: boolean }>`
   background-color: #36454F;
   color: #fff;
   padding: 5px 10px;
   border-radius: 4px;
   font-size: 14px;
   z-index: 1000;
-  opacity: ${props => props.isVisible ? 1 : 0};
-  visibility: ${props => props.isVisible ? 'visible' : 'hidden'};
+  opacity: ${props => props.$isVisible ? 1 : 0};
+  visibility: ${props => props.$isVisible ? 'visible' : 'hidden'};
   transition: opacity 0.2s, visibility 0.2s;
+  pointer-events: none;
 `;
 
 const TooltipArrow = styled.div`
@@ -29,7 +30,7 @@ const TooltipArrow = styled.div`
 `;
 
 const Tooltip: React.FC<TooltipProps> = ({ text, children }) => {
-    const [isVisible, setIsVisible] = useState(false);
+    const [$isVisible, set$isVisible] = useState(false);
     const referenceRef = useRef<HTMLSpanElement>(null);
     const popperRef = useRef<HTMLDivElement>(null);
     const arrowRef = useRef<HTMLDivElement>(null);
@@ -55,12 +56,12 @@ const Tooltip: React.FC<TooltipProps> = ({ text, children }) => {
     });
 
     const handleMouseEnter = () => {
-        setIsVisible(true);
+        set$isVisible(true);
         update?.();
     };
 
     const handleMouseLeave = () => {
-        setIsVisible(false);
+        set$isVisible(false);
     };
 
     return (
@@ -74,10 +75,10 @@ const Tooltip: React.FC<TooltipProps> = ({ text, children }) => {
             </span>
             <div
                 ref={popperRef}
-                style={styles.popper}
+                style={{ ...styles.popper, pointerEvents: 'none', zIndex: 1000 }}
                 {...attributes.popper}
             >
-                <TooltipContent isVisible={isVisible}>
+                <TooltipContent $isVisible={$isVisible}>
                     {text}
                     <TooltipArrow ref={arrowRef} style={styles.arrow} />
                 </TooltipContent>
