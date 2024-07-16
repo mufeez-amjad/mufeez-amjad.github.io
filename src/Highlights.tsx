@@ -121,11 +121,6 @@ export const Highlights = () => {
                 {posts.map((post, idx) => (
                     <Entry key={idx} title={post.title} description={post.description} onHover={(e) => onHover(e, idx)} link={post.link} />
                 ))}
-                {/* <Entry title="Concurrent manual compactions" description="Segmenting keyspace and parallelizing execution with goroutines" onHover={onHover} />
-                <Entry title="Flushable SSTables" description="Speeding up ingestion when ingested SSTables overlap with the memtable" onHover={onHover} />
-                <Entry title="Cross-thread shared futures" description="Facilitating event propagation between concurrent Buck2 invocations" onHover={onHover} />
-                <Entry title="ollyLLM" description="LLM observability platform for evals, regression testing, and execution tracing" onHover={onHover} />
-                <Entry title="Beam" description="Cross-platform AirDrop with e2e encryption" onHover={onHover} link={{ external: true, url: 'https://x.com/moofeez/status/1744119063901544530' }} /> */}
             </EntriesContainer>
         </div>
     )

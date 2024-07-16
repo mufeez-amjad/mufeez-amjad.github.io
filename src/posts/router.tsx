@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import posts from './content';
 import { Renderer } from './renderer';
 import styled from 'styled-components';
+import { PageHeader } from '../components/PageHeader';
 
 export function PostsRouter() {
     return (
@@ -18,12 +19,16 @@ export function PostsRouter() {
 type PostProps = typeof posts[number];
 
 const Post = (props: PostProps) => {
-    const { hero, content, title, description } = props;
+    const { hero, content, title, description, date } = props;
 
     return (
         <PostContainer>
-            <Heading>{title}</Heading>
-            <SubHeading>{description}</SubHeading>
+            <PageHeader heading={title} subheading={
+                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                    <span>{description}</span>
+                    <span style={{ color: 'grey' }}>{date}</span>
+                </div>
+            } />
             <Hero src={hero} alt='hero' />
             <Renderer markdown={content} />
         </PostContainer>
@@ -42,15 +47,6 @@ const Container = styled.div`
 
 const PostContainer = styled.div`
     font-family: 'Red Hat Display';
-`;
-
-const Heading = styled.h1`
-    font-size: 20px;
-`;
-
-const SubHeading = styled.h2`
-    font-size: 16px;
-    font-weight: 300;
 `;
 
 const Hero = styled.img`

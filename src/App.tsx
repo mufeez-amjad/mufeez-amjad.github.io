@@ -5,6 +5,7 @@ import Tooltip from "./Tooltip";
 import { Highlights } from "./Highlights";
 import { usePrevious } from "./usePrevious";
 import { PostsRouter } from "./posts/router";
+import { PageHeader } from "./components/PageHeader";
 
 export default function RoutedApp() {
   return (
@@ -81,41 +82,41 @@ const Header = () => {
   }, [previousLocation, location]);
 
   return (
-    <HeaderContainer>
-      <StyledImage src="photo1.jpeg" />
-      <HeaderText key={key}>
+    <PageHeader
+      heading={
         <Routes>
           {routes.map(route => (
             <Route key={route.path} path={route.path} element={<>{route.displayName}</>} />
           ))}
         </Routes>
-      </HeaderText>
-      <HeaderRoutes
-        ref={navRef}
-        onMouseLeave={() => {
-          updateActiveRect();
-          setIsActive(true);
-        }}
-      >
-        <AnimatedUnderline
-          style={{
-            left: activeRect.left,
-            width: activeRect.width,
-          }}
-          $isActive={isActive}
-        />
-        {routes.map(route => (
-          <StyledNavLink
-            key={route.path}
-            to={route.path}
-            className={({ isActive }) => isActive ? 'active' : ''}
-            onMouseEnter={updateActiveRect}
-          >
-            {route.routeName ?? route.displayName}
-          </StyledNavLink>
-        ))}
-      </HeaderRoutes>
-    </HeaderContainer>
+      }
+      subheading={
+        <HeaderRoutes
+          ref={navRef}
+          onMouseLeave={() => {
+            updateActiveRect();
+            setIsActive(true);
+          }}>
+          <AnimatedUnderline
+            style={{
+              left: activeRect.left,
+              width: activeRect.width,
+            }}
+            $isActive={isActive}
+          />
+          {routes.map(route => (
+            <StyledNavLink
+              key={route.path}
+              to={route.path}
+              className={({ isActive }) => isActive ? 'active' : ''}
+              onMouseEnter={updateActiveRect}
+            >
+              {route.routeName ?? route.displayName}
+            </StyledNavLink>
+          ))}
+        </HeaderRoutes>
+      }
+    />
   )
 }
 
@@ -205,12 +206,6 @@ const Paragraph = styled.div`
   color: #333333;
 `;
 
-const StyledImage = styled.img`
-  width: 48px;
-  height: 48px;
-  border-radius: 24px;
-`;
-
 const AppContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -226,31 +221,6 @@ const Container = styled.div`
   align-items: flex-start;
   padding: 20px 0;
   box-sizing: border-box;
-`;
-
-const blurInAndOut = keyframes`
-  from {
-    opacity: 0.5;
-    transform: translateY(-2px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-`;
-
-const HeaderText = styled.h1`
-  font-size: 26px;
-  font-family: 'Red Hat Display';
-  font-weight: 600;
-  opacity: 1;
-  /* animation: ${blurInAndOut} 0.5s ease-in forwards; */
-`;
-
-const HeaderContainer = styled.div`
-  padding-bottom: 32px;
-  width: 100%;
-  border-bottom: 1px solid #eeeeee;
 `;
 
 const HeaderRoutes = styled.div`
