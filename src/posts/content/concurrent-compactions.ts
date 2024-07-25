@@ -363,10 +363,10 @@ You can see that L0 alone makes up more than half of the total size of the LSM. 
 
 After seeding an inverted LSM of around 150 GB, I ran the manual compactions with and without parallelization:
 
-| Implementation | Real Time   | User Time   | Sys Time    |
-|----------------|-------------|-------------|-------------|
-| Serial         | 550m32.809s | 589m52.219s | 36m25.205s  |
-| Concurrent     | 384m56.152s | 373m0.258s  | 28m25.139s  |
+| Implementation | Times                                      |
+|:--------------:|:------------------------------------------:|
+| Serial         | **Real:** 550m32.809s<br>**User:** 589m52.219s<br>**Sys:** 36m25.205s  |
+| Concurrent     | **Real:** 384m56.152s<br>**User:** 373m0.258s<br>**Sys:** 28m25.139s   |
 
 The results were promising with a roughly 30% improvement in compaction time!
 

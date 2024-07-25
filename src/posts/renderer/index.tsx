@@ -63,4 +63,8 @@ const StyledTable = styled.table`
         border: 1px solid #ddd;
         padding: 8px;
     }
+
+    * strong {
+        font-weight: 600;
+    }
 `;

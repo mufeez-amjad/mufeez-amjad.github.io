@@ -32,9 +32,9 @@ const Post = (props: PostProps) => {
                     <meta property="og:image" content={hero} />
                 </Helmet>
                 <PageHeader heading={title} subheading={
-                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', gap: 4 }}>
                         <span>{description}</span>
-                        <span style={{ color: 'grey' }}>{date}</span>
+                        <span style={{ color: 'grey', textAlign: 'right' }}>{date}</span>
                     </div>
                 } />
                 <Hero src={hero} alt='hero' />
