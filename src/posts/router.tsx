@@ -47,6 +47,7 @@ const Container = styled.div`
 
 const PostContainer = styled.div`
     font-family: 'Red Hat Display';
+    max-width: 100%;
 `;
 
 const Hero = styled.img`

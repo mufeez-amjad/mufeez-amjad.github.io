@@ -1,6 +1,6 @@
 export const content = `
 
-*The contents of this post describe my implementation of [concurrent manual compactions](https://github.com/cockroachdb/pebble/issues/1404) in Pebble during my internship at Cockroach Labs in 2022.*
+*This post describes my implementation of [concurrent manual compactions](https://github.com/cockroachdb/pebble/issues/1404) in Pebble during my internship at Cockroach Labs in 2022.*
 
 \n &nbsp;
 
@@ -60,11 +60,30 @@ Offline (node is taken offline):
 
 \n &nbsp;
 
+Let's consider a simple example of a manual compaction:
+
+<div style="display: flex; align-items: center; gap: 4px; flex-wrap: wrap">
+	<img src="../../posts/compact1.png" alt="compaction" style="width: 150px" />
+	<img src="../../posts/compact2.png" alt="compaction" style="width: 150px" />
+	<img src="../../posts/compact3.png" alt="compaction" style="width: 150px" />
+	<img src="../../posts/compact4.png" alt="compaction" style="width: 150px" />
+	<img src="../../posts/compact5.png" alt="compaction" style="width: 150px" />
+	<img src="../../posts/compact6.png" alt="compaction" style="width: 150px" />
+	<img src="../../posts/compact7.png" alt="compaction" style="width: 150px" />
+</div>
+
+In the above sequence of images, you can see the manual compaction proceed from L0 to L1, L1 to L2, and so on. 
+While compacting, the size of the LSM reduces as we combine redundant keys and push them to lower levels.
+
+\n &nbsp;
+
 ### Motivation
 
 Before my changes, manual compactions were done serially level by level, i.e. L0 to L1, then L1 to L2, etc. 
 When a node is taken offline, we don't need to be considerate for any foreground traffic – 
 thus allowing us to make full use of the available system resources.
+
+As an anecdote, during this project, we encountered a customer who was manually compacting a database several petabytes in size. The process had been running for **6 days(!)**, highlighting the urgency of the issue.
 
 \n &nbsp;
 
@@ -230,6 +249,7 @@ As mentioned above we use a go channel to accomplish this.
 This completes our \`manualCompact\` function:
 
 ~~~go
+// Compacts the given level of the LSM between start and end.
 func (d *DB) manualCompact(start, end []byte, level int, parallelize bool) error {
 	d.mu.Lock()
     
@@ -273,7 +293,7 @@ func (d *DB) manualCompact(start, end []byte, level int, parallelize bool) error
 Finally, we run the concurrent manual compactions level by level in the main compaction method:
 
 ~~~go
-// start/end is the compaction range
+// Compacts the entire LSM between start and end.
 func (d *DB) Compact(start, end []byte, parallelize bool) error {
 	d.mu.Lock()
  
@@ -307,20 +327,63 @@ func (d *DB) Compact(start, end []byte, parallelize bool) error {
 }
 ~~~
 
-### Results and next steps
+## Benchmarking and Results
 
-After running some benchmarks with LSMs of around 200 GB, I observed a roughly 30% improvement. 
+While it would have been ideal to run these benchmarks programmatically, the precondition for the use of a manual compaction is an inverted LSM.
 
-Unfortunately, in practice, most of the time spent compacting an LSM is an L0 to Lbase compaction which is difficult to parallelize. That’s because with thousands of files in L0, there’s high overlap between files and thus difficult to pick more than one non-overlapping key range. 
+Thus, I seeded an LSM with the YCSB F workload which inserts keys following a zipf distribution (higher frequency of key ranges). Workload F is a write-heavy workload and is known to lead to an inverted LSM when using a large number of concurrent writers.
 
-One investigation that came out of this project was to look into how to parallelize compactions out of L0 and there’s an [issue](https://github.com/cockroachdb/pebble/issues/1533) tracking it
-`
+Here is the LSM after seeding:
+
+~~~text
+__level_____count____size___score______in__ingest(sz_cnt)____move(sz_cnt)___write(sz_cnt)____read___r-amp___w-amp
+    WAL         3   138 M       -     0 B       -       -       -       -   138 M       -       -       -     0.0
+      0     69428    84 G    3.02     0 B     0 B       0     0 B       0     0 B       0     0 B       0     0.0
+      1         0     0 B    0.00     0 B     0 B       0     0 B       0     0 B       0     0 B       0     0.0
+      2      2478   9.7 G    5.45     0 B     0 B       0     0 B       0     0 B       0     0 B       0     0.0
+      3      1975    12 G    5.72     0 B     0 B       0     0 B       0     0 B       0     0 B       0     0.0
+      4      1497    15 G    5.73     0 B     0 B       0     0 B       0     0 B       0     0 B       0     0.0
+      5       961    18 G    0.87     0 B     0 B       0     0 B       0     0 B       0     0 B       0     0.0
+      6       703    15 G       -     0 B     0 B       0     0 B       0     0 B       0     0 B       0     0.0
+  total     77042   154 G       -   138 M     0 B       0     0 B       0   138 M       0     0 B       0     1.0
+  flush         0
+compact         0   583 G     0 B       0          (size == estimated-debt, score = in-progress-bytes, in = num-in-progress)
+  ctype         0       0       0       0       0  (default, delete, elision, move, read)
+ memtbl        39   144 M
+zmemtbl         0     0 B
+   ztbl         0     0 B
+ bcache         0     0 B    0.0%  (score == hit-rate)
+ tcache         0     0 B    0.0%  (score == hit-rate)
+  snaps         0       -       0  (score == earliest seq num)
+ titers         0
+ filter         -       -    0.0%  (score == utility)
+~~~
+
+You can see that L0 alone makes up more than half of the total size of the LSM. This is a clear indication of an inverted LSM. 
+
+After seeding an inverted LSM of around 150 GB, I ran the manual compactions with and without parallelization:
+
+| Implementation | Real Time   | User Time   | Sys Time    |
+|----------------|-------------|-------------|-------------|
+| Serial         | 550m32.809s | 589m52.219s | 36m25.205s  |
+| Concurrent     | 384m56.152s | 373m0.258s  | 28m25.139s  |
+
+The results were promising with a roughly 30% improvement in compaction time!
+
+While the performance improvement is significant, the compaction logs when benchmarking revealed that the majority of the time is spent in L0 to Lbase compactions. My implementation was [extended](https://github.com/cockroachdb/pebble/pull/1604#issue-1182237405) to use L0 sublevels to further parallelize compactions in L0, yielding an additional 92% improvement in overall compaction time! Kudos to Arjun Nair for the follow-up work.
+
+That’s because with thousands of files in L0, there’s high overlap between files and thus difficult to pick more than one non-overlapping key range. Since my work, Pebble has had further optimizations to improve compactions out of L0: [issue](https://github.com/cockroachdb/pebble/issues/1533).
+
+## Conclusion
+
+All in all, the project my first large contribution to CockroachDB and the performance improvements were significant and impactful. Compactions are still a hot topic in Pebble and I’m excited to see the future optimizations that come out of it.
+`;
 
 export default {
-    slug: 'pebble-concurrent-compactions',
-    title: 'Concurrent manual compactions',
-    description: 'Segmenting key space and parallelizing execution, 30% perf improvement',
-    date: 'July 15, 2024',
-    content,
-    hero: '../../posts/compaction.png'
+	slug: 'pebble-concurrent-compactions',
+	title: 'Concurrent manual compactions',
+	description: 'Segmenting key space and parallelizing execution, 30% perf improvement',
+	date: 'July 15, 2024',
+	content,
+	hero: '../../posts/compaction.png'
 };

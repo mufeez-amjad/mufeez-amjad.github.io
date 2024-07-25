@@ -21,7 +21,7 @@ export const Highlights = () => {
             },
             {
                 title: "Flushable SSTables",
-                description: "Speeding up ingestion when ingested SSTables overlap with the memtable",
+                description: "~60% perf improvement when ingested SSTs overlap with the memtable",
                 link: { external: false, url: '/posts/sstables' },
                 image: "./posts/ingest.png",
             },

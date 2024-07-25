@@ -51,43 +51,44 @@ const LightboxImage = styled.img<{ isClosing: boolean }>`
 `;
 
 type Props = {
-    src?: string;
-    alt?: string;
+  src?: string;
+  alt?: string;
+  style?: React.CSSProperties;
 }
 
-const Image = ({ src, alt }: Props) => {
-    const [isOpen, setIsOpen] = useState(false);
-    const [isClosing, setIsClosing] = useState(false);
+const Image = ({ src, alt, style }: Props) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isClosing, setIsClosing] = useState(false);
 
-    const openLightbox = useCallback(() => {
-        setIsOpen(true);
-        setIsClosing(false);
-    }, []);
+  const openLightbox = useCallback(() => {
+    setIsOpen(true);
+    setIsClosing(false);
+  }, []);
 
-    const closeLightbox = useCallback(() => {
-        setIsClosing(true);
-        setTimeout(() => {
-            setIsOpen(false);
-            setIsClosing(false);
-        }, 300); // Match this with the animation duration
-    }, []);
+  const closeLightbox = useCallback(() => {
+    setIsClosing(true);
+    setTimeout(() => {
+      setIsOpen(false);
+      setIsClosing(false);
+    }, 300); // Match this with the animation duration
+  }, []);
 
-    return (
-        <>
-            <ImageWrapper onClick={openLightbox}>
-                <StyledImage src={src} alt={alt} />
-            </ImageWrapper>
-            {isOpen && (
-                <LightboxOverlay onClick={closeLightbox} isClosing={isClosing}>
-                    <LightboxImage
-                        src={src}
-                        alt={alt}
-                        isClosing={isClosing}
-                    />
-                </LightboxOverlay>
-            )}
-        </>
-    );
+  return (
+    <>
+      <ImageWrapper onClick={openLightbox}>
+        <StyledImage src={src} alt={alt} style={style} />
+      </ImageWrapper>
+      {isOpen && (
+        <LightboxOverlay onClick={closeLightbox} isClosing={isClosing}>
+          <LightboxImage
+            src={src}
+            alt={alt}
+            isClosing={isClosing}
+          />
+        </LightboxOverlay>
+      )}
+    </>
+  );
 };
 
 export default Image;
