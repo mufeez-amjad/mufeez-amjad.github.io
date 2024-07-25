@@ -43,7 +43,6 @@ const Header = () => {
   const [activeRect, setActiveRect] = React.useState({ left: 0, width: 0 });
   const [isActive, setIsActive] = React.useState(true);
   const navRef = React.useRef<HTMLDivElement>(null);
-  const [key, setKey] = React.useState(0);
 
   const updateActiveRect = (event?: any) => {
     if (!navRef.current) {
@@ -76,7 +75,6 @@ const Header = () => {
 
   React.useEffect(() => {
     if (previousLocation?.pathname !== location.pathname) {
-      setKey(prev => prev + 1);
       updateActiveRect();
     }
   }, [previousLocation, location]);
@@ -221,6 +219,13 @@ const Container = styled.div`
   align-items: flex-start;
   padding: 20px 0;
   box-sizing: border-box;
+
+  transition: all 0.3s ease-in-out;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 20px;
+  }
 `;
 
 const HeaderRoutes = styled.div`

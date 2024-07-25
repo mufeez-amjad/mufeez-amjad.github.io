@@ -25,19 +25,21 @@ const Post = (props: PostProps) => {
 
     return (
         <PostContainer>
-            <Helmet>
-                <meta property="og:title" content={title} />
-                <meta property="og:description" content={description} />
-                <meta property="og:image" content={hero} />
-            </Helmet>
-            <PageHeader heading={title} subheading={
-                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                    <span>{description}</span>
-                    <span style={{ color: 'grey' }}>{date}</span>
-                </div>
-            } />
-            <Hero src={hero} alt='hero' />
-            <Renderer markdown={content} />
+            <div>
+                <Helmet>
+                    <meta property="og:title" content={title} />
+                    <meta property="og:description" content={description} />
+                    <meta property="og:image" content={hero} />
+                </Helmet>
+                <PageHeader heading={title} subheading={
+                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                        <span>{description}</span>
+                        <span style={{ color: 'grey' }}>{date}</span>
+                    </div>
+                } />
+                <Hero src={hero} alt='hero' />
+                <Renderer markdown={content} />
+            </div>
         </PostContainer>
     )
 }
@@ -50,11 +52,23 @@ const Container = styled.div`
     align-items: flex-start;
     padding: 20px 0;
     box-sizing: border-box;
+
+    transition: all 0.3s ease-in-out;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        padding: 20px;
+    }
 `;
 
 const PostContainer = styled.div`
     font-family: 'Red Hat Display';
+    width: 100%;
     max-width: 100%;
+
+    @media (max-width: 768px) {
+        max-width: 100%;
+    }
 `;
 
 const Hero = styled.img`
