@@ -370,13 +370,13 @@ After seeding an inverted LSM of around 150 GB, I ran the manual compactions wit
 
 The results were promising with a roughly 30% improvement in compaction time!
 
-While the performance improvement is significant, the compaction logs when benchmarking revealed that the majority of the time is spent in L0 to Lbase compactions. My implementation was [extended](https://github.com/cockroachdb/pebble/pull/1604#issue-1182237405) to use L0 sublevels to further parallelize compactions in L0, yielding an additional 92% improvement in overall compaction time! Kudos to Arjun Nair for the follow-up work.
-
-That’s because with thousands of files in L0, there’s high overlap between files and thus difficult to pick more than one non-overlapping key range. Since my work, Pebble has had further optimizations to improve compactions out of L0: [issue](https://github.com/cockroachdb/pebble/issues/1533).
+While the performance improvement is significant, the compaction logs when benchmarking revealed that the majority of the time is spent in L0 to Lbase compactions. 
+My implementation was [extended](https://github.com/cockroachdb/pebble/pull/1604#issue-1182237405) to use L0 sublevels to further parallelize compactions in L0, yielding an additional 92% improvement in overall compaction time! 
+Kudos to Arjun Nair for the follow-up work.
 
 ## Conclusion
 
-All in all, the project my first large contribution to CockroachDB and the performance improvements were significant and impactful. Compactions are still a hot topic in Pebble and I’m excited to see the future optimizations that come out of it.
+All in all, this project was my first large contribution to CockroachDB and the performance improvements were significant and impactful. Compactions are still an active work area in Pebble and I’m excited to see the future optimizations that the team will come up with.
 `;
 
 export default {
