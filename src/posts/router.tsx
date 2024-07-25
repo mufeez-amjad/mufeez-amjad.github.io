@@ -1,7 +1,9 @@
 import { Route, Routes } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
+import styled from 'styled-components';
+
 import posts from './content';
 import { Renderer } from './renderer';
-import styled from 'styled-components';
 import { PageHeader } from '../components/PageHeader';
 
 export function PostsRouter() {
@@ -23,6 +25,11 @@ const Post = (props: PostProps) => {
 
     return (
         <PostContainer>
+            <Helmet>
+                <meta property="og:title" content={title} />
+                <meta property="og:description" content={description} />
+                <meta property="og:image" content={hero} />
+            </Helmet>
             <PageHeader heading={title} subheading={
                 <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                     <span>{description}</span>

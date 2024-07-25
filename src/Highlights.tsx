@@ -22,7 +22,7 @@ export const Highlights = () => {
             {
                 title: "Flushable SSTables",
                 description: "~60% perf improvement when ingested SSTs overlap with the memtable",
-                link: { external: false, url: '/posts/sstables' },
+                link: { external: false },
                 image: "./posts/ingest.png",
             },
             // {
@@ -221,7 +221,7 @@ type EntryProps = {
     onHover?: (e: React.MouseEvent<HTMLDivElement | HTMLAnchorElement>) => void;
     link?: {
         external: boolean;
-        url: string;
+        url?: string;
     };
 };
 
@@ -229,7 +229,7 @@ const Entry = ({ title, description, onHover, link }: EntryProps) => {
 
     const className = 'entry';
 
-    if (!link) {
+    if (!link || !link.url) {
         return (
             <EntryContainer onMouseEnter={onHover} className={className}>
                 <EntryHeader>{title}</EntryHeader>

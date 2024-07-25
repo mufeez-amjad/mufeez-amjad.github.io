@@ -35,8 +35,8 @@ export default function RoutedApp() {
 
 const routes = [
   { path: "/", displayName: "Mufeez Amjad", routeName: "About" },
-  { path: "/blog", displayName: "Blog" },
-  { path: "/photos", displayName: "Photos" },
+  // { path: "/blog", displayName: "Blog" },
+  // { path: "/photos", displayName: "Photos" },
 ];
 
 const Header = () => {
