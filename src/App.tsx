@@ -137,17 +137,33 @@ const AboutContent = () => {
           I'm an engineer based in NYC, currently working at <ExternalLink href="https://linear.app/homepage" target="_blank">Linear</ExternalLink>, where I joined as the first junior engineer in 2023.
         </Paragraph>
         <Paragraph>
-          Previously, I worked at Cockroach Labs on <Tooltip text="RocksDB inspired KV store written in Go">
-            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '2px' }}>
-              <ExternalLink href="https://github.com/cockroachdb/pebble" target="_blank">Pebble</ExternalLink>
-              <InfoIcon />
-            </span>
-          </Tooltip> and at Meta on <Tooltip text="Meta's incremental build system written in Rust">
-            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '2px' }}>
-              <ExternalLink href="https://github.com/facebook/buck2" target="_blank">Buck2</ExternalLink>
-              <InfoIcon />
-            </span>
-          </Tooltip>.
+          Previously, I've worked at:
+          <ul>
+            <li>
+              Cockroach Labs on <Tooltip text="RocksDB inspired KV store written in Go">
+                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '2px' }}>
+                  <ExternalLink href="https://github.com/cockroachdb/pebble" target="_blank">Pebble</ExternalLink>
+                  <InfoIcon />
+                </span>
+              </Tooltip>, improving the performance of the storage engine
+            </li>
+            <li>
+              Meta on <Tooltip text="Meta's incremental build system written in Rust">
+                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '2px' }}>
+                  <ExternalLink href="https://github.com/facebook/buck2" target="_blank">Buck2</ExternalLink>
+                  <InfoIcon />
+                </span>
+              </Tooltip>, improving build observability
+            </li>
+            <li>
+              Splunk on the <Tooltip text="Programmatically coordinating releases across Splunk's production fleet">
+                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '2px' }}>
+                  <ExternalLink href="https://www.splunk.com/" target="_blank">Release Train</ExternalLink>
+                  <InfoIcon />
+                </span>
+              </Tooltip> team, improving the release process in a large Kubernetes cluster
+            </li>
+          </ul>
         </Paragraph>
         <Paragraph>
           My interests include high-performance computing, distributed systems, and databases.

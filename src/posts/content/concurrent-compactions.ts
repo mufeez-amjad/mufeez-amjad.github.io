@@ -8,7 +8,7 @@ Before we dive into the details of the project, let’s first understand the sto
 
 ### Storage Essentials
 
-![storage internals](../../posts/storage-essentials.png)
+![storage internals](./posts/compaction/storage-essentials.png)
 
 The core of Pebble is a _log-structured merge tree_ (LSM) with six levels, and an in-memory data structure called the _memtable_ that sits above.
 
@@ -63,13 +63,13 @@ Offline (node is taken offline):
 Let's consider a simple example of a manual compaction:
 
 <div style="display: flex; align-items: center; gap: 4px; flex-wrap: wrap">
-	<img src="../../posts/compact1.png" alt="compaction" style="width: 150px" />
-	<img src="../../posts/compact2.png" alt="compaction" style="width: 150px" />
-	<img src="../../posts/compact3.png" alt="compaction" style="width: 150px" />
-	<img src="../../posts/compact4.png" alt="compaction" style="width: 150px" />
-	<img src="../../posts/compact5.png" alt="compaction" style="width: 150px" />
-	<img src="../../posts/compact6.png" alt="compaction" style="width: 150px" />
-	<img src="../../posts/compact7.png" alt="compaction" style="width: 150px" />
+	<img src="./posts/compaction/compact1.png" alt="compaction" style="width: 150px" />
+	<img src="./posts/compaction/compact2.png" alt="compaction" style="width: 150px" />
+	<img src="./posts/compaction/compact3.png" alt="compaction" style="width: 150px" />
+	<img src="./posts/compaction/compact4.png" alt="compaction" style="width: 150px" />
+	<img src="./posts/compaction/compact5.png" alt="compaction" style="width: 150px" />
+	<img src="./posts/compaction/compact6.png" alt="compaction" style="width: 150px" />
+	<img src="./posts/compaction/compact7.png" alt="compaction" style="width: 150px" />
 </div>
 
 In the above sequence of images, you can see the manual compaction proceed from L0 to L1, L1 to L2, and so on. 
@@ -385,5 +385,5 @@ export default {
 	description: 'Segmenting key space and parallelizing execution, 30% perf improvement',
 	date: 'July 15, 2024',
 	content,
-	hero: '../../posts/compaction.png'
+	hero: './posts/compaction/hero.png'
 };

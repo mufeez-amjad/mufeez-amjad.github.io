@@ -23,7 +23,7 @@ export const Highlights = () => {
                 title: "Flushable SSTables",
                 description: "~60% perf improvement when ingested SSTs overlap with the memtable",
                 link: { external: false },
-                image: "./posts/ingest.png",
+                image: "./posts/ingest/hero.png",
             },
             // {
             //     title: "Cross-thread shared futures",
