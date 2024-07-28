@@ -27,9 +27,10 @@ const Post = (props: PostProps) => {
         <PostContainer>
             <div>
                 <Helmet>
-                    <meta property="og:title" content={title} />
-                    <meta property="og:description" content={description} />
-                    <meta property="og:image" content={`https://mufeezamjad.me/${hero}`} />
+                    <title>{title}</title>
+                    <meta property="og:title" data-react-helmet="true" content={title} />
+                    <meta property="og:description" data-react-helmet="true" content={description} />
+                    <meta property="og:image" data-react-helmet="true" content={`https://mufeezamjad.me/${hero}`} />
                 </Helmet>
                 <PageHeader heading={title} subheading={
                     <div style={{ display: 'flex', justifyContent: 'space-between', gap: 4 }}>
