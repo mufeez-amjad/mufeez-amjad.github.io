@@ -385,5 +385,5 @@ export default {
 	description: 'Segmenting key space and parallelizing execution, 30% perf improvement',
 	date: 'July 15, 2024',
 	content,
-	hero: './posts/compaction/hero.png'
+	hero: 'posts/compaction/hero.png'
 };

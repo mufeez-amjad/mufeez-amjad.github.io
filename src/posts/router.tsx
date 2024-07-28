@@ -29,7 +29,7 @@ const Post = (props: PostProps) => {
                 <Helmet>
                     <meta property="og:title" content={title} />
                     <meta property="og:description" content={description} />
-                    <meta property="og:image" content={hero} />
+                    <meta property="og:image" content={`https://mufeezamjad.me/${hero}`} />
                 </Helmet>
                 <PageHeader heading={title} subheading={
                     <div style={{ display: 'flex', justifyContent: 'space-between', gap: 4 }}>
