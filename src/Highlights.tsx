@@ -170,33 +170,27 @@ const EntryHighlight = ({
                 <StyledEntryHighlightImage
                     id='entry-highlight-image'
                     as={motion.img}
-                    key={src} // Use src as the key to ensure unique transitions
+                    key={src}
                     src={src}
                     alt="cover"
                     initial={{
-                        opacity: 0.5,
-                        scale: 0.9,
-                        rotate: 5,
-                        filter: 'blur(10px)'
+                        opacity: 0,
+                        scale: 0.8,
                     }}
                     animate={{
                         opacity: 1,
                         scale: 1,
-                        rotate: 0,
-                        filter: 'blur(0px)'
                     }}
                     exit={{
                         opacity: 0,
-                        scale: 0.9,
-                        rotate: -5,
-                        filter: 'blur(10px)',
+                        scale: 0.8,
                         transition: { duration: 0.2 }
                     }}
                     transition={{
                         type: 'spring',
                         stiffness: 300,
                         damping: 30,
-                        duration: 0.15
+                        duration: 0.3
                     }}
                     style={{
                         ...position,
@@ -226,7 +220,6 @@ type EntryProps = {
 };
 
 const Entry = ({ title, description, onHover, link }: EntryProps) => {
-
     const className = 'entry';
 
     if (!link || !link.url) {
